@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.imooc.mapper.UserAddressMapper">
+  <resultMap id="BaseResultMap" type="com.imooc.pojo.UserAddress">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="user_id" jdbcType="VARCHAR" property="userId" />
+    <result column="receiver" jdbcType="VARCHAR" property="receiver" />
+    <result column="moblie" jdbcType="VARCHAR" property="moblie" />
+    <result column="porivunce" jdbcType="VARCHAR" property="porivunce" />
+    <result column="city" jdbcType="VARCHAR" property="city" />
+    <result column="district" jdbcType="VARCHAR" property="district" />
+    <result column="detali" jdbcType="VARCHAR" property="detali" />
+    <result column="extand" jdbcType="VARCHAR" property="extand" />
+    <result column="is_defauit" jdbcType="INTEGER" property="isDefauit" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="update_time" jdbcType="TIMESTAMP" property="updateTime" />
+  </resultMap>
+</mapper>
