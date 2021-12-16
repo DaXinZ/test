@@ -12,6 +12,6 @@ import org.springframework.web.bind.annotation.RestController;
 public class HelloController {
     @GetMapping("/hello")
     public Object hello(){
-        return "SpringBoot 运行成功~~1";
+        return "SpringBoot 运行成功~~2";
     }
 }
