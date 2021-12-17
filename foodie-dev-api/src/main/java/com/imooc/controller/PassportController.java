@@ -18,11 +18,12 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("paasport")
 public class PassportController {
 
-    @Autowired
-    private UserService userService;
-    @GetMapping("/usernameIsExist")
-    public  int usernameIsExist(@RequestParam  String  username){
-        return username;
+//    @Autowired
+//    private UserService userService;
+//    @GetMapping("/usernameIsExist")
+////    public  int usernameIsExist(@RequestParam  String  username){
+////
+////        return ;
     }
 
-}
+
