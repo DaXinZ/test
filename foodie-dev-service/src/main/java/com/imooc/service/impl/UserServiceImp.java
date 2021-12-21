@@ -22,16 +22,17 @@ public class UserServiceImp implements UserService {
     @Autowired
     private UsersMapper usersMapper;
     @Transactional(propagation = Propagation.SUPPORTS)
-
-
     @Override
-    public boolean querUsernameIsExist(String username) {
-        Example userExample = new Example(Users.class);
-        Example.Criteria  userCriteria  = userExample.createCriteria();
-        userCriteria.andEqualTo("username",username);
-         Users result =      usersMapper.selectOneByExample(userExample);
+    public boolean queryUsernameIsExist(String username) {
 
-        return result == null ? false : true ;
+        Example userExample = new Example(Users.class);
+        Example.Criteria userCriteria = userExample.createCriteria();
+
+        userCriteria.andEqualTo("username", username);
+
+        Users result = usersMapper.selectOneByExample(userExample);
+
+        return result == null ? false : true;
     }
 
 

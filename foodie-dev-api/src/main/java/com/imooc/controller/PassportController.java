@@ -1,6 +1,5 @@
 package com.imooc.controller;
 
-import com.imooc.service.StuService;
 import com.imooc.service.UserService;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -24,20 +23,21 @@ public class PassportController {
 
 
     @GetMapping("/usernameIsExist")
-    public  int usernameIsExist(@RequestParam  String  username){
+    public int usernameIsExist(@RequestParam String username) {
 
-        //判断用户名不能为空
-        if(StringUtils.isBlank(username)){
-             return  500;
+        // 1. 判断用户名不能为空
+        if (StringUtils.isBlank(username)) {
+            return 500;
         }
-        //查找注册的用户名是否存在
-          boolean   isExist = userService.querUsernameIsExist(username);
+
+        // 2. 查找注册的用户名是否存在
+        boolean isExist = userService.queryUsernameIsExist(username);
         if (isExist) {
-            return  500;
+            return 500;
         }
 
-        //请求用户名没有重复
-        return 200;
+        // 3. 请求成功，用户名没有重复
+        return 33;
     }
 
     }
