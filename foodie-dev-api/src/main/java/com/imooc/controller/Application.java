@@ -17,6 +17,8 @@ import org.springframework.context.annotation.ComponentScan;
 //@SpringBootApplication(exclude = {DataSourceAutoConfiguration.class}, scanBasePackages = "com.imooc")
 @SpringBootApplication(scanBasePackages = "com.imooc")
 @MapperScan(basePackages = "com.imooc.mapper")
+//扫描所有包，以及相关组件包
+@ComponentScan(basePackages =  {"com.imooc","org.n3r.idworker"})
 public class Application {
     public static void main(String[] args){
         SpringApplication.run(Application.class);
