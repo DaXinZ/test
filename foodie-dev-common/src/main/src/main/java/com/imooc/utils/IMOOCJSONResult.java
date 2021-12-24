@@ -26,6 +26,7 @@ public class IMOOCJSONResult {
 
     // 定义jackson对象
     private static final ObjectMapper MAPPER = new ObjectMapper();
+    private static String trceid;
 
     // 响应业务状态
     private Integer status;
@@ -35,67 +36,76 @@ public class IMOOCJSONResult {
 
     // 响应中的数据
     private Object data;
-    
+
+
+
+
+
     @JsonIgnore
     private String ok;	// 不使用
 
-    public static IMOOCJSONResult build(Integer status, String msg, Object data) {
-        return new IMOOCJSONResult(status, msg, data);
+    StringRandom test = new StringRandom();
+
+    public static IMOOCJSONResult build(Integer status, String msg, Object data ,String trceid) {
+        return new IMOOCJSONResult(status, msg, data,trceid);
     }
 
-    public static IMOOCJSONResult build(Integer status, String msg, Object data, String ok) {
-        return new IMOOCJSONResult(status, msg, data, ok);
+    public static IMOOCJSONResult build(Integer status, String msg, Object data, String ok,String trceid) {
+        return new IMOOCJSONResult(status, msg, data, ok,trceid);
     }
     
     public static IMOOCJSONResult ok(Object data) {
-        return new IMOOCJSONResult(data);
+        return new IMOOCJSONResult(data, trceid);
     }
 
     public static IMOOCJSONResult ok() {
-        return new IMOOCJSONResult(null);
+        return new IMOOCJSONResult(null, trceid);
     }
     
     public static IMOOCJSONResult errorMsg(String msg) {
-        return new IMOOCJSONResult(500, msg, null);
+        return new IMOOCJSONResult(500, msg, null, trceid);
     }
     
     public static IMOOCJSONResult errorMap(Object data) {
-        return new IMOOCJSONResult(501, "error", data);
+        return new IMOOCJSONResult(501, "error", data, trceid);
     }
     
     public static IMOOCJSONResult errorTokenMsg(String msg) {
-        return new IMOOCJSONResult(502, msg, null);
+        return new IMOOCJSONResult(502, msg, null, trceid);
     }
     
     public static IMOOCJSONResult errorException(String msg) {
-        return new IMOOCJSONResult(555, msg, null);
+        return new IMOOCJSONResult(555, msg, null, trceid);
     }
     
     public static IMOOCJSONResult errorUserQQ(String msg) {
-        return new IMOOCJSONResult(556, msg, null);
+        return new IMOOCJSONResult(556, msg, null, ok().trceid);
     }
 
     public IMOOCJSONResult() {
 
     }
 
-    public IMOOCJSONResult(Integer status, String msg, Object data) {
+    public IMOOCJSONResult(Integer status, String msg, Object data,String trceid) {
         this.status = status;
         this.msg = msg;
         this.data = data;
+        this.trceid = trceid;
     }
     
-    public IMOOCJSONResult(Integer status, String msg, Object data, String ok) {
+    public IMOOCJSONResult(Integer status, String msg, Object data, String ok,String trceid) {
         this.status = status;
         this.msg = msg;
         this.data = data;
         this.ok = ok;
+        this.trceid = trceid;
     }
 
-    public IMOOCJSONResult(Object data) {
+    public IMOOCJSONResult(Object data ,String trceid) {
         this.status = 200;
         this.msg = "OK";
         this.data = data;
+        this.trceid = trceid;
     }
 
     public Boolean isOK() {
@@ -133,5 +143,11 @@ public class IMOOCJSONResult {
 	public void setOk(String ok) {
 		this.ok = ok;
 	}
+    public String getTrceid() {
+        return trceid;
+    }
 
+    public void setTrceid(String trceid) {
+        this.trceid = trceid;
+    }
 }
