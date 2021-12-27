@@ -55,7 +55,7 @@ public class IMOOCJSONResult {
     }
     
     public static IMOOCJSONResult ok(Object data,String trceid) {
-        return new IMOOCJSONResult(data, trceid);
+        return new IMOOCJSONResult(data, "T"+trceid);
     }
 
     public static IMOOCJSONResult ok() {
@@ -63,23 +63,23 @@ public class IMOOCJSONResult {
     }
     
     public static IMOOCJSONResult errorMsg(String msg, String trceid) {
-        return new IMOOCJSONResult(500, msg, null, trceid);
+        return new IMOOCJSONResult(500, msg, null, "T"+trceid);
     }
     
     public static IMOOCJSONResult errorMap(Object data,String trceid) {
-        return new IMOOCJSONResult(501, "error", data, trceid);
+        return new IMOOCJSONResult(501, "error", data, "T"+trceid);
     }
     
     public static IMOOCJSONResult errorTokenMsg(String msg,String trceid) {
-        return new IMOOCJSONResult(502, msg, null, trceid);
+        return new IMOOCJSONResult(502, msg, null, "T"+trceid);
     }
     
     public static IMOOCJSONResult errorException(String msg,String trceid) {
-        return new IMOOCJSONResult(555, msg, null, trceid);
+        return new IMOOCJSONResult(555, msg, null, "T"+trceid);
     }
     
     public static IMOOCJSONResult errorUserQQ(String msg,String trceid) {
-        return new IMOOCJSONResult(556, msg, null, trceid);
+        return new IMOOCJSONResult(556, msg, null, "T"+trceid);
     }
 
     public IMOOCJSONResult() {
