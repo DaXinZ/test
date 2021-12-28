@@ -19,7 +19,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
  * 				556: 用户qq校验异常
  * @Copyright: Copyright (c) 2020
  * @Company: www.imooc.com
- * @author 慕课网 - 风间影月
+ * @author
  * @version V1.0
  */
 public class IMOOCJSONResult {

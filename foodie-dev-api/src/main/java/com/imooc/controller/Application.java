@@ -1,5 +1,6 @@
 package com.imooc.controller;
 
+import org.springframework.scheduling.annotation.EnableScheduling;
 import tk.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 
@@ -14,13 +15,16 @@ import org.springframework.context.annotation.ComponentScan;
  */
 
 
-//@SpringBootApplication(exclude = {DataSourceAutoConfiguration.class}, scanBasePackages = "com.imooc")
+
 @SpringBootApplication(scanBasePackages = "com.imooc")
 @MapperScan(basePackages = "com.imooc.mapper")
 //扫描所有包，以及相关组件包
 @ComponentScan(basePackages =  {"com.imooc","org.n3r.idworker"})
+//开启定时任务
+@EnableScheduling
+
 public class Application {
     public static void main(String[] args){
-        SpringApplication.run(Application.class);
+        SpringApplication.run(Application.class,args);
     }
 }
