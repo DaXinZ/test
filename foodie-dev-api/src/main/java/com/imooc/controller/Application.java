@@ -20,6 +20,7 @@ import org.springframework.context.annotation.ComponentScan;
 @MapperScan(basePackages = "com.imooc.mapper")
 //扫描所有包，以及相关组件包
 @ComponentScan(basePackages =  {"com.imooc","org.n3r.idworker"})
+@ComponentScan("config")
 //开启定时任务
 @EnableScheduling
 
