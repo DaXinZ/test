@@ -44,41 +44,42 @@ public class IMOOCJSONResult {
     @JsonIgnore
     private String ok;	// 不使用
 
-    StringRandom test = new StringRandom();
 
-    public static IMOOCJSONResult build(Integer status, String msg, Object data ,String trceid) {
+
+    public static IMOOCJSONResult build(Integer status, String msg, Object data ) {
         return new IMOOCJSONResult(status, msg, data,trceid);
     }
 
-    public static IMOOCJSONResult build(Integer status, String msg, Object data, String ok,String trceid) {
+
+    public static IMOOCJSONResult build(Integer status, String msg, Object data, String ok) {
         return new IMOOCJSONResult(status, msg, data, ok,trceid);
     }
     
-    public static IMOOCJSONResult ok(Object data,String trceid) {
-        return new IMOOCJSONResult(data, "T"+trceid);
+    public static IMOOCJSONResult ok(Object data) {
+        return new IMOOCJSONResult(data,"T"+trceid);
     }
 
     public static IMOOCJSONResult ok() {
-        return new IMOOCJSONResult(null, trceid);
+        return new IMOOCJSONResult(null, "T"+trceid);
     }
     
-    public static IMOOCJSONResult errorMsg(String msg, String trceid) {
+    public static IMOOCJSONResult errorMsg(String msg) {
         return new IMOOCJSONResult(500, msg, null, "T"+trceid);
     }
     
-    public static IMOOCJSONResult errorMap(Object data,String trceid) {
+    public static IMOOCJSONResult errorMap(Object data) {
         return new IMOOCJSONResult(501, "error", data, "T"+trceid);
     }
     
-    public static IMOOCJSONResult errorTokenMsg(String msg,String trceid) {
+    public static IMOOCJSONResult errorTokenMsg(String msg) {
         return new IMOOCJSONResult(502, msg, null, "T"+trceid);
     }
     
-    public static IMOOCJSONResult errorException(String msg,String trceid) {
+    public static IMOOCJSONResult errorException(String msg) {
         return new IMOOCJSONResult(555, msg, null, "T"+trceid);
     }
     
-    public static IMOOCJSONResult errorUserQQ(String msg,String trceid) {
+    public static IMOOCJSONResult errorUserQQ(String msg) {
         return new IMOOCJSONResult(556, msg, null, "T"+trceid);
     }
 
@@ -151,4 +152,11 @@ public class IMOOCJSONResult {
         this.trceid = trceid;
         return trceid;
     }
+
+    public static void trce(){
+        StringRandom test = new StringRandom();
+        IMOOCJSONResult imoocjsonResult = new IMOOCJSONResult();
+        imoocjsonResult.setTrceid(test.getStringRandom());
+    }
+
 }

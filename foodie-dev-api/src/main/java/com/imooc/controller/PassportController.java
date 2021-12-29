@@ -40,17 +40,17 @@ public class PassportController {
 
         // 1. 判断用户名不能为空
         if (StringUtils.isBlank(username)) {
-            return IMOOCJSONResult.errorMsg("用户名不能为空",imoocjsonResult.setTrceid(test.getStringRandom()));
+            return IMOOCJSONResult.errorMsg("用户名不能为空");
         }
 
         // 2. 查找注册的用户名是否存在
         boolean isExist = userService.queryUsernameIsExist(username);
         if (isExist) {
-            return IMOOCJSONResult.errorMsg("用户名已存在",imoocjsonResult.setTrceid(test.getStringRandom()));
+            return IMOOCJSONResult.errorMsg("用户名已存在");
         }
 
         // 3. 请求成功，用户名没有重复
-        return IMOOCJSONResult.ok(username,imoocjsonResult.setTrceid(test.getStringRandom()));
+        return IMOOCJSONResult.ok();
     }
 
     /**
@@ -73,29 +73,29 @@ public class PassportController {
                StringUtils.isBlank(password) ||
                StringUtils.isBlank(confirmpassword)
        ){
-           return IMOOCJSONResult.errorMsg("用户名或密码不能为空",imoocjsonResult.setTrceid(test.getStringRandom()));
+           return IMOOCJSONResult.errorMsg("用户名或密码不能为空");
        }
 
         // 查询用户名是否存在
         boolean isExist = userService.queryUsernameIsExist(username);
         if (isExist) {
-            return IMOOCJSONResult.errorMsg("用户名已存在",imoocjsonResult.setTrceid(test.getStringRandom()));
+            return IMOOCJSONResult.errorMsg("用户名已存在");
         }
 
         //密码长度不能少于6位
         if (password.length() < 6 ){
-            return IMOOCJSONResult.errorMsg("密码长度不能少于6",imoocjsonResult.setTrceid(test.getStringRandom()));
+            return IMOOCJSONResult.errorMsg("密码长度不能少于6");
         }
 
         //判断两次密码不一致
         if (!password.equals(confirmpassword)  ){
-            return IMOOCJSONResult.errorMsg("两次密码不一致",imoocjsonResult.setTrceid(test.getStringRandom()));
+            return IMOOCJSONResult.errorMsg("两次密码不一致");
         }
         // 实现注册功能
         userService.createUser(userBo);
 
         // 3. 请求成功，用户名没有重复
-        return IMOOCJSONResult.ok("注册成功，用户名为" + username ,imoocjsonResult.setTrceid(test.getStringRandom()) );
+        return IMOOCJSONResult.ok("注册成功，用户名为" + username  );
     }
 
 
