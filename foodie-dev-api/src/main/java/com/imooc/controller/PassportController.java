@@ -18,7 +18,7 @@ import org.springframework.web.bind.annotation.*;
  */
 @Api(value = "注册登录", tags = {"用于注册登录的相关接口"})
 @RestController
-@RequestMapping("paasport")
+@RequestMapping("passport")
 public class PassportController {
 
     @Autowired
@@ -69,12 +69,15 @@ public class PassportController {
       String password = userBo.getPassword();
       String confirmpassword = userBo.getCofirmPassword();
         // 判断用户名和密码必须不为空
-       if (StringUtils.isBlank(username) ||
-               StringUtils.isBlank(password) ||
-               StringUtils.isBlank(confirmpassword)
-       ){
-           return IMOOCJSONResult.errorMsg("用户名或密码不能为空");
+       if (StringUtils.isBlank(username)){
+           return IMOOCJSONResult.errorMsg("用户名为空");
        }
+        if (StringUtils.isBlank(password)){
+            return IMOOCJSONResult.errorMsg("密码为空");
+        }
+        if (StringUtils.isBlank(confirmpassword)){
+            return IMOOCJSONResult.errorMsg("确认密码为空");
+        }
 
         // 查询用户名是否存在
         boolean isExist = userService.queryUsernameIsExist(username);
