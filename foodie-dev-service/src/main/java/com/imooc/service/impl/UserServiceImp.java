@@ -38,7 +38,11 @@ public class UserServiceImp implements UserService {
 
     public static  final String  user_face = "https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201901%2F22%2F20190122075852_qqpst.thumb.400_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1637226059&t=44137c685590cefc784c8426b088c54f";
 
-
+    /**
+     *
+     * @param username
+     * @return  查询用户名是否重复
+     */
     @Transactional(propagation = Propagation.SUPPORTS)
     @Override
     public boolean queryUsernameIsExist(String username) {
@@ -52,6 +56,13 @@ public class UserServiceImp implements UserService {
 
         return result == null ? false : true;
     }
+
+    /**
+     *
+     * @param userBO
+     * @return 注册接口
+     */
+
     @Transactional(propagation = Propagation.REQUIRED)
     @Override
     public Users createUser(UserBo userBO) {
@@ -82,6 +93,27 @@ public class UserServiceImp implements UserService {
         usersMapper.insert(user);
         return user;
     }
+
+    /**
+     *
+     * @param username
+     * @param password
+     * @return 登录接口
+     */
+    @Transactional(propagation = Propagation.SUPPORTS)
+    @Override
+    public Users queryUserForLogin(String username,String password){
+
+
+        Example userExample = new Example(Users.class);
+        Example.Criteria userCriteria = userExample.createCriteria();
+
+        userCriteria.andEqualTo("username", username);
+        userCriteria.andEqualTo("password", password);
+        Users result = usersMapper.selectOneByExample(userExample);
+        return result;
+    }
+
 
 
 }

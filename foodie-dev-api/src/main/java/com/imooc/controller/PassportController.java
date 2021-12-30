@@ -1,15 +1,19 @@
 package com.imooc.controller;
 
 import bo.UserBo;
+import com.imooc.pojo.Users;
 import com.imooc.service.UserService;
 
 import com.imooc.utils.IMOOCJSONResult;
+import com.imooc.utils.MD5Utils;
 import com.imooc.utils.StringRandom;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
+
+import javax.management.ImmutableDescriptor;
 
 /**
  * Date: 2021/9/27 10:55 上午
@@ -102,7 +106,42 @@ public class PassportController {
     }
 
 
+    @ApiOperation(value = "用户登录", notes = "用户登录", httpMethod = "post")
+    @PostMapping("/login")
+    public IMOOCJSONResult login(@RequestBody UserBo userBo) throws Exception {
+        StringRandom test = new StringRandom();
+        IMOOCJSONResult imoocjsonResult = new IMOOCJSONResult();
+        imoocjsonResult.setTrceid(test.getStringRandom());
 
+      String username = userBo.getUsername();
+      String password = userBo.getPassword();
+        // 1. 判断用户名不能为空
+        if (StringUtils.isBlank(username)) {
+            return IMOOCJSONResult.errorMsg("用户名不能为空");
+        }
+        //判断密码不能为空
+        if (StringUtils.isBlank(password)){
+            return IMOOCJSONResult.errorMsg("密码不能为空");
+        }
+        //密码长度不能少于6位
+        if (password.length() < 6){
+            return IMOOCJSONResult.errorMsg("密码长度少于6位");
+        }
+
+
+        //实现登录
+        Users  usersResult = userService.queryUserForLogin(username, MD5Utils.getMD5Str(password));
+
+        //判断用户名和密码是否正确
+        if(usersResult == null ){
+            return IMOOCJSONResult.errorMsg("用户名或密码不正确");
+        }
+
+
+
+        // 3. 登录成功
+        return IMOOCJSONResult.ok("登录成功");
+    }
 
     }
 
