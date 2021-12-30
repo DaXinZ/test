@@ -14,8 +14,19 @@ public interface  UserService {
      */
     public  boolean queryUsernameIsExist(String username);
 
+    /**
+     *
+     * @param userBO
+     * @return 注册接口
+     */
     public Users createUser(UserBo userBO );
 
+    /**
+     *
+     * @param username
+     * @param password
+     * @return 登录接口
+     */
     public  Users queryUserForLogin(String username,String password);
 
 
