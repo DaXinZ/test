@@ -4,16 +4,15 @@ import bo.UserBo;
 import com.imooc.pojo.Users;
 import com.imooc.service.UserService;
 
-import com.imooc.utils.IMOOCJSONResult;
-import com.imooc.utils.MD5Utils;
-import com.imooc.utils.StringRandom;
+import com.imooc.utils.*;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
-import javax.management.ImmutableDescriptor;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 
 /**
  * Date: 2021/9/27 10:55 上午
@@ -64,14 +63,15 @@ public class PassportController {
      */
     @ApiOperation(value = "用户注册", notes = "用户注册", httpMethod = "POST")
     @PostMapping("/regist")
-    public IMOOCJSONResult regist(@RequestBody UserBo userBo) {
+    public IMOOCJSONResult regist(@RequestBody UserBo userBo, HttpServletRequest request,
+                                  HttpServletResponse response) {
         StringRandom test = new StringRandom();
         IMOOCJSONResult imoocjsonResult = new IMOOCJSONResult();
         imoocjsonResult.setTrceid(test.getStringRandom());
 
       String username = userBo.getUsername();
       String password = userBo.getPassword();
-      String confirmpassword = userBo.getCofirmPassword();
+      String confirmpassword = userBo.getConfirmPassword();
         // 判断用户名和密码必须不为空
        if (StringUtils.isBlank(username)){
            return IMOOCJSONResult.errorMsg("用户名为空");
@@ -99,7 +99,11 @@ public class PassportController {
             return IMOOCJSONResult.errorMsg("两次密码不一致");
         }
         // 实现注册功能
-        userService.createUser(userBo);
+        Users userResult =   userService.createUser(userBo);
+
+         userResult = setNullProperty(userResult);
+        CookieUtils.setCookie(request, response, "user",
+                JsonUtils.objectToJson(userResult), true);
 
         // 3. 请求成功，用户名没有重复
         return IMOOCJSONResult.ok("注册成功，用户名为" + username  );
@@ -108,7 +112,9 @@ public class PassportController {
 
     @ApiOperation(value = "用户登录", notes = "用户登录", httpMethod = "post")
     @PostMapping("/login")
-    public IMOOCJSONResult login(@RequestBody UserBo userBo) throws Exception {
+    public IMOOCJSONResult login(@RequestBody UserBo userBo ,
+                                 HttpServletRequest request,
+                                 HttpServletResponse response) throws Exception {
         StringRandom test = new StringRandom();
         IMOOCJSONResult imoocjsonResult = new IMOOCJSONResult();
         imoocjsonResult.setTrceid(test.getStringRandom());
@@ -130,19 +136,35 @@ public class PassportController {
 
 
         //实现登录
-        Users  usersResult = userService.queryUserForLogin(username, MD5Utils.getMD5Str(password));
+        Users userResult = userService.queryUserForLogin(username, MD5Utils.getMD5Str(password));
 
         //判断用户名和密码是否正确
-        if(usersResult == null ){
+        if(userResult == null ){
             return IMOOCJSONResult.errorMsg("用户名或密码不正确");
         }
 
+        userResult.setPassword(null);
+        userResult.setMobile(null);
+        userResult.setEmail(null);
+        userResult.setCreatedTime(null);
+        userResult.setUpdatedTime(null);
+        userResult.setBirthday(null);
 
-
+        userResult = setNullProperty(userResult);
+        CookieUtils.setCookie(request, response, "user",
+                JsonUtils.objectToJson(userResult), true);
         // 3. 登录成功
         return IMOOCJSONResult.ok("登录成功");
     }
-
+       private Users setNullProperty(Users userResult){
+           userResult.setPassword(null);
+           userResult.setMobile(null);
+           userResult.setEmail(null);
+           userResult.setCreatedTime(null);
+           userResult.setUpdatedTime(null);
+           userResult.setBirthday(null);
+           return userResult;
+       }
     }
 
 

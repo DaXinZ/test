@@ -14,8 +14,11 @@ public class UserBo {
     private  String username;
     @ApiModelProperty(value = "密码", name = "password", example = "123456", required = true)
     private  String password;
+
+
+
     @ApiModelProperty(value = "确认密码", name = "confirmPassword", example = "123456", required = true)
-    private  String cofirmPassword;
+    private  String confirmPassword;
 
     public String getUsername() {
         return username;
@@ -29,14 +32,16 @@ public class UserBo {
         this.password = password;
     }
 
-    public void setCofirmPassword(String cofirmPassword) {
-        this.cofirmPassword = cofirmPassword;
-    }
+
 
     public String getPassword() {
         return password;
     }
-    public String getCofirmPassword() {
-        return cofirmPassword;
+    public String getConfirmPassword() {
+        return confirmPassword;
+    }
+
+    public void setConfirmPassword(String confirmPassword) {
+        this.confirmPassword = confirmPassword;
     }
 }
