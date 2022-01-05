@@ -67,7 +67,7 @@ public class PassportController {
                                   HttpServletResponse response) {
         StringRandom test = new StringRandom();
         IMOOCJSONResult imoocjsonResult = new IMOOCJSONResult();
-        imoocjsonResult.setTrceid(test.getStringRandom());
+       String  trceid  =  imoocjsonResult.setTrceid(test.getStringRandom());
 
       String username = userBo.getUsername();
       String password = userBo.getPassword();
@@ -110,7 +110,7 @@ public class PassportController {
     }
 
 
-    @ApiOperation(value = "用户登录", notes = "用户登录", httpMethod = "post")
+    @ApiOperation(value = "用户登录", notes = "用户登录", httpMethod = "POST")
     @PostMapping("/login")
     public IMOOCJSONResult login(@RequestBody UserBo userBo ,
                                  HttpServletRequest request,

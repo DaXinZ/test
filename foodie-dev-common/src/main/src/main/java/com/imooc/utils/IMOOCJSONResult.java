@@ -56,31 +56,31 @@ public class IMOOCJSONResult {
     }
     
     public static IMOOCJSONResult ok(Object data) {
-        return new IMOOCJSONResult(data,"T"+trceid);
+        return new IMOOCJSONResult(data,trceid);
     }
 
     public static IMOOCJSONResult ok() {
-        return new IMOOCJSONResult(null, "T"+trceid);
+        return new IMOOCJSONResult(null, trceid);
     }
     
     public static IMOOCJSONResult errorMsg(String msg) {
-        return new IMOOCJSONResult(500, msg, null, "T"+trceid);
+        return new IMOOCJSONResult(500, msg, null, trceid);
     }
     
     public static IMOOCJSONResult errorMap(Object data) {
-        return new IMOOCJSONResult(501, "error", data, "T"+trceid);
+        return new IMOOCJSONResult(501, "error", data, trceid);
     }
     
     public static IMOOCJSONResult errorTokenMsg(String msg) {
-        return new IMOOCJSONResult(502, msg, null, "T"+trceid);
+        return new IMOOCJSONResult(502, msg, null, trceid);
     }
     
     public static IMOOCJSONResult errorException(String msg) {
-        return new IMOOCJSONResult(555, msg, null, "T"+trceid);
+        return new IMOOCJSONResult(555, msg, null, trceid);
     }
     
     public static IMOOCJSONResult errorUserQQ(String msg) {
-        return new IMOOCJSONResult(556, msg, null, "T"+trceid);
+        return new IMOOCJSONResult(556, msg, null, trceid);
     }
 
     public IMOOCJSONResult() {

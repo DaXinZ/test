@@ -11,7 +11,7 @@ public class StringRandom {
     //生成随机数字和字母,
     public String getStringRandom() {
 
-        String val = "";
+        String val = "T";
         Random random = new Random();
 
         //参数length，表示生成几位随机数
