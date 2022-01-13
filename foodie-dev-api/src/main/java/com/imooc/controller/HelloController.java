@@ -42,6 +42,6 @@ public class HelloController {
         session.setMaxInactiveInterval(3600);
         session.getAttribute("userInfo");
 //        session.removeAttribute("userInfo");
-        return "o k";
+        return "ok";
     }
 }
