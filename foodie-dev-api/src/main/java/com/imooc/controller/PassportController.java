@@ -8,6 +8,8 @@ import com.imooc.utils.*;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.apache.commons.lang3.StringUtils;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -27,7 +29,7 @@ public class PassportController {
     @Autowired
     private UserService userService;
 
-
+    final  static Logger logger = LoggerFactory.getLogger(HelloController.class);
 
     /**
      *  查询用户名接口
@@ -40,19 +42,23 @@ public class PassportController {
         StringRandom test = new StringRandom();
         IMOOCJSONResult imoocjsonResult = new IMOOCJSONResult();
         imoocjsonResult.setTrceid(test.getStringRandom());
+        String  trceid  = "trceid:" + imoocjsonResult.setTrceid(test.getStringRandom());
 
         // 1. 判断用户名不能为空
         if (StringUtils.isBlank(username)) {
+            logger.info(trceid +  "\t 用户名不能为空");
             return IMOOCJSONResult.errorMsg("用户名不能为空");
         }
 
         // 2. 查找注册的用户名是否存在
         boolean isExist = userService.queryUsernameIsExist(username);
         if (isExist) {
+            logger.info(trceid +  "\t 用户名已存在");
             return IMOOCJSONResult.errorMsg("用户名已存在");
         }
 
         // 3. 请求成功，用户名没有重复
+        logger.info(trceid +  "\t ok");
         return IMOOCJSONResult.ok();
     }
 
@@ -74,28 +80,35 @@ public class PassportController {
       String confirmpassword = userBo.getConfirmPassword();
         // 判断用户名和密码必须不为空
        if (StringUtils.isBlank(username)){
+           logger.info(trceid +  "\t 用户名为空");
            return IMOOCJSONResult.errorMsg("用户名为空");
+
        }
         if (StringUtils.isBlank(password)){
+            logger.info(trceid +  "\t 密码为空");
             return IMOOCJSONResult.errorMsg("密码为空");
         }
         if (StringUtils.isBlank(confirmpassword)){
+            logger.info(trceid +  "\t 确认密码为空");
             return IMOOCJSONResult.errorMsg("确认密码为空");
         }
 
         // 查询用户名是否存在
         boolean isExist = userService.queryUsernameIsExist(username);
         if (isExist) {
+            logger.info(trceid +  "\t 用户名已存在");
             return IMOOCJSONResult.errorMsg("用户名已存在");
         }
 
         //密码长度不能少于6位
         if (password.length() < 6 ){
+            logger.info(trceid +  "\t 密码长度不能少于6");
             return IMOOCJSONResult.errorMsg("密码长度不能少于6");
         }
 
         //判断两次密码不一致
         if (!password.equals(confirmpassword)  ){
+            logger.info(trceid +  "\t 两次密码不一致");
             return IMOOCJSONResult.errorMsg("两次密码不一致");
         }
         // 实现注册功能
@@ -106,6 +119,7 @@ public class PassportController {
                 JsonUtils.objectToJson(userResult), true);
 
         // 3. 请求成功，用户名没有重复
+        logger.info(trceid +  "\t 注册成功");
         return IMOOCJSONResult.ok("注册成功，用户名为" + username  );
     }
 
@@ -118,19 +132,23 @@ public class PassportController {
         StringRandom test = new StringRandom();
         IMOOCJSONResult imoocjsonResult = new IMOOCJSONResult();
         imoocjsonResult.setTrceid(test.getStringRandom());
+        String  trceid  =  imoocjsonResult.setTrceid(test.getStringRandom());
 
       String username = userBo.getUsername();
       String password = userBo.getPassword();
         // 1. 判断用户名不能为空
         if (StringUtils.isBlank(username)) {
+            logger.info(trceid +  "\t 用户名不能为空");
             return IMOOCJSONResult.errorMsg("用户名不能为空");
         }
         //判断密码不能为空
         if (StringUtils.isBlank(password)){
+            logger.info(trceid +  "\t 密码不能为空");
             return IMOOCJSONResult.errorMsg("密码不能为空");
         }
         //密码长度不能少于6位
         if (password.length() < 6){
+            logger.info(trceid +  "\t 密码长度少于6位");
             return IMOOCJSONResult.errorMsg("密码长度少于6位");
         }
 
@@ -140,6 +158,7 @@ public class PassportController {
 
         //判断用户名和密码是否正确
         if(userResult == null ){
+            logger.info(trceid +  "\t 用户名或密码不正确");
             return IMOOCJSONResult.errorMsg("用户名或密码不正确");
         }
 
@@ -154,6 +173,7 @@ public class PassportController {
         CookieUtils.setCookie(request, response, "user",
                 JsonUtils.objectToJson(userResult), true);
         // 3. 登录成功
+        logger.info(trceid +  "\t 登录成功");
         return IMOOCJSONResult.ok("登录成功");
     }
        private Users setNullProperty(Users userResult){
@@ -165,6 +185,25 @@ public class PassportController {
            userResult.setBirthday(null);
            return userResult;
        }
+
+
+    @ApiOperation(value = "用户退出登录", notes = "用户退出登录", httpMethod = "POST")
+    @PostMapping("/logout")
+    public  IMOOCJSONResult logout(@RequestParam String userid,
+                                   HttpServletRequest request,
+                                   HttpServletResponse response){
+        StringRandom test = new StringRandom();
+        IMOOCJSONResult imoocjsonResult = new IMOOCJSONResult();
+        imoocjsonResult.setTrceid(test.getStringRandom());
+        String  trceid  =  imoocjsonResult.setTrceid(test.getStringRandom());
+         //清楚用户的相关信息
+        CookieUtils.deleteCookie(request,response,"user");
+        // TODO 用户退出登录需要清空购物车
+        // TODO 分布式会话中需要清楚用户数据
+        logger.info(trceid +" \t 退出登录成功");
+        return IMOOCJSONResult.ok();
+    }
+
     }
 
 
