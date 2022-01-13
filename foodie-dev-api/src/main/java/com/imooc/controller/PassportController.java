@@ -177,6 +177,7 @@ public class PassportController {
         return IMOOCJSONResult.ok("登录成功");
     }
        private Users setNullProperty(Users userResult){
+           // TODO 设置那些字段不让前端知道，并且设置为空
            userResult.setPassword(null);
            userResult.setMobile(null);
            userResult.setEmail(null);
