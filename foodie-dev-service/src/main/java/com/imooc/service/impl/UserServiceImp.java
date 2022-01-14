@@ -115,7 +115,7 @@ public class UserServiceImp implements UserService {
 
     /**
      *
-     * @param userId
+     * @param id
      * @return  查询用户名是否重复
      */
     @Transactional(propagation = Propagation.SUPPORTS)
