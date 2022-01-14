@@ -197,6 +197,15 @@ public class PassportController {
         IMOOCJSONResult imoocjsonResult = new IMOOCJSONResult();
         imoocjsonResult.setTrceid(test.getStringRandom());
         String  trceid  =  imoocjsonResult.setTrceid(test.getStringRandom());
+
+
+        // 2. 查找用户id是否存在
+        boolean isExist = userService.queryUserIdIsExist(userId);
+        if (isExist) {
+            logger.info(trceid +  "\t 当前id不存在");
+            return IMOOCJSONResult.errorMsg("当前id不存在");
+        }
+
          //清楚用户的相关信息
         CookieUtils.deleteCookie(request,response,"user");
         // TODO 用户退出登录需要清空购物车

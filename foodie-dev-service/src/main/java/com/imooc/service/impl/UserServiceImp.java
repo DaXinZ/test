@@ -51,7 +51,6 @@ public class UserServiceImp implements UserService {
         Example.Criteria userCriteria = userExample.createCriteria();
 
         userCriteria.andEqualTo("username", username);
-
         Users result = usersMapper.selectOneByExample(userExample);
 
         return result == null ? false : true;
@@ -112,6 +111,23 @@ public class UserServiceImp implements UserService {
         userCriteria.andEqualTo("password", password);
         Users result = usersMapper.selectOneByExample(userExample);
         return result;
+    }
+
+    /**
+     *
+     * @param userId
+     * @return  查询用户名是否重复
+     */
+    @Transactional(propagation = Propagation.SUPPORTS)
+    @Override
+    public boolean queryUserIdIsExist(String id) {
+
+        Example userExample = new Example(Users.class);
+        Example.Criteria userCriteria = userExample.createCriteria();
+        userCriteria.andEqualTo("id", id);
+        Users result = usersMapper.selectOneByExample(userExample);
+
+        return result == null ? true : false;
     }
 
 

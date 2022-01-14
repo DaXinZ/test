@@ -30,4 +30,12 @@ public interface  UserService {
     public  Users queryUserForLogin(String username,String password);
 
 
+    /**
+     *
+     * @param id
+     * @return 判断用户id是否存在
+     */
+    public boolean  queryUserIdIsExist(String  id);
+
+
 }
