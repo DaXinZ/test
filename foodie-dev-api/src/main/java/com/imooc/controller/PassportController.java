@@ -123,7 +123,14 @@ public class PassportController {
         return IMOOCJSONResult.ok("注册成功，用户名为" + username  );
     }
 
-
+    /**
+     *
+     * @param userBo
+     * @param request
+     * @param response
+     * @return  用户登录接口
+     * @throws Exception
+     */
     @ApiOperation(value = "用户登录", notes = "用户登录", httpMethod = "POST")
     @PostMapping("/login")
     public IMOOCJSONResult login(@RequestBody UserBo userBo ,
@@ -187,7 +194,13 @@ public class PassportController {
            return userResult;
        }
 
-
+     /**
+     *
+     * @param userId
+     * @param request
+     * @param response
+     * @return 退出登录
+     */
     @ApiOperation(value = "用户退出登录", notes = "用户退出登录", httpMethod = "POST")
     @PostMapping("/logout")
     public  IMOOCJSONResult logout(@RequestParam String userId,
@@ -211,7 +224,7 @@ public class PassportController {
         // TODO 用户退出登录需要清空购物车
         // TODO 分布式会话中需要清楚用户数据
         logger.info(trceid +" \t 退出登录成功");
-        return IMOOCJSONResult.ok();
+        return IMOOCJSONResult.ok(userId);
     }
 
     }
