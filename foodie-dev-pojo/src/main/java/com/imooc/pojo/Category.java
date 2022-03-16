@@ -1,6 +1,7 @@
 package com.imooc.pojo;
 
-import javax.persistence.*;
+import javax.persistence.Column;
+import javax.persistence.Id;
 
 public class Category {
     /**
@@ -11,6 +12,11 @@ public class Category {
 
     /**
      * 分类名称
+     */
+    private String name;
+
+    /**
+     * 分类类型
      */
     private Integer type;
 
@@ -63,16 +69,34 @@ public class Category {
     /**
      * 获取分类名称
      *
-     * @return type - 分类名称
+     * @return name - 分类名称
+     */
+    public String getName() {
+        return name;
+    }
+
+    /**
+     * 设置分类名称
+     *
+     * @param name 分类名称
+     */
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    /**
+     * 获取分类类型
+     *
+     * @return type - 分类类型
      */
     public Integer getType() {
         return type;
     }
 
     /**
-     * 设置分类名称
+     * 设置分类类型
      *
-     * @param type 分类名称
+     * @param type 分类类型
      */
     public void setType(Integer type) {
         this.type = type;
