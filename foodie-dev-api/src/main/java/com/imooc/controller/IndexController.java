@@ -2,7 +2,9 @@ package com.imooc.controller;
 
 import com.imooc.enums.YesOrNo1;
 import com.imooc.pojo.Carousel;
+import com.imooc.pojo.Category;
 import com.imooc.service.CarouselService;
+import com.imooc.service.CategoryService;
 import com.imooc.utils.*;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
@@ -23,6 +25,8 @@ import java.util.List;
 public class IndexController {
      @Autowired
      private CarouselService carouselService;
+    @Autowired
+    private CategoryService categoryService;
 
     final  static Logger logger = LoggerFactory.getLogger(HelloController.class);
 
@@ -38,5 +42,22 @@ public class IndexController {
         return IMOOCJSONResult.ok(list);
     }
 
+    /**
+     * 首页分类展示需求：
+     * 1.第一次刷新主页查询大分类，渲染展示到首页
+     * 2.如果鼠标上移到大分类，则加载其子分类内容，如果存在子分类，则不需要加载（懒加载）
+     */
 
+    @ApiOperation(value = "获取商品分类（一级分类）", notes = "获取商品分类（一级分类）", httpMethod = "GET")
+    @GetMapping("/cats")
+    public IMOOCJSONResult cats(){
+        StringRandom test = new StringRandom();
+        IMOOCJSONResult imoocjsonResult = new IMOOCJSONResult();
+        imoocjsonResult.setTrceid(test.getStringRandom());
+        String  trceid  = "trceid:" + imoocjsonResult.setTrceid(test.getStringRandom());
+
+        List<Category> list =  categoryService.queryAllRootLevelCat();
+        logger.info(trceid +  "\t 一级分类查询成功" );
+        return IMOOCJSONResult.ok(list);
+    }
 }
