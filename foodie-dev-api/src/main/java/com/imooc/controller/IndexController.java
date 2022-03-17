@@ -3,11 +3,14 @@ package com.imooc.controller;
 import com.imooc.enums.YesOrNo1;
 import com.imooc.pojo.Carousel;
 import com.imooc.pojo.Category;
+import com.imooc.pojo.vo.CategoryVO;
 import com.imooc.service.CarouselService;
 import com.imooc.service.CategoryService;
 import com.imooc.utils.*;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
+import io.swagger.annotations.ApiParam;
+import io.swagger.models.auth.In;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -58,6 +61,25 @@ public class IndexController {
 
         List<Category> list =  categoryService.queryAllRootLevelCat();
         logger.info(trceid +  "\t 一级分类查询成功" );
+        return IMOOCJSONResult.ok(list);
+    }
+
+    @ApiOperation(value = "获取商品子分类", notes = "获取商品子分类", httpMethod = "GET")
+    @GetMapping("/subCat/{rootCatid}")
+    public IMOOCJSONResult subCat(
+            @ApiParam(name = "rootCatid",value =  "一级分类id",required = true)
+            @PathVariable Integer rootCatid){
+        StringRandom test = new StringRandom();
+        IMOOCJSONResult imoocjsonResult = new IMOOCJSONResult();
+        imoocjsonResult.setTrceid(test.getStringRandom());
+        String  trceid  = "trceid:" + imoocjsonResult.setTrceid(test.getStringRandom());
+        if (rootCatid == null ){
+            logger.info(trceid +  "\t id为空" );
+            return IMOOCJSONResult.errorMsg("分类不存在");
+        }
+        List<CategoryVO> list = categoryService.getSubCatList(rootCatid);
+
+        logger.info(trceid +  "\t 子分类查询成功" );
         return IMOOCJSONResult.ok(list);
     }
 }
