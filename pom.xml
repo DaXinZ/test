@@ -72,20 +72,7 @@
             <artifactId>mysql-connector-java</artifactId>
             <!--<version>5.1.41</version>-->
         </dependency>
-        <!-- mybatis -->
-        <dependency>
-            <groupId>org.mybatis.spring.boot</groupId>
-            <artifactId>mybatis-spring-boot-starter</artifactId>
-            <version>2.1.0</version>
-        </dependency>
 
-
-        <!--pagehelper -->
-        <dependency>
-            <groupId>com.github.pagehelper</groupId>
-            <artifactId>pagehelper-spring-boot-starter</artifactId>
-            <version>1.2.12</version>
-        </dependency>
 
         <!-- 引入 redis 依赖 -->
         <dependency>

@@ -18,7 +18,7 @@ import java.util.List;
  */
 @Service
 public class CarouselServiceImpl  implements CarouselService {
-    @Autowired
+    @Autowired(required=false)
     private CarouseMapper carouseMapper;
 
     @Override
@@ -27,7 +27,7 @@ public class CarouselServiceImpl  implements CarouselService {
         Example example = new Example(Carousel.class);
         example.orderBy("sort").desc();
         Example.Criteria criteria  = example.createCriteria();
-        criteria.andEqualTo("lsShow",isShow);
+        criteria.andEqualTo("isShow",isShow);
         List<Carousel>  result =  carouseMapper.selectByExample(example);
 
      //   carouseMapper.select()

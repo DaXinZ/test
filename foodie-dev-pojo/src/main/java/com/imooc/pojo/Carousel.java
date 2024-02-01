@@ -8,7 +8,7 @@ public class Carousel {
      * 主键
      */
     @Id
-    private Integer id;
+    private String id;
 
     /**
      * 图片
@@ -47,8 +47,8 @@ public class Carousel {
     /**
      * 是否展示
      */
-    @Column(name = "ls_show")
-    private Integer lsShow;
+    @Column(name = "is_show")
+    private Integer isShow;
 
     /**
      * 创建时间
@@ -67,7 +67,7 @@ public class Carousel {
      *
      * @return id - 主键
      */
-    public Integer getId() {
+    public String getId() {
         return id;
     }
 
@@ -76,7 +76,7 @@ public class Carousel {
      *
      * @param id 主键
      */
-    public void setId(Integer id) {
+    public void setId(String id) {
         this.id = id;
     }
 
@@ -191,19 +191,19 @@ public class Carousel {
     /**
      * 获取是否展示
      *
-     * @return ls_show - 是否展示
+     * @return is_show - 是否展示
      */
-    public Integer getLsShow() {
-        return lsShow;
+    public Integer getIsShow() {
+        return isShow;
     }
 
     /**
      * 设置是否展示
      *
-     * @param lsShow 是否展示
+     * @param isShow 是否展示
      */
-    public void setLsShow(Integer lsShow) {
-        this.lsShow = lsShow;
+    public void setIsShow(Integer isShow) {
+        this.isShow = isShow;
     }
 
     /**
