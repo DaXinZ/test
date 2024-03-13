@@ -27,13 +27,6 @@ public class RandomNickname {
     }
 
 
-    public static void main(String[] args) {
-        RandomNickname randomNickname = new RandomNickname();
-        for (int i= 0; i <100; i++){
-           String  AA =  randomNickname.RandomScale();
-            System.out.println(AA);
-        }
 
-    }
 
 }
