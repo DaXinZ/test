@@ -1,0 +1,5 @@
+2024-01-26 16:13:11 WARN  HikariPool:758 - DateSourceHikariCP - Retrograde clock change detected (housekeeper delta=29s843ms), soft-evicting connections from pool.
+2024-01-26 16:13:58 INFO  ThreadPoolTaskScheduler:208 - Shutting down ExecutorService 'taskScheduler'
+2024-01-26 16:13:58 INFO  ThreadPoolTaskExecutor:208 - Shutting down ExecutorService 'applicationTaskExecutor'
+2024-01-26 16:13:58 INFO  HikariDataSource:350 - DateSourceHikariCP - Shutdown initiated...
+2024-01-26 16:13:58 INFO  HikariDataSource:352 - DateSourceHikariCP - Shutdown completed.

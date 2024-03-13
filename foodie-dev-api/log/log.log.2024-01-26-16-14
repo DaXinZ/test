@@ -1,0 +1,40 @@
+2024-01-26 16:14:01 INFO  Version:21 - HV000001: Hibernate Validator 6.0.16.Final
+2024-01-26 16:14:01 INFO  Application:50 - Starting Application on daxindeMacBook-Pro.local with PID 50212 (/Users/daxin/Documents/code/tiantian/foodie-dev-api/target/classes started by daxin in /Users/daxin/Documents/code/tiantian)
+2024-01-26 16:14:01 INFO  Application:679 - The following profiles are active: dev
+2024-01-26 16:14:01 INFO  RepositoryConfigurationDelegate:244 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2024-01-26 16:14:01 INFO  RepositoryConfigurationDelegate:126 - Bootstrapping Spring Data repositories in DEFAULT mode.
+2024-01-26 16:14:01 INFO  RepositoryConfigurationDelegate:182 - Finished Spring Data repository scanning in 3ms. Found 0 repository interfaces.
+2024-01-26 16:14:02 INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$31d29f42] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-01-26 16:14:02 INFO  TomcatWebServer:90 - Tomcat initialized with port(s): 8088 (http)
+2024-01-26 16:14:02 INFO  ContextLoader:296 - Root WebApplicationContext: initialization completed in 1105 ms
+2024-01-26 16:14:03 INFO  ThreadPoolTaskExecutor:171 - Initializing ExecutorService 'applicationTaskExecutor'
+2024-01-26 16:14:04 INFO  ThreadPoolTaskScheduler:171 - Initializing ExecutorService 'taskScheduler'
+2024-01-26 16:14:04 INFO  DocumentationPluginsBootstrapper:84 - Context refreshed
+2024-01-26 16:14:04 INFO  DocumentationPluginsBootstrapper:87 - Found 1 custom documentation plugin(s)
+2024-01-26 16:14:04 INFO  ApiListingReferenceScanner:44 - Scanning for api listing references
+2024-01-26 16:14:04 INFO  TomcatWebServer:204 - Tomcat started on port(s): 8088 (http) with context path ''
+2024-01-26 16:14:04 INFO  Application:59 - Started Application in 3.23 seconds (JVM running for 3.628)
+2024-01-26 16:14:06 INFO  DispatcherServlet:524 - Initializing Servlet 'dispatcherServlet'
+2024-01-26 16:14:06 INFO  DispatcherServlet:546 - Completed initialization in 5 ms
+2024-01-26 16:14:06 INFO  HelloController:83 - T6y5u42086j07Fr33kzG57M8Us	 用户名为空
+2024-01-26 16:14:38 INFO  ThreadPoolTaskScheduler:208 - Shutting down ExecutorService 'taskScheduler'
+2024-01-26 16:14:38 INFO  ThreadPoolTaskExecutor:208 - Shutting down ExecutorService 'applicationTaskExecutor'
+2024-01-26 16:14:41 INFO  Version:21 - HV000001: Hibernate Validator 6.0.16.Final
+2024-01-26 16:14:41 INFO  Application:50 - Starting Application on daxindeMacBook-Pro.local with PID 50231 (/Users/daxin/Documents/code/tiantian/foodie-dev-api/target/classes started by daxin in /Users/daxin/Documents/code/tiantian)
+2024-01-26 16:14:41 INFO  Application:679 - The following profiles are active: dev
+2024-01-26 16:14:41 INFO  RepositoryConfigurationDelegate:244 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2024-01-26 16:14:41 INFO  RepositoryConfigurationDelegate:126 - Bootstrapping Spring Data repositories in DEFAULT mode.
+2024-01-26 16:14:41 INFO  RepositoryConfigurationDelegate:182 - Finished Spring Data repository scanning in 4ms. Found 0 repository interfaces.
+2024-01-26 16:14:42 INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$e2e91a6d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-01-26 16:14:42 INFO  TomcatWebServer:90 - Tomcat initialized with port(s): 8088 (http)
+2024-01-26 16:14:42 INFO  ContextLoader:296 - Root WebApplicationContext: initialization completed in 1062 ms
+2024-01-26 16:14:43 INFO  ThreadPoolTaskExecutor:171 - Initializing ExecutorService 'applicationTaskExecutor'
+2024-01-26 16:14:43 INFO  ThreadPoolTaskScheduler:171 - Initializing ExecutorService 'taskScheduler'
+2024-01-26 16:14:43 INFO  DocumentationPluginsBootstrapper:84 - Context refreshed
+2024-01-26 16:14:43 INFO  DocumentationPluginsBootstrapper:87 - Found 1 custom documentation plugin(s)
+2024-01-26 16:14:43 INFO  ApiListingReferenceScanner:44 - Scanning for api listing references
+2024-01-26 16:14:43 INFO  TomcatWebServer:204 - Tomcat started on port(s): 8088 (http) with context path ''
+2024-01-26 16:14:43 INFO  Application:59 - Started Application in 2.75 seconds (JVM running for 3.128)
+2024-01-26 16:14:46 INFO  DispatcherServlet:524 - Initializing Servlet 'dispatcherServlet'
+2024-01-26 16:14:46 INFO  DispatcherServlet:546 - Completed initialization in 5 ms
+2024-01-26 16:14:46 INFO  HelloController:83 - T1H9pdZK51O77s1o6leFb6k112	 用户名为空

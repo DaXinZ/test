@@ -12,7 +12,7 @@
     <result column="cat_id" jdbcType="VARCHAR" property="catId" />
     <result column="type" jdbcType="INTEGER" property="type" />
     <result column="sort" jdbcType="INTEGER" property="sort" />
-    <result column="ls_show" jdbcType="INTEGER" property="lsShow" />
+    <result column="is_show" jdbcType="INTEGER" property="isShow" />
     <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
     <result column="update_time" jdbcType="TIMESTAMP" property="updateTime" />
   </resultMap>

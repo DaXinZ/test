@@ -98,6 +98,7 @@ public class PassportController {
         if (isExist) {
             logger.info(trceid +  "\t 用户名已存在");
             return IMOOCJSONResult.errorMsg("用户名已存在");
+
         }
 
         //密码长度不能少于6位
@@ -145,7 +146,7 @@ public class PassportController {
       String password = userBo.getPassword();
         // 1. 判断用户名不能为空
         if (StringUtils.isBlank(username)) {
-            logger.info(trceid +  "\t 用户名不能为空");
+            logger.info(trceid + userBo +   IMOOCJSONResult.errorMsg("用户名不能为空"));
             return IMOOCJSONResult.errorMsg("用户名不能为空");
         }
         //判断密码不能为空
