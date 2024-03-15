@@ -13,6 +13,8 @@ import com.imooc.service.UserService;
 
 import com.imooc.utils.DateUtil;
 import com.imooc.utils.MD5Utils;
+import com.imooc.utils.RandomNickname;
+import javafx.scene.control.PasswordFieldBuilder;
 import org.n3r.idworker.Sid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -36,6 +38,7 @@ public class UserServiceImp implements UserService {
     @Autowired
     private Sid sid;
 
+
     public static  final String  user_face = "https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201901%2F22%2F20190122075852_qqpst.thumb.400_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1637226059&t=44137c685590cefc784c8426b088c54f";
 
     /**
@@ -58,6 +61,24 @@ public class UserServiceImp implements UserService {
 
     /**
      *
+     * @param nickname
+     * @return  查询用户呢称是否重复
+     */
+    @Transactional(propagation = Propagation.SUPPORTS)
+    @Override
+    public boolean queryUsernikenameIsExist(String nickname) {
+
+        Example likeuserExample = new Example(Users.class);
+        Example.Criteria userCriteria = likeuserExample.createCriteria();
+
+        userCriteria.andEqualTo("nickname", nickname);
+        Users result = usersMapper.selectOneByExample(likeuserExample);
+
+        return result == null ? false : true;
+    }
+
+    /**
+     *
      * @param userBO
      * @return 注册接口
      */
@@ -65,6 +86,8 @@ public class UserServiceImp implements UserService {
     @Transactional(propagation = Propagation.REQUIRED)
     @Override
     public Users createUser(UserBo userBO) {
+        RandomNickname randomNickname = new RandomNickname();
+
         String  userId =  sid.nextShort();
 
         Users user = new Users();
@@ -77,8 +100,9 @@ public class UserServiceImp implements UserService {
         } catch (Exception e) {
             e.printStackTrace();
         }
-        //默认用户昵称和用户名一致
-        user.setNickname(userBO.getUsername());
+        //默认用户昵称随机生成
+
+        user.setNickname(randomNickname.RandomScale());
         //设置默认头像
         user.setFace(user_face);
         //设置默认生日

@@ -37,5 +37,12 @@ public interface  UserService {
      */
     public boolean  queryUserIdIsExist(String  id);
 
+    /**
+     *
+     * @param nickname
+     * @return 判断用户呢称是否存在
+     */
+    public boolean  queryUsernikenameIsExist(String nickname);
+
 
 }

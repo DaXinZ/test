@@ -63,6 +63,40 @@ public class PassportController {
     }
 
     /**
+     *  查询用户名接口
+     * @param nikename
+     * @return
+     */
+    @ApiOperation(value = "用户昵称是否存在", notes = "用户昵称是否存在", httpMethod = "GET")
+    @GetMapping("/usernikenameIsExist")
+    public IMOOCJSONResult usernikenameIsExist(@RequestParam String nikename) {
+        StringRandom test = new StringRandom();
+        IMOOCJSONResult imoocjsonResult = new IMOOCJSONResult();
+        imoocjsonResult.setTrceid(test.getStringRandom());
+
+        String  trceid  = "trceid:" + imoocjsonResult.setTrceid(test.getStringRandom());
+
+        // 1. 判断用户名不能为空
+        if (StringUtils.isBlank(nikename)) {
+            logger.info(trceid +  "\t 用户名不能为空");
+            return IMOOCJSONResult.errorMsg("用户名不能为空");
+        }
+
+        // 2. 查找注册的用户名是否存在
+        boolean isExist = userService.queryUsernikenameIsExist(nikename);
+        if (isExist) {
+
+            logger.info(trceid +  "\t 用户名已存在");
+
+            return IMOOCJSONResult.errorMsg("用户名已存在");
+        }
+
+        // 3. 请求成功，用户名没有重复
+        logger.info(trceid +  "\t ok");
+        return IMOOCJSONResult.ok();
+    }
+
+    /**
      *
      * @param userBo
      * @return  用户注册
@@ -74,10 +108,14 @@ public class PassportController {
         StringRandom test = new StringRandom();
         IMOOCJSONResult imoocjsonResult = new IMOOCJSONResult();
        String  trceid  =  imoocjsonResult.setTrceid(test.getStringRandom());
+       RandomNickname randomNickname = new RandomNickname();
 
       String username = userBo.getUsername();
       String password = userBo.getPassword();
       String confirmpassword = userBo.getConfirmPassword();
+
+
+
         // 判断用户名和密码必须不为空
        if (StringUtils.isBlank(username)){
            logger.info(trceid +  "\t 用户名为空");
