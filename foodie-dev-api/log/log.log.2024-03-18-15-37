@@ -1,0 +1,8 @@
+2024-03-18 15:37:00 INFO  HelloController:45 - trceid:T93c76Mv4y39o3e4836C14qVX2	 轮播图查询成功
+2024-03-18 15:37:00 INFO  HelloController:64 - trceid:T4001lI89k3ldRd10gD6C93A48	 一级分类查询成功
+2024-03-18 15:37:00 INFO  HelloController:104 - trceid:T21Su4xr9b67VDyI92C0yL3ww2	 子分类查询成功
+2024-03-18 15:37:00 INFO  HelloController:104 - trceid:T37c5J4iRRc51ch9338h6N81p6	 子分类查询成功
+2024-03-18 15:37:58 INFO  ThreadPoolTaskScheduler:208 - Shutting down ExecutorService 'taskScheduler'
+2024-03-18 15:37:58 INFO  ThreadPoolTaskExecutor:208 - Shutting down ExecutorService 'applicationTaskExecutor'
+2024-03-18 15:37:58 INFO  HikariDataSource:350 - DateSourceHikariCP - Shutdown initiated...
+2024-03-18 15:37:58 INFO  HikariDataSource:352 - DateSourceHikariCP - Shutdown completed.

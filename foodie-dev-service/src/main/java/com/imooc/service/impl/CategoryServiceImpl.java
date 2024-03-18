@@ -11,6 +11,7 @@ import com.imooc.pojo.vo.CategoryVO;
 import com.imooc.pojo.Carousel;
 import com.imooc.pojo.Category;
 
+import com.imooc.pojo.vo.NewItemsVO;
 import com.imooc.service.CarouselService;
 import com.imooc.service.CategoryService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,7 +22,9 @@ import org.springframework.transaction.annotation.Transactional;
 
 import tk.mybatis.mapper.entity.Example;
 
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 /**
  * Date: 2022/3/15 2:26 下午
@@ -45,9 +48,9 @@ public class CategoryServiceImpl implements CategoryService {
 
         Example example = new Example(Carousel.class);
 
-        Example.Criteria criteria  = example.createCriteria();
-        criteria.andEqualTo("type",1 );
-        List<Category>  result =  categoryMapper.selectByExample(example);
+        Example.Criteria criteria = example.createCriteria();
+        criteria.andEqualTo("type", 1);
+        List<Category> result = categoryMapper.selectByExample(example);
 
         return result;
     }
@@ -59,6 +62,16 @@ public class CategoryServiceImpl implements CategoryService {
 
 
         return categoryMapperCustom.getSubCatList(rootCarId);
+    }
+
+    @Transactional(propagation = Propagation.SUPPORTS)
+    @Override
+    public List<NewItemsVO> getSixNewItemsLazy(Integer rootCarId) {
+        Map<String, Object> Map = new HashMap<>();
+        Map.put("rootCatId",rootCarId);
+
+
+        return categoryMapperCustom.getSixNewItemsLazy(Map);
     }
 
 
