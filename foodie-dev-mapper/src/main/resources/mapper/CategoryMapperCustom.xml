@@ -68,6 +68,7 @@
       f.slogan as slogan,
       f.cat_image as catImage,
       f.bg_color as bgColor,
+      i.id as itemId,
       i.item_name as itemName,
       ii.url as itemUrl,
       i.created_time as createdTime
