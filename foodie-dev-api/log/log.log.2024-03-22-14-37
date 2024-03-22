@@ -1,0 +1,6 @@
+2024-03-22 14:37:59 INFO  Version:21 - HV000001: Hibernate Validator 6.0.16.Final
+2024-03-22 14:37:59 INFO  Application:50 - Starting Application on daxindeMacBook-Pro.local with PID 26431 (/Users/daxin/Documents/code/tiantian/foodie-dev-api/target/classes started by daxin in /Users/daxin/Documents/code/tiantian)
+2024-03-22 14:37:59 INFO  Application:679 - The following profiles are active: dev
+2024-03-22 14:37:59 INFO  RepositoryConfigurationDelegate:244 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2024-03-22 14:37:59 INFO  RepositoryConfigurationDelegate:126 - Bootstrapping Spring Data repositories in DEFAULT mode.
+2024-03-22 14:37:59 INFO  RepositoryConfigurationDelegate:182 - Finished Spring Data repository scanning in 3ms. Found 0 repository interfaces.

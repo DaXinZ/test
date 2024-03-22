@@ -6,18 +6,18 @@ package com.imooc.pojo.vo;
  * */
 public class SimpleItemVo {
 
-    private Integer itemId;
+    private String itemId;
     private String itemName;
     private String itemUrl;
 
 
 
 
-    public Integer getItemId() {
+    public String getItemId() {
         return itemId;
     }
 
-    public void setItemId(Integer itemId) {
+    public void setItemId(String itemId) {
         this.itemId = itemId;
     }
 

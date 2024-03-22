@@ -1,0 +1,12 @@
+2024-03-15 15:25:00 INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$5b4baffb] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-03-15 15:25:00 INFO  TomcatWebServer:90 - Tomcat initialized with port(s): 8088 (http)
+2024-03-15 15:25:00 INFO  ContextLoader:296 - Root WebApplicationContext: initialization completed in 1097 ms
+2024-03-15 15:25:01 INFO  ThreadPoolTaskExecutor:171 - Initializing ExecutorService 'applicationTaskExecutor'
+2024-03-15 15:25:01 INFO  ThreadPoolTaskScheduler:171 - Initializing ExecutorService 'taskScheduler'
+2024-03-15 15:25:01 INFO  DocumentationPluginsBootstrapper:84 - Context refreshed
+2024-03-15 15:25:01 INFO  DocumentationPluginsBootstrapper:87 - Found 1 custom documentation plugin(s)
+2024-03-15 15:25:01 INFO  ApiListingReferenceScanner:44 - Scanning for api listing references
+2024-03-15 15:25:01 INFO  TomcatWebServer:204 - Tomcat started on port(s): 8088 (http) with context path ''
+2024-03-15 15:25:01 INFO  Application:59 - Started Application in 2.97 seconds (JVM running for 3.406)
+2024-03-15 15:25:01 INFO  DispatcherServlet:524 - Initializing Servlet 'dispatcherServlet'
+2024-03-15 15:25:01 INFO  DispatcherServlet:546 - Completed initialization in 6 ms

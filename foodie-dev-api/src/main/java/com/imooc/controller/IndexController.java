@@ -104,7 +104,7 @@ public class IndexController {
         }
         List<NewItemsVO> list = categoryService.getSixNewItemsLazy(rootCatId);
 
-        logger.info(trceid +  "\t 查询每级下的数据成功" );
+        logger.info(trceid +  "\t 子分类查询成功" );
         return IMOOCJSONResult.ok(list);
     }
 

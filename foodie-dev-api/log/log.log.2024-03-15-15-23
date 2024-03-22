@@ -1,0 +1,38 @@
+2024-03-13 15:26:12 INFO  DispatcherServlet:524 - Initializing Servlet 'dispatcherServlet'
+2024-03-13 15:26:12 INFO  DispatcherServlet:546 - Completed initialization in 7 ms
+2024-03-13 15:26:12 INFO  HelloController:83 - T3546J8dowK56l6V5mC8sC30Oh	 用户名为空
+2024-03-15 15:23:10 INFO  Version:21 - HV000001: Hibernate Validator 6.0.16.Final
+2024-03-15 15:23:11 INFO  Application:50 - Starting Application on daxindeMacBook-Pro.local with PID 2209 (/Users/daxin/Documents/code/tiantian/foodie-dev-api/target/classes started by daxin in /Users/daxin/Documents/code/tiantian)
+2024-03-15 15:23:11 INFO  Application:679 - The following profiles are active: dev
+2024-03-15 15:23:11 INFO  RepositoryConfigurationDelegate:244 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2024-03-15 15:23:11 INFO  RepositoryConfigurationDelegate:126 - Bootstrapping Spring Data repositories in DEFAULT mode.
+2024-03-15 15:23:11 INFO  RepositoryConfigurationDelegate:182 - Finished Spring Data repository scanning in 3ms. Found 0 repository interfaces.
+2024-03-15 15:23:12 INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$ea281022] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-03-15 15:23:12 INFO  TomcatWebServer:90 - Tomcat initialized with port(s): 8088 (http)
+2024-03-15 15:23:12 INFO  ContextLoader:296 - Root WebApplicationContext: initialization completed in 1117 ms
+2024-03-15 15:23:13 INFO  ThreadPoolTaskExecutor:171 - Initializing ExecutorService 'applicationTaskExecutor'
+2024-03-15 15:23:13 INFO  ThreadPoolTaskScheduler:171 - Initializing ExecutorService 'taskScheduler'
+2024-03-15 15:23:13 INFO  DocumentationPluginsBootstrapper:84 - Context refreshed
+2024-03-15 15:23:13 INFO  DocumentationPluginsBootstrapper:87 - Found 1 custom documentation plugin(s)
+2024-03-15 15:23:13 INFO  ApiListingReferenceScanner:44 - Scanning for api listing references
+2024-03-15 15:23:13 INFO  TomcatWebServer:204 - Tomcat started on port(s): 8088 (http) with context path ''
+2024-03-15 15:23:13 INFO  Application:59 - Started Application in 2.796 seconds (JVM running for 3.163)
+2024-03-15 15:23:16 INFO  DispatcherServlet:524 - Initializing Servlet 'dispatcherServlet'
+2024-03-15 15:23:16 INFO  DispatcherServlet:546 - Completed initialization in 5 ms
+2024-03-15 15:23:20 INFO  HikariDataSource:110 - DateSourceHikariCP - Starting...
+2024-03-15 15:23:21 INFO  HikariDataSource:123 - DateSourceHikariCP - Start completed.
+2024-03-15 15:23:21 INFO  HelloController:44 - trceid:T05pHsFZ1BB73xue13T1XZY0B9	 轮播图查询成功
+2024-03-15 15:23:21 INFO  HelloController:44 - trceid:T53lj7o965V8zD45U3ZmI26Cb3	 轮播图查询成功
+2024-03-15 15:23:21 INFO  HelloController:44 - trceid:T4XP043I222484dXi0X46U9807	 轮播图查询成功
+2024-03-15 15:23:21 INFO  HelloController:44 - trceid:T754l1MHSI0zu037T473l1X5HF	 轮播图查询成功
+2024-03-15 15:23:21 INFO  HelloController:44 - trceid:T0h5f9X9Yz53uHRB3qvkdw5kLq	 轮播图查询成功
+2024-03-15 15:23:21 INFO  HelloController:44 - trceid:T248Z5f795mVtFfcCOW220yq13	 轮播图查询成功
+2024-03-15 15:23:22 INFO  HelloController:44 - trceid:T74Wq60SCz6yigh1LE6EyJw2r1	 轮播图查询成功
+2024-03-15 15:23:22 INFO  HelloController:44 - trceid:TGr0E9132Zi82s5e59091819IV	 轮播图查询成功
+2024-03-15 15:23:22 INFO  HelloController:44 - trceid:Tt7sGhuS6j71L13dY8Q8p6981V	 轮播图查询成功
+2024-03-15 15:23:22 INFO  HelloController:44 - trceid:TqR6U81H48c0ex32jf66864ZdC	 轮播图查询成功
+2024-03-15 15:23:26 INFO  HelloController:63 - trceid:T8M9927E65HgBw7V9n809S1i73	 一级分类查询成功
+2024-03-15 15:23:26 INFO  HelloController:63 - trceid:T86rz0WgY49uy2I07D60UXXiK5	 一级分类查询成功
+2024-03-15 15:23:26 INFO  HelloController:63 - trceid:T2c90IOvld548Kz20IioWb795o	 一级分类查询成功
+2024-03-15 15:23:26 INFO  HelloController:63 - trceid:TmP1W69Fw679zPsG6zBwj27913	 一级分类查询成功
+2024-03-15 15:23:26 INFO  HelloController:63 - trceid:Tfu6R651OKDXSB4Zt8O1TD7b8j	 一级分类查询成功
