@@ -7,22 +7,28 @@ import bo.UserBo;
 import com.imooc.enums.Sex;
 import com.imooc.mapper.UsersMapper;
 
+import com.imooc.mapper.UsersMapperCustom;
 import com.imooc.pojo.Users;
 
+import com.imooc.pojo.vo.CategoryVO;
+import com.imooc.pojo.vo.UsersVO;
 import com.imooc.service.UserService;
 
-import com.imooc.utils.DateUtil;
-import com.imooc.utils.MD5Utils;
-import com.imooc.utils.RandomNickname;
+import com.imooc.utils.*;
+import io.swagger.annotations.ApiOperation;
 import javafx.scene.control.PasswordFieldBuilder;
+import org.apache.commons.lang3.StringUtils;
 import org.n3r.idworker.Sid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import tk.mybatis.mapper.entity.Example;
 
 import java.util.Date;
+import java.util.List;
 
 import static com.imooc.utils.MD5Utils.getMD5Str;
 
@@ -38,6 +44,8 @@ public class UserServiceImp implements UserService {
     @Autowired
     private Sid sid;
 
+    @Autowired
+    private UsersMapperCustom usersMapperCustom;
 
     public static  final String  user_face = "https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201901%2F22%2F20190122075852_qqpst.thumb.400_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1637226059&t=44137c685590cefc784c8426b088c54f";
 
@@ -76,6 +84,7 @@ public class UserServiceImp implements UserService {
 
         return result == null ? false : true;
     }
+
 
     /**
      *
@@ -152,6 +161,26 @@ public class UserServiceImp implements UserService {
         Users result = usersMapper.selectOneByExample(userExample);
 
         return result == null ? true : false;
+    }
+
+    /**
+     *
+     * @param id
+     * @return  查询用户信息
+     */
+
+    @Transactional(propagation = Propagation.SUPPORTS)
+    @Override
+    public List<UsersVO> queryUsers(String id) {
+
+        return usersMapperCustom.queryUsers(id);
+    }
+
+
+    @Transactional(propagation = Propagation.SUPPORTS)
+    @Override
+    public List<UsersVO> queryUsername(String nickname){
+        return usersMapperCustom.queryUsername(nickname);
     }
 
 

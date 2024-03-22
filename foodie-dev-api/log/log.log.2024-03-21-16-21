@@ -1,0 +1,5 @@
+2024-03-21 16:21:04 INFO  DispatcherServlet:524 - Initializing Servlet 'dispatcherServlet'
+2024-03-21 16:21:04 INFO  DispatcherServlet:546 - Completed initialization in 6 ms
+2024-03-21 16:21:18 INFO  HikariDataSource:110 - DateSourceHikariCP - Starting...
+2024-03-21 16:21:18 INFO  HikariDataSource:123 - DateSourceHikariCP - Start completed.
+2024-03-21 16:21:18 INFO  HelloController:137 - Tn2e3667kdLxJRY787t18Y08Q1	 用户名已存在

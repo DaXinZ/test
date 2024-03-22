@@ -2,6 +2,9 @@ package com.imooc.service;
 
 import bo.UserBo;
 import com.imooc.pojo.Users;
+import com.imooc.pojo.vo.UsersVO;
+
+import java.util.List;
 
 /**
  * Date: 2021/9/27 10:40 上午
@@ -43,6 +46,19 @@ public interface  UserService {
      * @return 判断用户呢称是否存在
      */
     public boolean  queryUsernikenameIsExist(String nickname);
+
+
+    /**
+     * @param id
+     * @return 查询用户信息
+     */
+    public List<UsersVO>  queryUsers(String id);
+
+    /**
+     * @param nickname
+     * @return 模糊查询用户信息
+     */
+    public List<UsersVO>  queryUsername(String nickname);
 
 
 }
