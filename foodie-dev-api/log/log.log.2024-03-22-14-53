@@ -1,0 +1,22 @@
+2024-03-22 14:53:04 INFO  Version:21 - HV000001: Hibernate Validator 6.0.16.Final
+2024-03-22 14:53:04 INFO  Application:50 - Starting Application on daxindeMacBook-Pro.local with PID 26993 (/Users/daxin/Documents/code/tiantian/foodie-dev-api/target/classes started by daxin in /Users/daxin/Documents/code/tiantian)
+2024-03-22 14:53:04 INFO  Application:679 - The following profiles are active: dev
+2024-03-22 14:53:05 INFO  RepositoryConfigurationDelegate:244 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2024-03-22 14:53:05 INFO  RepositoryConfigurationDelegate:126 - Bootstrapping Spring Data repositories in DEFAULT mode.
+2024-03-22 14:53:05 INFO  RepositoryConfigurationDelegate:182 - Finished Spring Data repository scanning in 4ms. Found 0 repository interfaces.
+2024-03-22 14:53:05 INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$eb041e5e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-03-22 14:53:05 INFO  TomcatWebServer:90 - Tomcat initialized with port(s): 8088 (http)
+2024-03-22 14:53:06 INFO  ContextLoader:296 - Root WebApplicationContext: initialization completed in 1050 ms
+2024-03-22 14:53:06 INFO  ThreadPoolTaskExecutor:171 - Initializing ExecutorService 'applicationTaskExecutor'
+2024-03-22 14:53:07 INFO  ThreadPoolTaskScheduler:171 - Initializing ExecutorService 'taskScheduler'
+2024-03-22 14:53:07 INFO  DocumentationPluginsBootstrapper:84 - Context refreshed
+2024-03-22 14:53:07 INFO  DocumentationPluginsBootstrapper:87 - Found 1 custom documentation plugin(s)
+2024-03-22 14:53:07 INFO  ApiListingReferenceScanner:44 - Scanning for api listing references
+2024-03-22 14:53:07 INFO  TomcatWebServer:204 - Tomcat started on port(s): 8088 (http) with context path ''
+2024-03-22 14:53:07 INFO  Application:59 - Started Application in 2.76 seconds (JVM running for 3.166)
+2024-03-22 14:53:09 INFO  DispatcherServlet:524 - Initializing Servlet 'dispatcherServlet'
+2024-03-22 14:53:09 INFO  DispatcherServlet:546 - Completed initialization in 6 ms
+2024-03-22 14:53:09 INFO  HelloController:48 - 接受用户请求参数"240313F8T00KCW4H"
+2024-03-22 14:53:09 INFO  HikariDataSource:110 - DateSourceHikariCP - Starting...
+2024-03-22 14:53:09 INFO  HikariDataSource:123 - DateSourceHikariCP - Start completed.
+2024-03-22 14:53:09 INFO  HelloController:59 - 查询成功返回参数如下[{"createdTime":"2024-03-13 20:03:28","id":"240313F8T00KCW4H","nickName":"公仪香","userName":"dad1s"}]

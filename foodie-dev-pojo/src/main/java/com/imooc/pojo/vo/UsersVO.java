@@ -58,4 +58,15 @@ public class UsersVO {
     public void setqueryUsers(List<UsersVO> usersList) {
         this.usersList = usersList;
     }
+
+    @Override
+    public String toString() {
+        return "UsersVO{" +
+                "id='" + id + '\'' +
+                ", userName='" + userName + '\'' +
+                ", nickName='" + nickName + '\'' +
+                ", createdTime='" + createdTime + '\'' +
+                ", usersList=" + usersList +
+                '}';
+    }
 }

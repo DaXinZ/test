@@ -1,5 +1,6 @@
 package com.imooc.controller;
 
+import com.alibaba.fastjson.JSON;
 import com.imooc.enums.YesOrNo1;
 import com.imooc.pojo.Carousel;
 import com.imooc.pojo.Category;
@@ -44,17 +45,18 @@ public class UsersController  {
         IMOOCJSONResult imoocjsonResult = new IMOOCJSONResult();
         imoocjsonResult.setTrceid(test.getStringRandom());
         String  trceid  = "trceid:" + imoocjsonResult.setTrceid(test.getStringRandom());
-
+        logger.info("接受用户请求参数"+ JSON.toJSONString(uid));
         // 1. 判断用户名不能为空
         if (uid ==  null) {
-            logger.info("查询失败用户名为空"+ uid);
+            logger.info("查询失败用户名为空"+ JSON.toJSONString(uid));
             return IMOOCJSONResult.errorMsg("用户名不能为空");
         }
 
         // 2. 查找注册的用户名是否存在
         List<UsersVO> list = userService.queryUsers(uid);
 
-         logger.info("查询成功uid为：" + uid);
+
+         logger.info("查询成功返回参数如下" + JSON.toJSONString(list));
         return IMOOCJSONResult.ok(list);
     }
 

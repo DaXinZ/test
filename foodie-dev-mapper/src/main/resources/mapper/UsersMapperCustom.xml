@@ -20,11 +20,6 @@
   </resultMap>
 
 
-
-
-
-
-
   <resultMap id="queryUserList" type="com.imooc.pojo.vo.UsersVO" >
 
     <id column="id" property="id"/>

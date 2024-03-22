@@ -1,0 +1,5 @@
+2024-03-22 14:46:02 INFO  DispatcherServlet:524 - Initializing Servlet 'dispatcherServlet'
+2024-03-22 14:46:02 INFO  DispatcherServlet:546 - Completed initialization in 5 ms
+2024-03-22 14:46:02 INFO  HikariDataSource:110 - DateSourceHikariCP - Starting...
+2024-03-22 14:46:02 INFO  HikariDataSource:123 - DateSourceHikariCP - Start completed.
+2024-03-22 14:46:02 INFO  HelloController:59 - 查询成功uid为：[{"createdTime":"2024-03-13 20:03:28","id":"240313F8T00KCW4H","nickName":"公仪香","userName":"dad1s"}]
