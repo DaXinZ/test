@@ -8,7 +8,7 @@ public class OrderItems {
      * 主键id
      */
     @Id
-    private Integer id;
+    private String id;
 
     /**
      * 归属订单id
@@ -62,7 +62,7 @@ public class OrderItems {
      *
      * @return id - 主键id
      */
-    public Integer getId() {
+    public String getId() {
         return id;
     }
 
@@ -71,7 +71,7 @@ public class OrderItems {
      *
      * @param id 主键id
      */
-    public void setId(Integer id) {
+    public void setId(String id) {
         this.id = id;
     }
 
