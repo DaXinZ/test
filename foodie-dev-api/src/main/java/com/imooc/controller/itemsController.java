@@ -72,7 +72,7 @@ public class itemsController {
         String ItemSpe = JSON.toJSONString(itemSpecs);
         String ItemPara = JSON.toJSONString(itemParam);
 
-        logger.info( JSON.toJSONString("item数据"+ Item)
+        logger.info( "商品详情细化数据"+JSON.toJSONString("item数据"+ Item)
                 + "\t" +
                 JSON.toJSONString("itemImg数据"+Itemimg)
                 + "\t" +
@@ -83,7 +83,7 @@ public class itemsController {
                 );
 
 
-        logger.info( JSON.toJSONString("新数据"+ itemvo));
+        logger.info( JSON.toJSONString("商品详情数据查询成功"+ itemvo));
         return IMOOCJSONResult.ok(iteminfoVo);
     }
 
