@@ -18,6 +18,19 @@ public class UserBo {
     @ApiModelProperty(value = "确认密码", name = "confirmPassword", example = "123456", required = true)
     private  String confirmPassword;
 
+
+    @ApiModelProperty(value = "用户昵称", name = "nickname", example = "不填则随机", required = false)
+    private  String nickname;
+
+    public String getNickname() {
+        return nickname;
+    }
+
+    public void setNickname(String nickname) {
+        this.nickname = nickname;
+    }
+
+
     public String getUsername() {
         return username;
     }
@@ -45,4 +58,6 @@ public class UserBo {
     public void setConfirmPassword(String confirmPassword) {
         this.confirmPassword = confirmPassword;
     }
+
+
 }

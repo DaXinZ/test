@@ -1,0 +1,8 @@
+2024-03-28 15:52:01 INFO  HelloController:183 - {"face":"https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201901%2F22%2F20190122075852_qqpst.thumb.400_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1637226059&t=44137c685590cefc784c8426b088c54f","id":"240328B9023HPTTC","sex":2,"username":"331188299912321331"}
+2024-03-28 15:52:19 INFO  ThreadPoolTaskScheduler:208 - Shutting down ExecutorService 'taskScheduler'
+2024-03-28 15:52:19 INFO  ThreadPoolTaskExecutor:208 - Shutting down ExecutorService 'applicationTaskExecutor'
+2024-03-28 15:52:19 INFO  HikariDataSource:350 - DateSourceHikariCP - Shutdown initiated...
+2024-03-28 15:52:19 INFO  HikariDataSource:352 - DateSourceHikariCP - Shutdown completed.
+2024-03-28 15:52:59 INFO  Version:21 - HV000001: Hibernate Validator 6.0.16.Final
+2024-03-28 15:52:59 INFO  Application:50 - Starting Application on daxindeMacBook-Pro.local with PID 17618 (/Users/daxin/Documents/code/tiantian/foodie-dev-api/target/classes started by daxin in /Users/daxin/Documents/code/tiantian)
+2024-03-28 15:52:59 INFO  Application:679 - The following profiles are active: dev

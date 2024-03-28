@@ -1,0 +1,6 @@
+2024-03-28 15:26:02 INFO  CookieUtils:210 - ========== domainName: localhost ==========
+2024-03-28 15:26:02 INFO  HelloController:179 - T56z2K4NA3Khz299gaBN41529Z	 注册成功
+2024-03-28 15:26:02 INFO  ThreadPoolTaskScheduler:208 - Shutting down ExecutorService 'taskScheduler'
+2024-03-28 15:26:02 INFO  ThreadPoolTaskExecutor:208 - Shutting down ExecutorService 'applicationTaskExecutor'
+2024-03-28 15:26:02 INFO  HikariDataSource:350 - DateSourceHikariCP - Shutdown initiated...
+2024-03-28 15:26:02 INFO  HikariDataSource:352 - DateSourceHikariCP - Shutdown completed.

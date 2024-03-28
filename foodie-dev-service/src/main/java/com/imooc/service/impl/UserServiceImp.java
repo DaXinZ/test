@@ -4,6 +4,7 @@ package com.imooc.service.impl;
 
 
 import bo.UserBo;
+import com.alibaba.fastjson.JSON;
 import com.imooc.enums.Sex;
 import com.imooc.mapper.UsersMapper;
 
@@ -97,6 +98,7 @@ public class UserServiceImp implements UserService {
     public Users createUser(UserBo userBO) {
         RandomNickname randomNickname = new RandomNickname();
 
+
         String  userId =  sid.nextShort();
 
         Users user = new Users();
@@ -111,11 +113,11 @@ public class UserServiceImp implements UserService {
         }
         //默认用户昵称随机生成
 
-        user.setNickname(randomNickname.RandomScale());
+        user.setNickname(userBO.getNickname());
         //设置默认头像
         user.setFace(user_face);
         //设置默认生日
-        user.setBirthday(DateUtil.stringToDate("1900-01-01"));
+        user.setBirthday(new Date());
         //设置默认性别
         user.setSex(Sex.secret.type);
         //创建时间

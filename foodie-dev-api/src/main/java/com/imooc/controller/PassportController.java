@@ -1,9 +1,9 @@
 package com.imooc.controller;
 
 import bo.UserBo;
+import com.alibaba.fastjson.JSON;
 import com.imooc.pojo.Users;
 import com.imooc.service.UserService;
-
 import com.imooc.utils.*;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
@@ -109,12 +109,19 @@ public class PassportController {
         IMOOCJSONResult imoocjsonResult = new IMOOCJSONResult();
        String  trceid  =  imoocjsonResult.setTrceid(test.getStringRandom());
        RandomNickname randomNickname = new RandomNickname();
-
       String username = userBo.getUsername();
       String password = userBo.getPassword();
+        UsersController usersController = new UsersController();
       String confirmpassword = userBo.getConfirmPassword();
+      String nickname = userBo.getNickname();
+
+      //判断用户名是否为空，为空则塞入随机数
+      if (StringUtils.isBlank(nickname)){
+          userBo.setNickname(randomNickname.RandomScale());
 
 
+      }
+        String  nickname2 = userBo.getNickname();
 
         // 判断用户名和密码必须不为空
        if (StringUtils.isBlank(username)){
@@ -134,7 +141,7 @@ public class PassportController {
         // 查询用户名是否存在
         boolean isExist = userService.queryUsernameIsExist(username);
         if (isExist) {
-            logger.info(trceid +  "\t 用户名已存在");
+            logger.info(JSON.toJSONString("用户名已存在" + username));
             return IMOOCJSONResult.errorMsg("用户名已存在");
 
         }
@@ -150,6 +157,7 @@ public class PassportController {
             logger.info(trceid +  "\t 两次密码不一致");
             return IMOOCJSONResult.errorMsg("两次密码不一致");
         }
+
         // 实现注册功能
         Users userResult =   userService.createUser(userBo);
 
@@ -158,8 +166,8 @@ public class PassportController {
                 JsonUtils.objectToJson(userResult), true);
 
         // 3. 请求成功，用户名没有重复
-        logger.info(trceid +  "\t 注册成功");
-        return IMOOCJSONResult.ok("注册成功，用户名为" + username  );
+        logger.info(JSON.toJSONString(userResult));
+        return IMOOCJSONResult.ok("注册成功用户名为"+username+"昵称为" + nickname2);
     }
 
     /**
