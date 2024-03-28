@@ -1,0 +1,6 @@
+2024-03-27 16:59:19 INFO  HelloController:68 - "item数据com.imooc.pojo.Items@2ecbcc5b""itemImg数据[com.imooc.pojo.ItemsImg@70c38b41, com.imooc.pojo.ItemsImg@55da90c5]""itemSpecs数据[com.imooc.pojo.ItemsSpec@5375cf35, com.imooc.pojo.ItemsSpec@232c7814, com.imooc.pojo.ItemsSpec@4f5976b3]""itemParam数据com.imooc.pojo.ItemsParam@4e849b25"
+2024-03-27 16:59:39 INFO  HelloController:75 - "查询成功数据如下com.imooc.pojo.vo.IteminfoVo@3375e9a7"
+2024-03-27 16:59:39 INFO  ThreadPoolTaskScheduler:208 - Shutting down ExecutorService 'taskScheduler'
+2024-03-27 16:59:39 INFO  ThreadPoolTaskExecutor:208 - Shutting down ExecutorService 'applicationTaskExecutor'
+2024-03-27 16:59:39 INFO  HikariDataSource:350 - DateSourceHikariCP - Shutdown initiated...
+2024-03-27 16:59:39 INFO  HikariDataSource:352 - DateSourceHikariCP - Shutdown completed.

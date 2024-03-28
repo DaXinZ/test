@@ -1,0 +1,33 @@
+2024-03-27 15:37:47 INFO  ThreadPoolTaskScheduler:208 - Shutting down ExecutorService 'taskScheduler'
+2024-03-27 15:37:47 INFO  ThreadPoolTaskExecutor:208 - Shutting down ExecutorService 'applicationTaskExecutor'
+2024-03-27 15:37:50 INFO  Version:21 - HV000001: Hibernate Validator 6.0.16.Final
+2024-03-27 15:37:50 INFO  Application:50 - Starting Application on daxindeMacBook-Pro.local with PID 9258 (/Users/daxin/Documents/code/tiantian/foodie-dev-api/target/classes started by daxin in /Users/daxin/Documents/code/tiantian)
+2024-03-27 15:37:50 INFO  Application:679 - The following profiles are active: dev
+2024-03-27 15:37:51 INFO  RepositoryConfigurationDelegate:244 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2024-03-27 15:37:51 INFO  RepositoryConfigurationDelegate:126 - Bootstrapping Spring Data repositories in DEFAULT mode.
+2024-03-27 15:37:51 INFO  RepositoryConfigurationDelegate:182 - Finished Spring Data repository scanning in 4ms. Found 0 repository interfaces.
+2024-03-27 15:37:51 INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$b45af172] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-03-27 15:37:51 INFO  TomcatWebServer:90 - Tomcat initialized with port(s): 8088 (http)
+2024-03-27 15:37:51 INFO  ContextLoader:296 - Root WebApplicationContext: initialization completed in 1106 ms
+2024-03-27 15:37:52 INFO  ThreadPoolTaskExecutor:171 - Initializing ExecutorService 'applicationTaskExecutor'
+2024-03-27 15:37:53 INFO  ThreadPoolTaskScheduler:171 - Initializing ExecutorService 'taskScheduler'
+2024-03-27 15:37:53 INFO  DocumentationPluginsBootstrapper:84 - Context refreshed
+2024-03-27 15:37:53 INFO  DocumentationPluginsBootstrapper:87 - Found 1 custom documentation plugin(s)
+2024-03-27 15:37:53 INFO  ApiListingReferenceScanner:44 - Scanning for api listing references
+2024-03-27 15:37:53 INFO  TomcatWebServer:204 - Tomcat started on port(s): 8088 (http) with context path ''
+2024-03-27 15:37:53 INFO  Application:59 - Started Application in 2.906 seconds (JVM running for 3.287)
+2024-03-27 15:37:53 INFO  DispatcherServlet:524 - Initializing Servlet 'dispatcherServlet'
+2024-03-27 15:37:53 INFO  DispatcherServlet:546 - Completed initialization in 7 ms
+2024-03-27 15:37:53 INFO  HikariDataSource:110 - DateSourceHikariCP - Starting...
+2024-03-27 15:37:53 INFO  HikariDataSource:123 - DateSourceHikariCP - Start completed.
+2024-03-27 15:37:53 INFO  HelloController:48 - trceid:Tr4Jc365nS29u62W5j8eQ5gkI0	 轮播图查询成功
+2024-03-27 15:37:53 INFO  HelloController:67 - trceid:T7V3e577CS3TCBxyxAd810OeXN	 一级分类查询成功
+2024-03-27 15:37:54 INFO  HelloController:107 - trceid:TjCt57ftn3h9AO715z80IM57T3	 子分类查询成功
+2024-03-27 15:37:55 INFO  HelloController:86 - trceid:T5c937M4lqPN14Jp587HN06P40	 子分类查询成功
+2024-03-27 15:37:55 INFO  HelloController:86 - trceid:TUpp754Jc7E97f54z20Pt4Xi79	 子分类查询成功
+2024-03-27 15:37:55 INFO  HelloController:86 - trceid:T1Sc6i623qQ3zp3e28696M6J0a	 子分类查询成功
+2024-03-27 15:37:55 INFO  HelloController:86 - trceid:Tk20Kcge6c8rO82M0IjQ5pBd13	 子分类查询成功
+2024-03-27 15:37:55 INFO  HelloController:86 - trceid:T4tPR9u02f26T03325PFM4L0Ah	 子分类查询成功
+2024-03-27 15:37:56 INFO  HelloController:86 - trceid:TH611Jd07rD904E0e1rSJ4qFyo	 子分类查询成功
+2024-03-27 15:37:56 INFO  HelloController:107 - trceid:TmO25oBjP43NN3L3ZT2xOpC30z	 子分类查询成功
+2024-03-27 15:37:57 INFO  HelloController:107 - trceid:TVR2S3358u7879B2OBJ43fz914	 子分类查询成功

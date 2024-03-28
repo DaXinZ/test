@@ -16,7 +16,7 @@ public interface ItemService {
      * @param itemId
      * @return
      */
-    public Items queryItemByid(String itemId);
+    public Items queryItemById(String id);
 
     /**
      * 根据商品id查询商品列表

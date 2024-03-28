@@ -18,19 +18,23 @@ import java.util.List;
 
 @Service
 public class ItemServiceImpl implements ItemService {
+    @Autowired
     private ItemsMapper itemsMapper;
-
+    @Autowired
     private ItemsImgMapper itemsImgMapper;
+    @Autowired
     private ItemsSpecMapper itemsSpecMapper;
+    @Autowired
     private ItemsParamMapper itemsParamMapper;
 
 
 
     @Transactional(propagation = Propagation.SUPPORTS)
     @Override
-    public Items queryItemByid(String itemId) {
+    public Items queryItemById(String itemId) {
         return itemsMapper.selectByPrimaryKey(itemId);
     }
+
     @Transactional(propagation = Propagation.SUPPORTS)
     @Override
     public List<ItemsImg> queryItemsImg(String itemId) {

@@ -153,7 +153,7 @@ public class IMOOCJSONResult {
         return trceid;
     }
 
-    public static void trce(){
+    public static void Trce(){
         StringRandom test = new StringRandom();
         IMOOCJSONResult imoocjsonResult = new IMOOCJSONResult();
         imoocjsonResult.setTrceid(test.getStringRandom());

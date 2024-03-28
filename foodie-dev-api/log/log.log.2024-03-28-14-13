@@ -1,0 +1,3 @@
+2024-03-28 14:13:01 INFO  HelloController:48 - 接收参数"cake-38"
+2024-03-28 14:13:01 INFO  HelloController:70 - "item数据com.imooc.pojo.Items@4949917c"	"itemImg数据[com.imooc.pojo.ItemsImg@10c27402, com.imooc.pojo.ItemsImg@3ba253cd]"	"itemSpecs数据[com.imooc.pojo.ItemsSpec@4e4eff71, com.imooc.pojo.ItemsSpec@4b8955b5, com.imooc.pojo.ItemsSpec@48e84aa2]"	"itemParam数据com.imooc.pojo.ItemsParam@617d5449"
+2024-03-28 14:13:01 INFO  HelloController:79 - "新数据IteminfoVo{item=com.imooc.pojo.Items@4949917c, itemsImgList=[com.imooc.pojo.ItemsImg@10c27402, com.imooc.pojo.ItemsImg@3ba253cd], itemSpecsList=[com.imooc.pojo.ItemsSpec@4e4eff71, com.imooc.pojo.ItemsSpec@4b8955b5, com.imooc.pojo.ItemsSpec@48e84aa2], itemParam=com.imooc.pojo.ItemsParam@617d5449}"
