@@ -1,0 +1,8 @@
+2024-03-29 11:29:10 INFO  HelloController:130 - 查询用户呢称返回的数据 [{"createdTime":"2024-03-29 11:25:48","id":"24032984BG09X2A8","nickName":"丁雾海","userName":"daxin31"}]
+2024-03-29 11:29:10 INFO  HelloController:150 - "用户名已存在daxin31"
+2024-03-29 11:29:12 INFO  HelloController:130 - 查询用户呢称返回的数据 [{"createdTime":"2024-03-29 11:25:48","id":"24032984BG09X2A8","nickName":"丁雾海","userName":"daxin31"}]
+2024-03-29 11:29:12 INFO  HelloController:150 - "用户名已存在daxin31"
+2024-03-29 11:29:13 INFO  HelloController:130 - 查询用户呢称返回的数据 [{"createdTime":"2024-03-29 11:25:48","id":"24032984BG09X2A8","nickName":"丁雾海","userName":"daxin31"}]
+2024-03-29 11:29:13 INFO  HelloController:150 - "用户名已存在daxin31"
+2024-03-29 11:29:13 INFO  HelloController:130 - 查询用户呢称返回的数据 [{"createdTime":"2024-03-29 11:25:48","id":"24032984BG09X2A8","nickName":"丁雾海","userName":"daxin31"}]
+2024-03-29 11:29:13 INFO  HelloController:150 - "用户名已存在daxin31"

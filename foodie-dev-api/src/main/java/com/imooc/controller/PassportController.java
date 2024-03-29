@@ -3,11 +3,14 @@ package com.imooc.controller;
 import bo.UserBo;
 import com.alibaba.fastjson.JSON;
 import com.imooc.pojo.Users;
+import com.imooc.pojo.vo.UsersVO;
 import com.imooc.service.UserService;
 import com.imooc.utils.*;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.apache.commons.lang3.StringUtils;
+import org.json.JSONArray;
+import org.json.JSONObject;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,6 +18,8 @@ import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Date: 2021/9/27 10:55 上午
@@ -111,7 +116,6 @@ public class PassportController {
        RandomNickname randomNickname = new RandomNickname();
       String username = userBo.getUsername();
       String password = userBo.getPassword();
-        UsersController usersController = new UsersController();
       String confirmpassword = userBo.getConfirmPassword();
       String nickname = userBo.getNickname();
 
@@ -122,6 +126,22 @@ public class PassportController {
 
       }
         String  nickname2 = userBo.getNickname();
+
+      //查询用户名
+        List<UsersVO>  queryname =  userService.queryUsername(nickname2);
+        logger.info("查询用户呢称返回的数据 "+JSON.toJSONString(queryname));
+        JSONArray jsonArray = new JSONArray(queryname);
+
+        for (int i = 0; i < jsonArray.length(); i++) {
+            JSONObject jsonObject = jsonArray.getJSONObject(i);
+            String nickName = jsonObject.getString("nickName");
+            logger.info("取值出来的数据"+ nickName);
+            if (nickname2.equals(nickName)){
+                 logger.info(JSON.toJSONString("当前名字已存在，请修改"+nickName));
+                 return  IMOOCJSONResult.errorMsg("用户昵称已存在");
+            }
+        }
+
 
         // 判断用户名和密码必须不为空
        if (StringUtils.isBlank(username)){
