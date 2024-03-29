@@ -2,6 +2,7 @@ package com.imooc.controller;
 
 import com.alibaba.fastjson.JSON;
 import com.imooc.pojo.*;
+import com.imooc.pojo.vo.CommentLevelCommensVo;
 import com.imooc.pojo.vo.IteminfoVo;
 import com.imooc.service.ItemService;
 import com.imooc.utils.IMOOCJSONResult;
@@ -13,11 +14,7 @@ import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.converter.ObjectToStringHttpMessageConverter;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -85,6 +82,31 @@ public class itemsController {
 
         logger.info( JSON.toJSONString("商品详情数据查询成功"+ itemvo));
         return IMOOCJSONResult.ok(iteminfoVo);
+    }
+
+
+
+
+    @ApiOperation(value = "查询商品评价等级", notes = "查询商品评价等级", httpMethod = "GET")
+    @GetMapping("/commentLevel")
+    public IMOOCJSONResult commentLevel(
+            @ApiParam(name = "itemId",value =  "商品id",required = true)
+            @RequestParam String itemId){
+        StringRandom treceid = new StringRandom();
+        IMOOCJSONResult imoocjsonResult = new IMOOCJSONResult();
+        imoocjsonResult.setTrceid(treceid.getStringRandom());
+
+        logger.info("接收参数" +    JSON.toJSONString(itemId));
+        if (StringUtils.isBlank(itemId)){
+            logger.info(JSON.toJSONString(itemId));
+            return IMOOCJSONResult.errorMsg("id为空");
+        }
+
+        CommentLevelCommensVo commensVo = itemService.queryCommentCounts(itemId);
+
+        String com = JSON.toJSONString(commensVo);
+        logger.info( JSON.toJSONString("商品详情数据查询成功"+ com));
+        return IMOOCJSONResult.ok(commensVo);
     }
 
 

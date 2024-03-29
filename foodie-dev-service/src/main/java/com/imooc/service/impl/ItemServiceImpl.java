@@ -1,11 +1,10 @@
 package com.imooc.service.impl;
 
 
-import com.imooc.mapper.ItemsImgMapper;
-import com.imooc.mapper.ItemsMapper;
-import com.imooc.mapper.ItemsParamMapper;
-import com.imooc.mapper.ItemsSpecMapper;
+import com.imooc.enums.CommentLevel;
+import com.imooc.mapper.*;
 import com.imooc.pojo.*;
+import com.imooc.pojo.vo.CommentLevelCommensVo;
 import com.imooc.service.ItemService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -26,6 +25,9 @@ public class ItemServiceImpl implements ItemService {
     private ItemsSpecMapper itemsSpecMapper;
     @Autowired
     private ItemsParamMapper itemsParamMapper;
+
+    @Autowired
+    private ItemsCommentsMapper itemsCommentsMapper;
 
 
 
@@ -59,5 +61,37 @@ public class ItemServiceImpl implements ItemService {
         Example.Criteria criteria = itemsParamExp.createCriteria();
         criteria.andEqualTo("itemId",itemId);
         return itemsParamMapper.selectOneByExample(itemsParamExp);
+    }
+
+
+    @Transactional(propagation = Propagation.SUPPORTS)
+    @Override
+    public CommentLevelCommensVo queryCommentCounts(String itemId) {
+
+        Integer goodCounts = getCommentCounts(itemId, CommentLevel.GOOD.type);
+        Integer noramlCounts = getCommentCounts(itemId, CommentLevel.NORML.type);
+        Integer badCounts = getCommentCounts(itemId, CommentLevel.BAD.type);
+        Integer totalCounts = goodCounts+noramlCounts+badCounts;
+
+        CommentLevelCommensVo commensVo  = new CommentLevelCommensVo();
+        commensVo.setTotalCounts(totalCounts);
+        commensVo.setGoodCounts(goodCounts);
+        commensVo.setNormalCounts(noramlCounts);
+        commensVo.setBadCounts(badCounts);
+
+        return commensVo;
+    }
+
+
+    @Transactional(propagation = Propagation.SUPPORTS)
+    Integer getCommentCounts(String itemId,Integer level){
+        ItemsComments  conditon = new ItemsComments();
+        conditon.setItemId(itemId);
+        if (level != null){
+            conditon.setCommentLevel(level);
+        }
+
+
+        return  itemsCommentsMapper.selectCount(conditon);
     }
 }

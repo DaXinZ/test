@@ -1,6 +1,7 @@
 package com.imooc.service;
 
 import com.imooc.pojo.*;
+import com.imooc.pojo.vo.CommentLevelCommensVo;
 
 import java.util.List;
 
@@ -39,6 +40,12 @@ public interface ItemService {
      */
     public ItemsParam queryItemsParam(String itemId);
 
+
+    /**
+     *  根据商品id查询商品的评价
+     * @param itemId
+     */
+    public CommentLevelCommensVo queryCommentCounts(String itemId);
 
 
 }
