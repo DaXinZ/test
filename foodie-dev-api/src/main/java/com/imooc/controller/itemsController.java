@@ -4,7 +4,9 @@ import com.alibaba.fastjson.JSON;
 import com.imooc.pojo.*;
 import com.imooc.pojo.vo.CommentLevelCommensVo;
 import com.imooc.pojo.vo.IteminfoVo;
+import com.imooc.pojo.vo.GetevaluateVO;
 import com.imooc.service.ItemService;
+import com.imooc.service.ItemsService;
 import com.imooc.utils.IMOOCJSONResult;
 import com.imooc.utils.StringRandom;
 import io.swagger.annotations.Api;
@@ -30,8 +32,11 @@ public class itemsController {
      @Autowired
      private ItemService itemService;
 
+    @Autowired
+    private ItemsService itemsService;
 
-    final  static Logger logger = LoggerFactory.getLogger(HelloController.class);
+
+    final  static Logger logger = LoggerFactory.getLogger(itemsController.class);
 
 
     @ApiOperation(value = "查询商品详情", notes = "查询商品详情", httpMethod = "GET")
@@ -108,6 +113,31 @@ public class itemsController {
         logger.info( JSON.toJSONString("商品详情数据查询成功"+ com));
         return IMOOCJSONResult.ok(commensVo);
     }
+
+
+    @ApiOperation(value = "查询商品评价", notes = "查询商品评价", httpMethod = "GET")
+    @GetMapping("/comments{itemId}")
+    public IMOOCJSONResult comments(
+            @ApiParam(name = "itemId",value =  "商品id",required = true)
+            @RequestParam String itemId){
+        StringRandom treceid = new StringRandom();
+        IMOOCJSONResult imoocjsonResult = new IMOOCJSONResult();
+        imoocjsonResult.setTrceid(treceid.getStringRandom());
+
+        logger.info("商品评价接受请求" +    JSON.toJSONString(itemId));
+        if (StringUtils.isBlank(itemId)){
+            logger.info(JSON.toJSONString(itemId));
+            return IMOOCJSONResult.errorMsg("id为空");
+        }
+
+        List<GetevaluateVO> myGetevaluateList = itemsService.queryGetevaluate(itemId);
+
+        String mygetevaluateList = JSON.toJSONString(myGetevaluateList);
+        logger.info( JSON.toJSONString("商品详情数据查询成功"+ mygetevaluateList));
+        return IMOOCJSONResult.ok(myGetevaluateList);
+    }
+
+
 
 
 }

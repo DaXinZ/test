@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.imooc.mapper.ItemsMapperCustom" >
+
+
+  <resultMap id="myGetevaluateVO" type="com.imooc.pojo.vo.GetevaluateVO" >
+
+    <id column="commentLevel" property="commentLevel" jdbcType="VARCHAR" />
+    <result column="content" property="content" jdbcType="VARCHAR" />
+    <result column="sepcName" property="sepcName" jdbcType="INTEGER" />
+    <result column="createdTime" property="createdTime" jdbcType="INTEGER" />
+    <result column="face" property="face" jdbcType="INTEGER" />
+    <result column="nickname" property="nickname" jdbcType="INTEGER" />
+  </resultMap>
+
+  <select id = "queryGetevaluate" resultMap="myGetevaluateVO" parameterType="String">
+    SELECT
+      items_comments.comment_level as commentLevel,
+      items_comments.content as content,
+      items_comments.sepc_name as sepcName,
+      items_comments.created_time as createdTime,
+      users.face as face,
+      users.nickname as nickname
+    FROM
+      items_comments
+        LEFT JOIN users
+                  ON  items_comments.user_id  = users.id
+    WHERE
+      items_comments.item_id = #{itemId}
+      AND
+      items_comments.comment_level = 1
+  </select>
+</mapper>

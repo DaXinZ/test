@@ -1,0 +1,58 @@
+2024-03-29 16:35:02 INFO  ThreadPoolTaskScheduler:208 - Shutting down ExecutorService 'taskScheduler'
+2024-03-29 16:35:02 INFO  ThreadPoolTaskExecutor:208 - Shutting down ExecutorService 'applicationTaskExecutor'
+2024-03-29 16:35:05 INFO  Version:21 - HV000001: Hibernate Validator 6.0.16.Final
+2024-03-29 16:35:05 INFO  Application:50 - Starting Application on daxindeMacBook-Pro.local with PID 25914 (/Users/daxin/Documents/code/tiantian/foodie-dev-api/target/classes started by daxin in /Users/daxin/Documents/code/tiantian)
+2024-03-29 16:35:05 INFO  Application:679 - The following profiles are active: dev
+2024-03-29 16:35:06 INFO  RepositoryConfigurationDelegate:244 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2024-03-29 16:35:06 INFO  RepositoryConfigurationDelegate:126 - Bootstrapping Spring Data repositories in DEFAULT mode.
+2024-03-29 16:35:06 INFO  RepositoryConfigurationDelegate:182 - Finished Spring Data repository scanning in 4ms. Found 0 repository interfaces.
+2024-03-29 16:35:06 INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$17dc3027] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-03-29 16:35:06 INFO  TomcatWebServer:90 - Tomcat initialized with port(s): 8088 (http)
+2024-03-29 16:35:06 INFO  ContextLoader:296 - Root WebApplicationContext: initialization completed in 1065 ms
+2024-03-29 16:35:07 INFO  ThreadPoolTaskExecutor:171 - Initializing ExecutorService 'applicationTaskExecutor'
+2024-03-29 16:35:07 INFO  ThreadPoolTaskScheduler:171 - Initializing ExecutorService 'taskScheduler'
+2024-03-29 16:35:08 INFO  DocumentationPluginsBootstrapper:84 - Context refreshed
+2024-03-29 16:35:08 INFO  DocumentationPluginsBootstrapper:87 - Found 1 custom documentation plugin(s)
+2024-03-29 16:35:08 INFO  ApiListingReferenceScanner:44 - Scanning for api listing references
+2024-03-29 16:35:08 INFO  TomcatWebServer:204 - Tomcat started on port(s): 8088 (http) with context path ''
+2024-03-29 16:35:08 INFO  Application:59 - Started Application in 2.864 seconds (JVM running for 3.252)
+2024-03-29 16:35:09 INFO  DispatcherServlet:524 - Initializing Servlet 'dispatcherServlet'
+2024-03-29 16:35:09 INFO  DispatcherServlet:546 - Completed initialization in 5 ms
+2024-03-29 16:35:09 INFO  itemsController:127 - 接收参数"123"
+2024-03-29 16:35:09 INFO  HikariDataSource:110 - DateSourceHikariCP - Starting...
+2024-03-29 16:35:09 INFO  HikariDataSource:123 - DateSourceHikariCP - Start completed.
+2024-03-29 16:35:09 INFO  itemsController:136 - "商品详情数据查询成功[]"
+2024-03-29 16:35:10 INFO  itemsController:127 - 接收参数"123"
+2024-03-29 16:35:10 INFO  itemsController:136 - "商品详情数据查询成功[]"
+2024-03-29 16:35:10 INFO  itemsController:127 - 接收参数"123"
+2024-03-29 16:35:10 INFO  itemsController:136 - "商品详情数据查询成功[]"
+2024-03-29 16:35:19 INFO  itemsController:127 - 接收参数"cack-1001"
+2024-03-29 16:35:19 INFO  itemsController:136 - "商品详情数据查询成功[]"
+2024-03-29 16:35:25 INFO  itemsController:127 - 接收参数"cake-1001"
+2024-03-29 16:35:25 INFO  itemsController:136 - "商品详情数据查询成功[{\"commentLevel\":1,\"content\":\"很棒\",\"createdTime\":\"2019-07-22 09:55:05\",\"sepcName\":\"草莓味\"},{\"commentLevel\":1,\"content\":\"非常不错！~\",\"createdTime\":\"2019-07-22 09:55:05\",\"sepcName\":\"香草味\"},{\"commentLevel\":1,\"content\":\"非常好吃\",\"createdTime\":\"2019-07-22 09:55:05\",\"sepcName\":\"原味\"},{\"commentLevel\":1,\"content\":\"非常好吃\",\"createdTime\":\"2019-07-22 09:55:05\",\"sepcName\":\"香草味\"},{\"commentLevel\":1,\"content\":\"非常好吃\",\"createdTime\":\"2019-07-22 09:55:05\",\"sepcName\":\"原味\"},{\"commentLevel\":1,\"content\":\"非常好吃\",\"createdTime\":\"2019-07-22 09:55:05\",\"sepcName\":\"原味\"},{\"commentLevel\":1,\"content\":\"非常好吃\",\"createdTime\":\"2019-07-22 09:55:05\",\"sepcName\":\"原味\"},{\"commentLevel\":1,\"content\":\"非常好吃\",\"createdTime\":\"2019-07-22 09:55:05\",\"sepcName\":\"原味\"},{\"commentLevel\":1,\"content\":\"非常好吃\",\"createdTime\":\"2019-07-22 09:55:05\",\"sepcName\":\"原味\"},{\"commentLevel\":1,\"content\":\"非常好吃\",\"createdTime\":\"2019-07-22 09:55:05\",\"sepcName\":\"原味\"},{\"commentLevel\":1,\"content\":\"非常好吃\",\"createdTime\":\"2019-07-22 09:55:05\",\"sepcName\":\"原味\"},{\"commentLevel\":1,\"content\":\"非常好吃\",\"createdTime\":\"2019-07-22 09:55:05\",\"sepcName\":\"原味\"},{\"commentLevel\":1,\"content\":\"非常好吃\",\"createdTime\":\"2019-07-22 09:55:05\",\"sepcName\":\"原味\"},{\"commentLevel\":1,\"content\":\"非常好吃\",\"createdTime\":\"2019-07-22 09:55:05\",\"sepcName\":\"原味\"}]"
+2024-03-29 16:35:40 INFO  ThreadPoolTaskScheduler:208 - Shutting down ExecutorService 'taskScheduler'
+2024-03-29 16:35:40 INFO  ThreadPoolTaskExecutor:208 - Shutting down ExecutorService 'applicationTaskExecutor'
+2024-03-29 16:35:40 INFO  HikariDataSource:350 - DateSourceHikariCP - Shutdown initiated...
+2024-03-29 16:35:40 INFO  HikariDataSource:352 - DateSourceHikariCP - Shutdown completed.
+2024-03-29 16:35:42 INFO  Version:21 - HV000001: Hibernate Validator 6.0.16.Final
+2024-03-29 16:35:42 INFO  Application:50 - Starting Application on daxindeMacBook-Pro.local with PID 25937 (/Users/daxin/Documents/code/tiantian/foodie-dev-api/target/classes started by daxin in /Users/daxin/Documents/code/tiantian)
+2024-03-29 16:35:42 INFO  Application:679 - The following profiles are active: dev
+2024-03-29 16:35:42 INFO  RepositoryConfigurationDelegate:244 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2024-03-29 16:35:42 INFO  RepositoryConfigurationDelegate:126 - Bootstrapping Spring Data repositories in DEFAULT mode.
+2024-03-29 16:35:42 INFO  RepositoryConfigurationDelegate:182 - Finished Spring Data repository scanning in 3ms. Found 0 repository interfaces.
+2024-03-29 16:35:43 INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$399b7258] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-03-29 16:35:43 INFO  TomcatWebServer:90 - Tomcat initialized with port(s): 8088 (http)
+2024-03-29 16:35:43 INFO  ContextLoader:296 - Root WebApplicationContext: initialization completed in 1020 ms
+2024-03-29 16:35:44 INFO  ThreadPoolTaskExecutor:171 - Initializing ExecutorService 'applicationTaskExecutor'
+2024-03-29 16:35:44 INFO  ThreadPoolTaskScheduler:171 - Initializing ExecutorService 'taskScheduler'
+2024-03-29 16:35:44 INFO  DocumentationPluginsBootstrapper:84 - Context refreshed
+2024-03-29 16:35:44 INFO  DocumentationPluginsBootstrapper:87 - Found 1 custom documentation plugin(s)
+2024-03-29 16:35:44 INFO  ApiListingReferenceScanner:44 - Scanning for api listing references
+2024-03-29 16:35:44 INFO  TomcatWebServer:204 - Tomcat started on port(s): 8088 (http) with context path ''
+2024-03-29 16:35:44 INFO  Application:59 - Started Application in 2.706 seconds (JVM running for 3.081)
+2024-03-29 16:35:49 INFO  DispatcherServlet:524 - Initializing Servlet 'dispatcherServlet'
+2024-03-29 16:35:49 INFO  DispatcherServlet:546 - Completed initialization in 6 ms
+2024-03-29 16:35:49 INFO  itemsController:127 - 接收参数"cake-1001"
+2024-03-29 16:35:49 INFO  HikariDataSource:110 - DateSourceHikariCP - Starting...
+2024-03-29 16:35:49 INFO  HikariDataSource:123 - DateSourceHikariCP - Start completed.
+2024-03-29 16:35:49 INFO  itemsController:136 - "商品详情数据查询成功[{\"commentLevel\":1,\"content\":\"很棒\",\"createdTime\":\"2019-07-22 09:55:05\",\"sepcName\":\"草莓味\"},{\"commentLevel\":1,\"content\":\"非常不错！~\",\"createdTime\":\"2019-07-22 09:55:05\",\"sepcName\":\"香草味\"},{\"commentLevel\":1,\"content\":\"非常好吃\",\"createdTime\":\"2019-07-22 09:55:05\",\"sepcName\":\"原味\"},{\"commentLevel\":1,\"content\":\"非常好吃\",\"createdTime\":\"2019-07-22 09:55:05\",\"sepcName\":\"香草味\"},{\"commentLevel\":1,\"content\":\"非常好吃\",\"createdTime\":\"2019-07-22 09:55:05\",\"sepcName\":\"原味\"},{\"commentLevel\":1,\"content\":\"非常好吃\",\"createdTime\":\"2019-07-22 09:55:05\",\"sepcName\":\"原味\"},{\"commentLevel\":1,\"content\":\"非常好吃\",\"createdTime\":\"2019-07-22 09:55:05\",\"sepcName\":\"原味\"},{\"commentLevel\":1,\"content\":\"非常好吃\",\"createdTime\":\"2019-07-22 09:55:05\",\"sepcName\":\"原味\"},{\"commentLevel\":1,\"content\":\"非常好吃\",\"createdTime\":\"2019-07-22 09:55:05\",\"sepcName\":\"原味\"},{\"commentLevel\":1,\"content\":\"非常好吃\",\"createdTime\":\"2019-07-22 09:55:05\",\"sepcName\":\"原味\"},{\"commentLevel\":1,\"content\":\"非常好吃\",\"createdTime\":\"2019-07-22 09:55:05\",\"sepcName\":\"原味\"},{\"commentLevel\":1,\"content\":\"非常好吃\",\"createdTime\":\"2019-07-22 09:55:05\",\"sepcName\":\"原味\"},{\"commentLevel\":1,\"content\":\"非常好吃\",\"createdTime\":\"2019-07-22 09:55:05\",\"sepcName\":\"原味\"},{\"commentLevel\":1,\"content\":\"非常好吃\",\"createdTime\":\"2019-07-22 09:55:05\",\"sepcName\":\"原味\"}]"
