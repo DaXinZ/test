@@ -26,8 +26,10 @@
         LEFT JOIN users
                   ON  items_comments.user_id  = users.id
     WHERE
-      items_comments.item_id = #{itemId}
+      items_comments.item_id = #{pramsMap.itemId}
+      <if test="pramsMap.level != null and pramsMap.level  != '' ">
       AND
-      items_comments.comment_level = 1
+      items_comments.comment_level = #{pramsMap.level}
+      </if>
   </select>
 </mapper>

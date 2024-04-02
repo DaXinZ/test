@@ -8,6 +8,7 @@ import com.imooc.pojo.vo.GetevaluateVO;
 import com.imooc.service.ItemService;
 import com.imooc.service.ItemsService;
 import com.imooc.utils.IMOOCJSONResult;
+import com.imooc.utils.PagedGridResult;
 import com.imooc.utils.StringRandom;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
@@ -28,7 +29,7 @@ import java.util.List;
 @Api(value = "商品接口", tags = {"商品信息展示的相关接口"})
 @RestController
 @RequestMapping("items")
-public class itemsController {
+public class itemsController extends  BaseController{
      @Autowired
      private ItemService itemService;
 
@@ -119,21 +120,38 @@ public class itemsController {
     @GetMapping("/comments{itemId}")
     public IMOOCJSONResult comments(
             @ApiParam(name = "itemId",value =  "商品id",required = true)
-            @RequestParam String itemId){
+            @RequestParam String itemId,
+            @ApiParam(name = "level",value =  "评价等级",required = false)
+            @RequestParam Integer level,
+
+            @ApiParam(name = "page",value =  "查询下一页的第几页",required = false)
+            @RequestParam Integer page,
+
+            @ApiParam(name = "pageSize",value =  "每一页的条数",required = false)
+            @RequestParam Integer pageSize)
+
+ {
         StringRandom treceid = new StringRandom();
         IMOOCJSONResult imoocjsonResult = new IMOOCJSONResult();
         imoocjsonResult.setTrceid(treceid.getStringRandom());
 
-        logger.info("商品评价接受请求" +    JSON.toJSONString(itemId));
+        logger.info("商品评价接受请求" +    JSON.toJSONString(itemId+level+page+pageSize));
         if (StringUtils.isBlank(itemId)){
             logger.info(JSON.toJSONString(itemId));
             return IMOOCJSONResult.errorMsg("id为空");
         }
+        if (page == null){
+            page = 1;
+        }
+        if (pageSize == null){
+         pageSize = COMMENT_PAGE_SIZE;
+        }
 
-        List<GetevaluateVO> myGetevaluateList = itemsService.queryGetevaluate(itemId);
+
+        PagedGridResult myGetevaluateList = itemsService.queryGetevaluate(itemId,level,page,pageSize);
 
         String mygetevaluateList = JSON.toJSONString(myGetevaluateList);
-        logger.info( JSON.toJSONString("商品详情数据查询成功"+ mygetevaluateList));
+        logger.info( JSON.toJSONString("商品评价数据查询成功"+ mygetevaluateList));
         return IMOOCJSONResult.ok(myGetevaluateList);
     }
 

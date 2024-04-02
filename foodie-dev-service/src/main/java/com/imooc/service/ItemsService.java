@@ -2,6 +2,7 @@ package com.imooc.service;
 
 
 import com.imooc.pojo.vo.GetevaluateVO;
+import com.imooc.utils.PagedGridResult;
 
 import java.util.List;
 
@@ -14,11 +15,13 @@ public interface ItemsService {
 
 
     /**
-     * 查询商品评价数据
+     * 根据商品id查询商品评价
      * @param itemId
+     * @param level
      * @return
      */
-    public List<GetevaluateVO>   queryGetevaluate(String itemId);
+    public PagedGridResult queryGetevaluate(String itemId, Integer level,
+                                            Integer page, Integer pageSize);
 
 
 }
