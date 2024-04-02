@@ -6,6 +6,7 @@ import com.github.pagehelper.PageInfo;
 import com.imooc.mapper.ItemsMapperCustom;
 import com.imooc.pojo.vo.GetevaluateVO;
 import com.imooc.service.ItemsService;
+import com.imooc.utils.DesensitizationUtil;
 import com.imooc.utils.PagedGridResult;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -41,7 +42,10 @@ public class ItemsServiceImpl implements ItemsService {
 
         PageHelper.startPage(page,pageSize);
         List<GetevaluateVO> list = itemsCustomMapper.queryGetevaluate(map);
+        for (GetevaluateVO vo : list){
+            vo.setNickname(DesensitizationUtil.commonDisplay(vo.getNickname()));
 
+        }
         PageInfo<?> pagelist = new PageInfo<>(list);
         PagedGridResult  grid = new PagedGridResult();
         grid.setPage(page);
