@@ -1,0 +1,9 @@
+2024-04-18 14:36:20 INFO  Version:21 - HV000001: Hibernate Validator 6.0.16.Final
+2024-04-18 14:36:21 INFO  Application:50 - Starting Application on daxindeMacBook-Pro.local with PID 72218 (/Users/daxin/Documents/code/tiantian/foodie-dev-api/target/classes started by daxin in /Users/daxin/Documents/code/tiantian)
+2024-04-18 14:36:21 INFO  Application:679 - The following profiles are active: dev
+2024-04-18 14:36:21 INFO  RepositoryConfigurationDelegate:244 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2024-04-18 14:36:21 INFO  RepositoryConfigurationDelegate:126 - Bootstrapping Spring Data repositories in DEFAULT mode.
+2024-04-18 14:36:21 INFO  RepositoryConfigurationDelegate:182 - Finished Spring Data repository scanning in 5ms. Found 0 repository interfaces.
+2024-04-18 14:36:22 INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$8cc4ece1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-04-18 14:36:22 INFO  TomcatWebServer:90 - Tomcat initialized with port(s): 8088 (http)
+2024-04-18 14:36:22 INFO  ContextLoader:296 - Root WebApplicationContext: initialization completed in 1388 ms

@@ -1,0 +1,14 @@
+2024-04-12 14:25:49 INFO  HelloController:132 - 查询用户呢称返回的数据 []
+2024-04-12 14:25:49 INFO  CookieUtils:210 - ========== domainName: localhost ==========
+2024-04-12 14:25:49 INFO  HelloController:189 - {"face":"https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201901%2F22%2F20190122075852_qqpst.thumb.400_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1637226059&t=44137c685590cefc784c8426b088c54f","id":"240412A8A6NZGWBC","nickname":"上官懿","sex":2,"username":"659"}
+2024-04-12 14:25:50 INFO  HelloController:132 - 查询用户呢称返回的数据 []
+2024-04-12 14:25:50 INFO  CookieUtils:210 - ========== domainName: localhost ==========
+2024-04-12 14:25:50 INFO  HelloController:189 - {"face":"https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201901%2F22%2F20190122075852_qqpst.thumb.400_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1637226059&t=44137c685590cefc784c8426b088c54f","id":"240412A8AAW9YAY8","nickname":"彭仲","sex":2,"username":"542"}
+2024-04-12 14:25:50 INFO  HelloController:132 - 查询用户呢称返回的数据 []
+2024-04-12 14:25:50 INFO  HelloController:164 - "用户名已存在924"
+2024-04-12 14:25:51 INFO  HelloController:132 - 查询用户呢称返回的数据 [{"createdTime":"2024-04-12 14:21:18","id":"240412A6W1F07540","nickName":"东方孤影","userName":"679"}]
+2024-04-12 14:25:51 INFO  HelloController:138 - 取值出来的数据东方孤影
+2024-04-12 14:25:51 INFO  HelloController:140 - "当前名字已存在，请修改东方孤影"
+2024-04-12 14:25:52 INFO  HelloController:132 - 查询用户呢称返回的数据 []
+2024-04-12 14:25:52 INFO  CookieUtils:210 - ========== domainName: localhost ==========
+2024-04-12 14:25:52 INFO  HelloController:189 - {"face":"https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201901%2F22%2F20190122075852_qqpst.thumb.400_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1637226059&t=44137c685590cefc784c8426b088c54f","id":"240412A8ARZNAGF8","nickname":"司迁娇气","sex":2,"username":"730"}

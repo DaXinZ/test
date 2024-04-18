@@ -13,7 +13,7 @@
     <result column="nickname" property="nickname" jdbcType="INTEGER" />
   </resultMap>
 
-  <select id = "queryGetevaluate" resultMap="myGetevaluateVO" parameterType="String">
+  <select id = "queryGetevaluate" resultMap="myGetevaluateVO" parameterType="map">
     SELECT
       items_comments.comment_level as commentLevel,
       items_comments.content as content,

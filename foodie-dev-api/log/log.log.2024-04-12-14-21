@@ -1,0 +1,35 @@
+2024-04-12 14:21:17 INFO  HelloController:132 - 查询用户呢称返回的数据 []
+2024-04-12 14:21:17 INFO  CookieUtils:210 - ========== domainName: localhost ==========
+2024-04-12 14:21:17 INFO  HelloController:189 - {"face":"https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201901%2F22%2F20190122075852_qqpst.thumb.400_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1637226059&t=44137c685590cefc784c8426b088c54f","id":"240412A6W1F07540","nickname":"东方孤影","sex":2,"username":"679"}
+2024-04-12 14:21:18 INFO  HelloController:132 - 查询用户呢称返回的数据 []
+2024-04-12 14:21:18 INFO  CookieUtils:210 - ========== domainName: localhost ==========
+2024-04-12 14:21:18 INFO  HelloController:189 - {"face":"https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201901%2F22%2F20190122075852_qqpst.thumb.400_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1637226059&t=44137c685590cefc784c8426b088c54f","id":"240412A6W4RB5968","nickname":"卜阳","sex":2,"username":"499"}
+2024-04-12 14:21:18 INFO  HelloController:132 - 查询用户呢称返回的数据 []
+2024-04-12 14:21:18 INFO  CookieUtils:210 - ========== domainName: localhost ==========
+2024-04-12 14:21:18 INFO  HelloController:189 - {"face":"https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201901%2F22%2F20190122075852_qqpst.thumb.400_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1637226059&t=44137c685590cefc784c8426b088c54f","id":"240412A6W6MRK0BC","nickname":"司寇囍佳","sex":2,"username":"700"}
+2024-04-12 14:21:19 INFO  HelloController:132 - 查询用户呢称返回的数据 []
+2024-04-12 14:21:19 INFO  CookieUtils:210 - ========== domainName: localhost ==========
+2024-04-12 14:21:19 INFO  HelloController:189 - {"face":"https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201901%2F22%2F20190122075852_qqpst.thumb.400_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1637226059&t=44137c685590cefc784c8426b088c54f","id":"240412A6W9G8WMY8","nickname":"吴幻","sex":2,"username":"416"}
+2024-04-12 14:21:19 INFO  HelloController:132 - 查询用户呢称返回的数据 []
+2024-04-12 14:21:19 INFO  CookieUtils:210 - ========== domainName: localhost ==========
+2024-04-12 14:21:19 INFO  HelloController:189 - {"face":"https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201901%2F22%2F20190122075852_qqpst.thumb.400_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1637226059&t=44137c685590cefc784c8426b088c54f","id":"240412A6WB298094","nickname":"诸葛慈","sex":2,"username":"545"}
+2024-04-12 14:21:20 INFO  HelloController:132 - 查询用户呢称返回的数据 []
+2024-04-12 14:21:20 INFO  CookieUtils:210 - ========== domainName: localhost ==========
+2024-04-12 14:21:20 INFO  HelloController:189 - {"face":"https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201901%2F22%2F20190122075852_qqpst.thumb.400_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1637226059&t=44137c685590cefc784c8426b088c54f","id":"240412A6WDSA8Y3C","nickname":"吴暗夜","sex":2,"username":"837"}
+2024-04-12 14:21:20 INFO  HelloController:132 - 查询用户呢称返回的数据 []
+2024-04-12 14:21:20 INFO  CookieUtils:210 - ========== domainName: localhost ==========
+2024-04-12 14:21:20 INFO  HelloController:189 - {"face":"https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201901%2F22%2F20190122075852_qqpst.thumb.400_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1637226059&t=44137c685590cefc784c8426b088c54f","id":"240412A6WG84HY3C","nickname":"李芷香","sex":2,"username":"362"}
+2024-04-12 14:21:21 INFO  HelloController:132 - 查询用户呢称返回的数据 []
+2024-04-12 14:21:21 INFO  CookieUtils:210 - ========== domainName: localhost ==========
+2024-04-12 14:21:21 INFO  HelloController:189 - {"face":"https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201901%2F22%2F20190122075852_qqpst.thumb.400_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1637226059&t=44137c685590cefc784c8426b088c54f","id":"240412A6WMKKG44H","nickname":"端木公","sex":2,"username":"801"}
+2024-04-12 14:21:22 INFO  HelloController:132 - 查询用户呢称返回的数据 []
+2024-04-12 14:21:22 INFO  CookieUtils:210 - ========== domainName: localhost ==========
+2024-04-12 14:21:22 INFO  HelloController:189 - {"face":"https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201901%2F22%2F20190122075852_qqpst.thumb.400_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1637226059&t=44137c685590cefc784c8426b088c54f","id":"240412A6WR6713MW","nickname":"申屠碎梦","sex":2,"username":"379"}
+2024-04-12 14:21:22 INFO  HelloController:132 - 查询用户呢称返回的数据 []
+2024-04-12 14:21:22 INFO  CookieUtils:210 - ========== domainName: localhost ==========
+2024-04-12 14:21:22 INFO  HelloController:189 - {"face":"https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201901%2F22%2F20190122075852_qqpst.thumb.400_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1637226059&t=44137c685590cefc784c8426b088c54f","id":"240412A6WW6SXB54","nickname":"司马白狐","sex":2,"username":"89"}
+2024-04-12 14:21:39 INFO  HelloController:94 - trceid:T2AAf4FU0O1f4KP8a6369iOV0L	 用户名已存在
+2024-04-12 14:21:51 INFO  HelloController:85 - 接受入参"司马白狐"
+2024-04-12 14:21:51 INFO  HelloController:97 - 请求成功返回参数如下[{"createdTime":"2024-04-12 14:21:23","id":"240412A6WW6SXB54","nickName":"司马白狐","userName":"89"}]
+2024-04-12 14:21:54 INFO  HelloController:85 - 接受入参"司马"
+2024-04-12 14:21:54 INFO  HelloController:97 - 请求成功返回参数如下[{"createdTime":"2024-03-28 15:35:18","id":"240328B3AS55WC28","nickName":"司马大新","userName":"11231123"},{"createdTime":"2024-04-12 14:21:23","id":"240412A6WW6SXB54","nickName":"司马白狐","userName":"89"}]
