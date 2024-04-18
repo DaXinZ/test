@@ -5,6 +5,7 @@ import com.imooc.enums.CommentLevel;
 import com.imooc.mapper.*;
 import com.imooc.pojo.*;
 import com.imooc.pojo.vo.CommentLevelCommensVo;
+import com.imooc.pojo.vo.commodityVo;
 import com.imooc.service.ItemService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -93,5 +94,13 @@ public class ItemServiceImpl implements ItemService {
 
 
         return  itemsCommentsMapper.selectCount(conditon);
+    }
+
+    @Transactional(propagation = Propagation.SUPPORTS)
+    @Override
+    public List<commodityVo> queryItemsByKeywords(String keywords, String sort, Integer pgae, Integer pageSize) {
+
+
+        return null;
     }
 }

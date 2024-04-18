@@ -2,6 +2,7 @@ package com.imooc.service;
 
 import com.imooc.pojo.*;
 import com.imooc.pojo.vo.CommentLevelCommensVo;
+import com.imooc.pojo.vo.commodityVo;
 
 import java.util.List;
 
@@ -46,6 +47,16 @@ public interface ItemService {
      * @param itemId
      */
     public CommentLevelCommensVo queryCommentCounts(String itemId);
+
+    /**
+     * 搜索商品列表
+     * @param keywords
+     * @param sort
+     * @param pgae
+     * @param pageSize
+     * @return
+     */
+    public List<commodityVo> queryItemsByKeywords(String keywords, String sort,Integer pgae,Integer pageSize);
 
 
 }
