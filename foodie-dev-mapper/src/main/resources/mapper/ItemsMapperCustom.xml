@@ -33,7 +33,7 @@
       </if>
   </select>
 
-  <select id = "queryitems" resultType="com.imooc.pojo.vo.commodityVo" parameterType="map">
+  <select id = "queryItemsByKeywords" resultType="com.imooc.pojo.vo.commodityVo" parameterType="map">
     SELECT
       i.id AS itemId,
       i.item_name AS itemName,
@@ -61,10 +61,10 @@
      order by
          <choose>
 
-           <when test="pramsMap.sort == 'c'">
+           <when test="pramsMap.sort == &quot;c&quot; ">
              i.sell_counts DESC
            </when>
-          <when test="pramsMap.sort == 'p'">
+          <when test="pramsMap.sort == &quot;p&quot;">
             tempSpec.price_discount DESC
           </when>
            <otherwise>

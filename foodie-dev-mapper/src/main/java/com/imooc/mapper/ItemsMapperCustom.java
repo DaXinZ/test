@@ -1,6 +1,7 @@
 package com.imooc.mapper;
 
 import com.imooc.pojo.vo.GetevaluateVO;
+import com.imooc.pojo.vo.commodityVo;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 
@@ -15,4 +16,11 @@ public interface ItemsMapperCustom {
      * @return
      */
     public List<GetevaluateVO> queryGetevaluate(@Param("pramsMap") Map<String, Object> map);
+
+    /**
+     * 查询评价相关数据总数
+     * @param map
+     * @return
+     */
+    public List<commodityVo> queryItemsByKeywords(@Param("pramsMap") Map<String, Object> map);
 }

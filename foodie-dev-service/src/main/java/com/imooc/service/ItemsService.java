@@ -1,10 +1,7 @@
 package com.imooc.service;
 
 
-import com.imooc.pojo.vo.GetevaluateVO;
 import com.imooc.utils.PagedGridResult;
-
-import java.util.List;
 
 /**
  * Date: 2022/3/15 2:20 下午
@@ -22,6 +19,17 @@ public interface ItemsService {
      */
     public PagedGridResult queryGetevaluate(String itemId, Integer level,
                                             Integer page, Integer pageSize);
+
+    /**
+     * 搜索商品列表
+     *
+     * @param catId
+     * @param sort
+     * @param pgae
+     * @param pageSize
+     * @return
+     */
+    public PagedGridResult queryItemsByKeywords(Integer catId, String sort, Integer page, Integer pageSize);
 
 
 }

@@ -5,6 +5,7 @@ import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 import com.imooc.mapper.ItemsMapperCustom;
 import com.imooc.pojo.vo.GetevaluateVO;
+import com.imooc.pojo.vo.commodityVo;
 import com.imooc.service.ItemsService;
 import com.imooc.utils.DesensitizationUtil;
 import com.imooc.utils.PagedGridResult;
@@ -53,10 +54,10 @@ public class ItemsServiceImpl implements ItemsService {
         grid.setTotal(pagelist.getPages());
         grid.setRecords(pagelist.getTotal());
 
-        return settpageGrod(list,page);
+        return settpageGrodid(list,page);
     }
 
-    private PagedGridResult settpageGrod(List<?> list,Integer page){
+    private PagedGridResult settpageGrodid(List<?> list, Integer page){
 
         PageInfo<?> pagelist = new PageInfo<>(list);
         PagedGridResult  grid = new PagedGridResult();
@@ -65,5 +66,16 @@ public class ItemsServiceImpl implements ItemsService {
         grid.setTotal(pagelist.getPages());
         grid.setRecords(pagelist.getTotal());
         return grid;
+    }
+    @Transactional(propagation = Propagation.SUPPORTS)
+    @Override
+    public PagedGridResult queryItemsByKeywords(Integer catId, String sort, Integer page, Integer pageSize) {
+        Map<String, Object> map = new HashMap<>();
+        map.put("catid",catId);
+        map.put("sort",sort);
+        PageHelper.startPage(page,pageSize);
+     List<commodityVo> list = itemsCustomMapper.queryItemsByKeywords(map);
+
+        return settpageGrodid(list,page);
     }
 }

@@ -48,15 +48,5 @@ public interface ItemService {
      */
     public CommentLevelCommensVo queryCommentCounts(String itemId);
 
-    /**
-     * 搜索商品列表
-     * @param keywords
-     * @param sort
-     * @param pgae
-     * @param pageSize
-     * @return
-     */
-    public List<commodityVo> queryItemsByKeywords(String keywords, String sort,Integer pgae,Integer pageSize);
-
 
 }

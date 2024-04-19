@@ -4,7 +4,6 @@ import com.alibaba.fastjson.JSON;
 import com.imooc.pojo.*;
 import com.imooc.pojo.vo.CommentLevelCommensVo;
 import com.imooc.pojo.vo.IteminfoVo;
-import com.imooc.pojo.vo.GetevaluateVO;
 import com.imooc.service.ItemService;
 import com.imooc.service.ItemsService;
 import com.imooc.utils.IMOOCJSONResult;
@@ -153,6 +152,48 @@ public class itemsController extends  BaseController{
         String mygetevaluateList = JSON.toJSONString(myGetevaluateList);
         logger.info( JSON.toJSONString("商品评价数据查询成功"+ mygetevaluateList));
         return IMOOCJSONResult.ok(myGetevaluateList);
+    }
+
+
+    @ApiOperation(value = "搜索商品列表", notes = "搜索商品列表", httpMethod = "GET")
+    @GetMapping("/catItems")
+    public IMOOCJSONResult search(
+            @ApiParam(name = "catId",value =  "分类id",required = true)
+            @RequestParam Integer catId,
+            @ApiParam(name = "sort",value =  "排序",required = false)
+            @RequestParam String sort,
+
+            @ApiParam(name = "page",value =  "查询下一页的第几页",required = false)
+            @RequestParam Integer page,
+
+            @ApiParam(name = "pageSize",value =  "每一页的条数",required = false)
+            @RequestParam Integer pageSize)
+
+    {
+        StringRandom treceid = new StringRandom();
+        IMOOCJSONResult imoocjsonResult = new IMOOCJSONResult();
+        imoocjsonResult.setTrceid(treceid.getStringRandom());
+
+        logger.info("商品评价接受请求" +    JSON.toJSONString(catId+sort+page+pageSize));
+        if (catId == null){
+            logger.info(JSON.toJSONString(catId));
+            return IMOOCJSONResult.errorMsg("id为空");
+        }
+        if (page == null){
+            page = 1;
+        }
+        if (pageSize == null){
+            pageSize = COMMENT_PAGE_SIZE;
+        }
+
+
+
+
+        PagedGridResult search =itemsService.queryItemsByKeywords(catId,sort,page,pageSize);
+
+        String mygetevaluateList = JSON.toJSONString(search);
+        logger.info( JSON.toJSONString("商品评价数据查询成功"+ mygetevaluateList));
+        return IMOOCJSONResult.ok(search);
     }
 
 

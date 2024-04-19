@@ -1,6 +1,7 @@
 package com.imooc.service.impl;
 
 
+import com.github.pagehelper.PageHelper;
 import com.imooc.enums.CommentLevel;
 import com.imooc.mapper.*;
 import com.imooc.pojo.*;
@@ -13,7 +14,9 @@ import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
 import tk.mybatis.mapper.entity.Example;
 
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 
 @Service
@@ -94,13 +97,5 @@ public class ItemServiceImpl implements ItemService {
 
 
         return  itemsCommentsMapper.selectCount(conditon);
-    }
-
-    @Transactional(propagation = Propagation.SUPPORTS)
-    @Override
-    public List<commodityVo> queryItemsByKeywords(String keywords, String sort, Integer pgae, Integer pageSize) {
-
-
-        return null;
     }
 }
