@@ -29,7 +29,9 @@ import org.springframework.web.bind.annotation.RequestParam;
 import tk.mybatis.mapper.entity.Example;
 
 import java.util.Date;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import static com.imooc.utils.MD5Utils.getMD5Str;
 
@@ -186,5 +188,15 @@ public class UserServiceImp implements UserService {
     }
 
 
-
+    @Override
+    public List<UsersVO> queryUsertow(String id, String nickname, String username, Integer sex,String sort) {
+        Map<String,Object> map = new HashMap<>();
+        map.put("id",id);
+        map.put("nickname",nickname);
+        map.put("username",username);
+        map.put("sex",sex);
+        map.put("sort",sort);
+        List<UsersVO> usersVOS =  usersMapperCustom.queryUsertow(map);
+        return usersVOS;
+    }
 }

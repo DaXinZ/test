@@ -60,5 +60,7 @@ public interface  UserService {
      */
     public List<UsersVO>  queryUsername(String nickname);
 
+    public List<UsersVO>  queryUsertow(String id,String nickname,String username,Integer sex,String sort);
+
 
 }

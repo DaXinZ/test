@@ -13,6 +13,15 @@ public class UsersVO {
     private String nickName;
     private String createdTime;
 
+    private Integer sex;
+
+    public Integer getSex() {
+        return sex;
+    }
+
+    public void setSex(Integer sex) {
+        this.sex = sex;
+    }
 
     public String getId() {
         return id;

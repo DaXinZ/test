@@ -4,8 +4,10 @@ import com.imooc.my.mapper.MyMapper;
 import com.imooc.pojo.Users;
 import com.imooc.pojo.vo.UsersVO;
 import org.apache.ibatis.annotations.Mapper;
+import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
+import java.util.Map;
 
 @Mapper
 public interface UsersMapperCustom {
@@ -23,5 +25,17 @@ public interface UsersMapperCustom {
      * @return  根据用户昵称查询用户信息
      */
     public List<UsersVO>  queryUsername(String nikename);
+
+
+    /**
+     *  用户信息整合查询接口
+     * @param id
+     * @param nikename
+     * @param username
+     * @param sex
+     * @param sort
+     * @return
+     */
+    public List<UsersVO>  queryUsertow(@Param("pramsMap") Map<String, Object> map);
 
 }

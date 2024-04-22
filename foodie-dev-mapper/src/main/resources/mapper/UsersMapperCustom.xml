@@ -43,4 +43,35 @@
   </select>
 
 
+
+
+
+
+  <select id = "queryUsertow" resultType="com.imooc.pojo.vo.UsersVO" parameterType="map">
+    SELECT
+      id,
+      nickname,
+      username,
+      sex,
+      created_time
+    FROM
+      users
+    <choose>
+      <when test="pramsMap.sort == &quot;id&quot; ">
+       WHERE id = #{pramsMap.id}
+      </when>
+      <when test="pramsMap.sort == &quot;username&quot;">
+        WHERE username = #{pramsMap.username}
+      </when>
+      <when test="pramsMap.sort == &quot;sex&quot;">
+        WHERE sex = #{pramsMap.sex}
+      </when>
+      <when test="pramsMap.sort == &quot;nickname&quot;">
+        WHERE nickname = #{pramsMap.nickname}
+      </when>
+    </choose>
+
+  </select>
+
+
 </mapper>

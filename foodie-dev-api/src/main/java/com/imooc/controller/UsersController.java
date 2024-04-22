@@ -25,7 +25,7 @@ import org.springframework.web.bind.annotation.*;
 import java.math.BigDecimal;
 import java.math.BigInteger;
 import java.util.List;
-
+import java.util.Scanner;
 
 
 @Api(value = "用户接口", tags = {"用户相关信息的查询修改接口"})
@@ -100,6 +100,43 @@ public class UsersController  {
    }
 
 
+    @ApiOperation(value = "新整合用户查询接口",notes = "用户昵称",httpMethod = "POST")
+    @PostMapping("/queryUser.json")
+    public IMOOCJSONResult getsuer(
+            @ApiParam(name = "Id",value =  "用户id",required = false)
+            @RequestParam String Id,
+
+            @ApiParam(name = "nickname",value =  "用户昵称",required = false)
+            @RequestParam String nickname,
+
+            @ApiParam(name = "username",value =  "用户名称",required = false)
+            @RequestParam String username,
+
+            @ApiParam(name = "sex",value =  "年龄",required = false)
+            @RequestParam Integer sex,
+
+            @ApiParam(name = "sort",value =  "查询方式",required = true)
+            @RequestParam String sort)
+
+    {
+
+
+        logger.info("接受入参"+JSON.toJSONString(Id+nickname+username+sex+sort));
+        StringRandom test = new StringRandom();
+        IMOOCJSONResult imoocjsonResult = new IMOOCJSONResult();
+        imoocjsonResult.setTrceid(test.getStringRandom());
+        String  trceid  = "trceid:" + imoocjsonResult.setTrceid(test.getStringRandom());
+        if (StringUtils.isBlank(sort))
+        {
+            logger.info("查询方式为空"+JSON.toJSONString(sort));
+            return IMOOCJSONResult.errorMsg("查询方式不能为空");
+        }
+
+        List<UsersVO> list = userService.queryUsertow(Id,nickname,username,sex,sort);
+        logger.info("请求成功返回参数如下"+JSON.toJSONString(list));
+
+        return IMOOCJSONResult.ok(list);
+    }
 
 
 }
