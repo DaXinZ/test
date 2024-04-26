@@ -4,36 +4,27 @@ package com.imooc.service.impl;
 
 
 import bo.UserBo;
-import com.alibaba.fastjson.JSON;
 import com.imooc.enums.Sex;
 import com.imooc.mapper.UsersMapper;
 
 import com.imooc.mapper.UsersMapperCustom;
 import com.imooc.pojo.Users;
 
-import com.imooc.pojo.vo.CategoryVO;
 import com.imooc.pojo.vo.UsersVO;
 import com.imooc.service.UserService;
 
 import com.imooc.utils.*;
-import io.swagger.annotations.ApiOperation;
-import javafx.scene.control.PasswordFieldBuilder;
-import org.apache.commons.lang3.StringUtils;
 import org.n3r.idworker.Sid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestParam;
 import tk.mybatis.mapper.entity.Example;
 
 import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-
-import static com.imooc.utils.MD5Utils.getMD5Str;
 
 /**
  * Date: 2021/9/27 10:43 上午
@@ -198,5 +189,22 @@ public class UserServiceImp implements UserService {
         map.put("sort",sort);
         List<UsersVO> usersVOS =  usersMapperCustom.queryUsertow(map);
         return usersVOS;
+    }
+
+    @Transactional(rollbackFor = Exception.class)
+    @Override
+    public Boolean updetepassword(String id, String password) {
+        Boolean result =  usersMapperCustom.updetepassword(id, password);
+
+
+        return result;
+    }
+
+
+    @Transactional(propagation = Propagation.SUPPORTS)
+    @Override
+    public UsersVO querypassword(String id) {
+
+        return usersMapperCustom.querypassword(id);
     }
 }

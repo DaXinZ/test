@@ -74,4 +74,17 @@
   </select>
 
 
+  <update id="updetepassword" parameterType="com.imooc.pojo.vo.UsersVO">
+
+    UPDATE users SET password = #{password}  WHERE  id  =  #{id};
+
+  </update>
+
+
+
+  <select id = "querypassword" resultMap="querypassword" parameterType="map">
+    SELECT `password` FROM users WHERE id = #{id}
+
+  </select>
+
 </mapper>

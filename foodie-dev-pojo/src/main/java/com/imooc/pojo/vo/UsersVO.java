@@ -15,6 +15,34 @@ public class UsersVO {
 
     private Integer sex;
 
+    private String passowrd;
+
+    private String newpassword;
+
+    public String getNewpassword() {
+        return newpassword;
+    }
+
+    public void setNewpassword(String newpassword) {
+        this.newpassword = newpassword;
+    }
+
+    public String getPassowrd() {
+        return passowrd;
+    }
+
+    public void setPassowrd(String passowrd) {
+        this.passowrd = passowrd;
+    }
+
+    public List<UsersVO> getUsersList() {
+        return usersList;
+    }
+
+    public void setUsersList(List<UsersVO> usersList) {
+        this.usersList = usersList;
+    }
+
     public Integer getSex() {
         return sex;
     }
@@ -63,19 +91,4 @@ public class UsersVO {
     }
 
 
-
-    public void setqueryUsers(List<UsersVO> usersList) {
-        this.usersList = usersList;
-    }
-
-    @Override
-    public String toString() {
-        return "UsersVO{" +
-                "id='" + id + '\'' +
-                ", userName='" + userName + '\'' +
-                ", nickName='" + nickName + '\'' +
-                ", createdTime='" + createdTime + '\'' +
-                ", usersList=" + usersList +
-                '}';
-    }
 }

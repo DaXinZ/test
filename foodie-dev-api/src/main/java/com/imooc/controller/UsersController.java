@@ -139,4 +139,62 @@ public class UsersController  {
     }
 
 
+    @ApiOperation(value = "修改用户密码",notes = "修改密码",httpMethod = "POST")
+    @PostMapping("/updatepassword.json")
+    public IMOOCJSONResult updatepassword(
+            @ApiParam(name = "id",value =  "用户id",required = false)
+            @RequestParam String id,
+
+            @ApiParam(name = "password",value =  "新密码",required = false)
+            @RequestParam String password,
+
+            @ApiParam(name = "newpassword",value =  "原有密码",required = false)
+            @RequestParam String newpassword)
+
+    {
+        logger.info("接受入参"+JSON.toJSONString(id+password+newpassword));
+        if (StringUtils.isBlank(id)){
+            logger.info(JSON.toJSONString(id+"不能为空"));
+            return IMOOCJSONResult.ok("id为空");
+
+        }
+        UsersVO usersVO = new UsersVO();
+        usersVO.setPassowrd(password);
+        usersVO.setNewpassword(newpassword);
+        if (StringUtils.isBlank(password) ||  StringUtils.isBlank(newpassword)){
+            logger.info(JSON.toJSONString("新密码和原有密码不能为空"));
+        }
+
+        try {
+            usersVO.setPassowrd(MD5Utils.getMD5Str(usersVO.getPassowrd()));
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
+        String pass = usersVO.getPassowrd();
+        String newpass = usersVO.getNewpassword();
+        if (pass.equals(newpass)){
+            logger.info("两次输入密码不一致");
+            return IMOOCJSONResult.ok("两次输入密码不一致");
+        }
+
+             UsersVO  pas     = userService.querypassword(id);
+        logger.info(JSON.toJSONString(pas));
+
+        if (pas != null && pas.equals(pass)){
+            logger.info(JSON.toJSONString("新密码和老密码不能一样"));
+        }
+
+
+        boolean new1 =  userService.updetepassword(id,pass);
+         JSON.toJSONString("修改密码成功，新密码为"+pass);
+        return IMOOCJSONResult.ok(new1);
+
+    }
+
+
+
+
+
+
+
 }

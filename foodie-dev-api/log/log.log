@@ -1,10 +1,234 @@
-2024-04-22 14:22:03 WARN  DefaultHandlerExceptionResolver:198 - Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required String parameter 'nickname' is not present]
-2024-04-22 14:22:03 WARN  DefaultHandlerExceptionResolver:198 - Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required String parameter 'nickname' is not present]
-2024-04-22 14:22:19 INFO  HelloController:124 - 接受入参"null"
-2024-04-22 14:22:19 INFO  HelloController:131 - 查询方式为空""
-2024-04-22 14:22:26 INFO  HelloController:124 - 接受入参"2"
-2024-04-22 14:22:26 INFO  HelloController:131 - 查询方式为空""
-2024-04-22 14:22:30 INFO  HelloController:124 - 接受入参"2sex"
-2024-04-22 14:22:30 INFO  HelloController:138 - 请求成功返回参数如下[{"id":"1908017YR51G1XWH","nickName":"上官","sex":2,"userName":"imooc"},{"id":"240126BB78Z29214","nickName":"zhangsa1n","sex":2,"userName":"zhangsa1n"},{"id":"240313D680G6DN9P","nickName":"上官黛萱","sex":2,"userName":"33333"},{"id":"240313D740T35FCH","nickName":"杨黛萱","sex":2,"userName":"DDD"},{"id":"240313DCHNHWFT9P","nickName":"皇甫冷颜","sex":2,"userName":"DD1D"},{"id":"240313F7KRRTN540","nickName":"吕芷香","sex":2,"userName":"dads"},{"id":"240313F8T00KCW4H","nickName":"公仪香","sex":2,"userName":"dad1s"},{"id":"240313FB9Y27P4H0","nickName":"祝懿","sex":2,"userName":"da1d1s"},{"id":"240313FC19DY8NHH","nickName":"彭落落","sex":2,"userName":"da1d11s"},{"id":"240315A3AP1DK1P0","nickName":"卜呦嘿","sex":2,"userName":"daxin"},{"id":"240315APFYTMR0BC","nickName":"张暗","sex":2,"userName":"daxin1111"},{"id":"240328AD54RNFY80","nickName":"方奈川","sex":2,"userName":"123123"},{"id":"240328AKCYR2Y98H","nickName":"上官","sex":2,"userName":"12333"},{"id":"240328ANWS7Y4F14","nickName":"上官","sex":2,"userName":"123333"},{"id":"240328ARM4DPK4M8","nickName":"上官","sex":2,"userName":"1233333"},{"id":"240328ARY9PFD7HH","nickName":"上官","sex":2,"userName":"12333333"},{"id":"240328ATXC194BR4","nickName":"秋凌霄","sex":2,"userName":"123333333"},{"id":"240328AZS4TZFY80","nickName":"慕容云舒","sex":2,"userName":"1231333"},{"id":"240328B2BBTNFD68","nickName":"士孙呦嘿","sex":2,"userName":"12311333"},{"id":"240328B33Y7SSCX4","nickName":"方慈","sex":2,"userName":"1231123"},{"id":"240328B3AS55WC28","nickName":"司马大新","sex":2,"userName":"11231123"},{"id":"240328B5TRXWM6NC","sex":2,"userName":"331"},{"id":"240328B6H0DY0MY8","sex":2,"userName":"331231"},{"id":"240328B6N3H6AGTC","sex":2,"userName":"3311231"},{"id":"240328B70CWNS4PH","sex":2,"userName":"331188231"},{"id":"240328B87WSRBHX4","sex":2,"userName":"331188299931"},{"id":"240328B9023HPTTC","sex":2,"userName":"331188299912321331"},{"id":"240328B9KS5K43XP","sex":2,"userName":"33111912321331"},{"id":"240328B9X3053DKP","sex":2,"userName":"33111131"},{"id":"240328BBS0ZTWWDP","sex":2,"userName":"大新"},{"id":"240328BC12K3AT9P","nickName":"大新","sex":2,"userName":"daxin2"},{"id":"240328BC4RYMKZF8","nickName":"贾暮雪","sex":2,"userName":"daxin3"},{"id":"240328BCM6YZZ0H0","nickName":"祁孤影","sex":2,"userName":"daxin4"},{"id":"240328BFB60K2S14","nickName":"端木幻","sex":2,"userName":"daxin5"},{"id":"240328BZ0TY0F2CH","nickName":"贾暮雪","sex":2,"userName":"da3"},{"id":"240328C2K0KAM614","nickName":"端木仙糖","sex":2,"userName":"123123l"},{"id":"240328C34XXHW8DP","nickName":"东方公","sex":2,"userName":"123123l1"},{"id":"240328C3G9X7MSNC","nickName":"yy","sex":2,"userName":"123123l11"},{"id":"240328C3HYXTX494","nickName":"余懿","sex":2,"userName":"123123l211"},{"id":"24032984BG09X2A8","nickName":"丁雾海","sex":2,"userName":"daxin31"},{"id":"24032989AXM76XKP","nickName":"丁雾海","sex":2,"userName":"daxin21"},{"id":"240412A2YW88R4ZC","nickName":"郑文","sex":2,"userName":"sss"},{"id":"240412A55C4AZN54","nickName":"祝雨烟","sex":2,"userName":"565"},{"id":"240412A55GG216K4","nickName":"皇甫八月","sex":2,"userName":"938"},{"id":"240412A55K6D7RS8","nickName":"钱亮","sex":2,"userName":"192"},{"id":"240412A55YMBDB54","nickName":"马雾海","sex":2,"userName":"349"},{"id":"240412A561CWPZR4","nickName":"元约影","sex":2,"userName":"213"},{"id":"240412A5643CTF80","nickName":"沈云","sex":2,"userName":"42"},{"id":"240412A566M3PYRP","nickName":"凌霄铭","sex":2,"userName":"193"},{"id":"240412A56BFA7C94","nickName":"元桑","sex":2,"userName":"506"},{"id":"240412A56FBB56K4","nickName":"公仪雾海","sex":2,"userName":"559"},{"id":"240412A56K44NA14","nickName":"东方幻","sex":2,"userName":"197"},{"id":"240412A5F5NFCTTC","nickName":"司迁公","sex":2,"userName":"583"},{"id":"240412A5F8XGW3HH","nickName":"太史吟月","sex":2,"userName":"924"},{"id":"240412A5FAM5604H","nickName":"陈晨曦","sex":2,"userName":"451"},{"id":"240412A5FHTHA614","nickName":"司空文","sex":2,"userName":"603"},{"id":"240412A5FN5R0XS8","nickName":"方幻","sex":2,"userName":"267"},{"id":"240412A5FRKW84H0","nickName":"贾公","sex":2,"userName":"447"},{"id":"240412A5FTT7X1P0","nickName":"刘吟月","sex":2,"userName":"598"},{"id":"240412A67Z2Z7SCH","nickName":"丁幻","sex":2,"userName":"940"},{"id":"240412A68KMSDT7C","nickName":"沈幻柏","sex":2,"userName":"157"},{"id":"240412A6W1F07540","nickName":"东方孤影","sex":2,"userName":"679"},{"id":"240412A6W4RB5968","nickName":"卜阳","sex":2,"userName":"499"},{"id":"240412A6W6MRK0BC","nickName":"司寇囍佳","sex":2,"userName":"700"},{"id":"240412A6W9G8WMY8","nickName":"吴幻","sex":2,"userName":"416"},{"id":"240412A6WB298094","nickName":"诸葛慈","sex":2,"userName":"545"},{"id":"240412A6WDSA8Y3C","nickName":"吴暗夜","sex":2,"userName":"837"},{"id":"240412A6WG84HY3C","nickName":"李芷香","sex":2,"userName":"362"},{"id":"240412A6WMKKG44H","nickName":"端木公","sex":2,"userName":"801"},{"id":"240412A6WR6713MW","nickName":"申屠碎梦","sex":2,"userName":"379"},{"id":"240412A6WW6SXB54","nickName":"司马白狐","sex":2,"userName":"89"},{"id":"240412A8A6NZGWBC","nickName":"上官懿","sex":2,"userName":"659"},{"id":"240412A8AAW9YAY8","nickName":"彭仲","sex":2,"userName":"542"},{"id":"240412A8ARZNAGF8","nickName":"司迁娇气","sex":2,"userName":"730"},{"id":"240412AA9W8KD6K4","nickName":"祁娇气","sex":2,"userName":"514"},{"id":"240412AGWWYFMYY8","nickName":"冯茶栀","sex":2,"userName":"3"},{"id":"240412AGX0GRZ91P","nickName":"蒋芷香","sex":2,"userName":"21"},{"id":"240412AGX3AZP37C","nickName":"上官星辰","sex":2,"userName":"707"},{"id":"240412AGZD5XD58H","nickName":"韩香","sex":2,"userName":"12"},{"id":"240412AHR3G2MB7C","nickName":"姚公","sex":2,"userName":"870"},{"id":"240412AHSBN2H9S8","nickName":"赵娇气","sex":2,"userName":"474"},{"id":"240412AHSMN7R968","nickName":"诸葛海","sex":2,"userName":"701"},{"id":"240412AK0CH01DS8","nickName":"周云舒","sex":2,"userName":"595"},{"id":"240412AK0MM6DT7C","nickName":"太史白狐","sex":2,"userName":"84"},{"id":"240412AK0ST5Y0DP","nickName":"祁亮","sex":2,"userName":"116"},{"id":"240412AK171W6894","nickName":"吴懿","sex":2,"userName":"136"},{"id":"240412AKAS7CRT7C","nickName":"祝芷香","sex":2,"userName":"482"},{"id":"240412AKFRY30K8H","nickName":"梁丘黛萱","sex":2,"userName":"949"},{"id":"240412AM27MY0P6W","nickName":"严暮雪","sex":2,"userName":"862"},{"id":"240412AM3CKZ75D4","nickName":"祝木","sex":2,"userName":"111"},{"id":"240412AMZ01M9XGC","nickName":"神行梦漓","sex":2,"userName":"440"},{"id":"240412ARC26GSDWH","nickName":"伍桑","sex":2,"userName":"139"},{"id":"240412ARP4R8KN0H","nickName":"太史奈川","sex":2,"userName":"743"},{"id":"240412ARW0XPWCBC","nickName":"士孙终葵","sex":2,"userName":"449"},{"id":"240412ASKWT0P2Y8","nickName":"孟八月","sex":2,"userName":"637"},{"id":"240412ASWB301CDP","nickName":"祝亮","sex":2,"userName":"29"},{"id":"240412ATHP162HDP","nickName":"澹台木","sex":2,"userName":"638"},{"id":"240412ATT1DGZ354","nickName":"诸葛流萤","sex":2,"userName":"404"},{"id":"240412ATTAN19CSW","nickName":"赫连黛萱","sex":2,"userName":"273"},{"id":"240412AW2B9R130H","nickName":"轩辕公","sex":2,"userName":"735"},{"id":"240412AWF5DHMFFW","nickName":"余雾海","sex":2,"userName":"165"},{"id":"240412AX22KMWD1P","nickName":"韩阳","sex":2,"userName":"662"},{"id":"240412AZ7X6ZGT2W","nickName":"秦仙糖","sex":2,"userName":"850"},{"id":"240412AZ84KWZR40","nickName":"元星辰","sex":2,"userName":"372"},{"id":"240412AZ887R9RYW","nickName":"沈公","sex":2,"userName":"695"},{"id":"240412AZFD1006FW","nickName":"澹台呦嘿","sex":2,"userName":"423"},{"id":"240412AZFGYWSRAW","nickName":"公玉木","sex":2,"userName":"841"},{"id":"240412B0W58MPWDP","nickName":"王海","sex":2,"userName":"666"},{"id":"240412B11KSMYR1P","nickName":"太史浅吻","sex":2,"userName":"955"},{"id":"240412B11P6GAXYW","nickName":"孟暗","sex":2,"userName":"534"},{"id":"240412B25BXP26NC","nickName":"公仪暗夜","sex":2,"userName":"275"},{"id":"240412C3AK878N7C","nickName":"元雨烟","sex":2,"userName":"355"},{"id":"240412C3C5R6SPPH","nickName":"公户芷香","sex":2,"userName":"794"},{"id":"240412C3CAF8K9WH","nickName":"朱雾海","sex":2,"userName":"587"},{"id":"240412C3CCZKZY14","nickName":"慕容夙浅","sex":2,"userName":"852"},{"id":"240412C3CGDT76RP","nickName":"姚娇气","sex":2,"userName":"172"},{"id":"240412C3CM00FGF8","nickName":"祝仲文","sex":2,"userName":"335"},{"id":"240412C3CPH4AB7C","nickName":"马约影","sex":2,"userName":"819"},{"id":"240418AFG6ZN24BC","nickName":"何余夏","sex":2,"userName":"346"},{"id":"240418AFGFNA4F14","nickName":"韩沆砀","sex":2,"userName":"842"},{"id":"240418AFGM9YZPDP","nickName":"秦亮","sex":2,"userName":"832"},{"id":"240418AFGP8XR9WH","nickName":"顾云","sex":2,"userName":"972"},{"id":"240418AFH204MZHH","nickName":"吴苍老","sex":2,"userName":"406"},{"id":"240418AFH4FTHC28","nickName":"东方云","sex":2,"userName":"822"},{"id":"240418AGB3R6ABXP","nickName":"上官落落","sex":2,"userName":"24"},{"id":"240418AGB8D5D6K4","nickName":"公玉吟月","sex":2,"userName":"760"},{"id":"240418AGBCPZANC0","nickName":"欧阳暗夜","sex":2,"userName":"212"}]
-2024-04-22 14:22:37 INFO  HelloController:124 - 接受入参"2id"
-2024-04-22 14:22:37 INFO  HelloController:138 - 请求成功返回参数如下[]
+2024-04-26 15:28:00 INFO  Version:21 - HV000001: Hibernate Validator 6.0.16.Final
+2024-04-26 15:28:00 INFO  Application:50 - Starting Application on daxindeMacBook-Pro.local with PID 2005 (/Users/daxin/Documents/code/tiantian/foodie-dev-api/target/classes started by daxin in /Users/daxin/Documents/code/tiantian)
+2024-04-26 15:28:00 INFO  Application:679 - The following profiles are active: dev
+2024-04-26 15:28:00 INFO  RepositoryConfigurationDelegate:244 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2024-04-26 15:28:00 INFO  RepositoryConfigurationDelegate:126 - Bootstrapping Spring Data repositories in DEFAULT mode.
+2024-04-26 15:28:00 INFO  RepositoryConfigurationDelegate:182 - Finished Spring Data repository scanning in 6ms. Found 0 repository interfaces.
+2024-04-26 15:28:01 INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$600e2b4e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-04-26 15:28:01 INFO  TomcatWebServer:90 - Tomcat initialized with port(s): 8088 (http)
+2024-04-26 15:28:01 INFO  ContextLoader:296 - Root WebApplicationContext: initialization completed in 1129 ms
+2024-04-26 15:28:01 WARN  AnnotationConfigServletWebServerApplicationContext:557 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'indexController': Unsatisfied dependency expressed through field 'carouselService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'carouselServiceImpl': Unsatisfied dependency expressed through field 'carouseMapper'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'carouseMapper' defined in file [/Users/daxin/Documents/code/tiantian/foodie-dev-mapper/target/classes/com/imooc/mapper/CarouseMapper.class]: Invocation of init method failed; nested exception is org.apache.ibatis.builder.IncompleteElementException: Could not find result map com.imooc.mapper.UsersMapperCustom.querypassword
+2024-04-26 15:28:01 ERROR SpringApplication:858 - Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'indexController': Unsatisfied dependency expressed through field 'carouselService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'carouselServiceImpl': Unsatisfied dependency expressed through field 'carouseMapper'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'carouseMapper' defined in file [/Users/daxin/Documents/code/tiantian/foodie-dev-mapper/target/classes/com/imooc/mapper/CarouseMapper.class]: Invocation of init method failed; nested exception is org.apache.ibatis.builder.IncompleteElementException: Could not find result map com.imooc.mapper.UsersMapperCustom.querypassword
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:596)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:374)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1411)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:592)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:843)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:877)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at com.imooc.controller.Application.main(Application.java:29)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'carouselServiceImpl': Unsatisfied dependency expressed through field 'carouseMapper'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'carouseMapper' defined in file [/Users/daxin/Documents/code/tiantian/foodie-dev-mapper/target/classes/com/imooc/mapper/CarouseMapper.class]: Invocation of init method failed; nested exception is org.apache.ibatis.builder.IncompleteElementException: Could not find result map com.imooc.mapper.UsersMapperCustom.querypassword
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:596)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:374)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1411)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:592)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:277)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1248)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1168)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:593)
+	... 19 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'carouseMapper' defined in file [/Users/daxin/Documents/code/tiantian/foodie-dev-mapper/target/classes/com/imooc/mapper/CarouseMapper.class]: Invocation of init method failed; nested exception is org.apache.ibatis.builder.IncompleteElementException: Could not find result map com.imooc.mapper.UsersMapperCustom.querypassword
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1778)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:277)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1248)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1168)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:593)
+	... 32 more
+Caused by: org.apache.ibatis.builder.IncompleteElementException: Could not find result map com.imooc.mapper.UsersMapperCustom.querypassword
+	at org.apache.ibatis.builder.MapperBuilderAssistant.getStatementResultMaps(MapperBuilderAssistant.java:346)
+	at org.apache.ibatis.builder.MapperBuilderAssistant.addMappedStatement(MapperBuilderAssistant.java:290)
+	at org.apache.ibatis.builder.xml.XMLStatementBuilder.parseStatementNode(XMLStatementBuilder.java:109)
+	at org.apache.ibatis.session.Configuration.buildAllStatements(Configuration.java:788)
+	at org.apache.ibatis.session.Configuration.getMappedStatements(Configuration.java:677)
+	at tk.mybatis.mapper.mapperhelper.MapperHelper.processConfiguration(MapperHelper.java:248)
+	at tk.mybatis.spring.mapper.MapperFactoryBean.checkDaoConfig(MapperFactoryBean.java:54)
+	at org.springframework.dao.support.DaoSupport.afterPropertiesSet(DaoSupport.java:44)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1837)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1774)
+	... 42 more
+Caused by: java.lang.IllegalArgumentException: Result Maps collection does not contain value for com.imooc.mapper.UsersMapperCustom.querypassword
+	at org.apache.ibatis.session.Configuration$StrictMap.get(Configuration.java:888)
+	at org.apache.ibatis.session.Configuration.getResultMap(Configuration.java:640)
+	at org.apache.ibatis.builder.MapperBuilderAssistant.getStatementResultMaps(MapperBuilderAssistant.java:344)
+	... 51 more
+2024-04-26 15:28:32 INFO  Version:21 - HV000001: Hibernate Validator 6.0.16.Final
+2024-04-26 15:28:33 INFO  Application:50 - Starting Application on daxindeMacBook-Pro.local with PID 2024 (/Users/daxin/Documents/code/tiantian/foodie-dev-api/target/classes started by daxin in /Users/daxin/Documents/code/tiantian)
+2024-04-26 15:28:33 INFO  Application:679 - The following profiles are active: dev
+2024-04-26 15:28:33 INFO  RepositoryConfigurationDelegate:244 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2024-04-26 15:28:33 INFO  RepositoryConfigurationDelegate:126 - Bootstrapping Spring Data repositories in DEFAULT mode.
+2024-04-26 15:28:33 INFO  RepositoryConfigurationDelegate:182 - Finished Spring Data repository scanning in 5ms. Found 0 repository interfaces.
+2024-04-26 15:28:34 INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$c11653ca] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-04-26 15:28:34 INFO  TomcatWebServer:90 - Tomcat initialized with port(s): 8088 (http)
+2024-04-26 15:28:34 INFO  ContextLoader:296 - Root WebApplicationContext: initialization completed in 1175 ms
+2024-04-26 15:28:34 WARN  AnnotationConfigServletWebServerApplicationContext:557 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'indexController': Unsatisfied dependency expressed through field 'carouselService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'carouselServiceImpl': Unsatisfied dependency expressed through field 'carouseMapper'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'carouseMapper' defined in file [/Users/daxin/Documents/code/tiantian/foodie-dev-mapper/target/classes/com/imooc/mapper/CarouseMapper.class]: Invocation of init method failed; nested exception is org.apache.ibatis.builder.IncompleteElementException: Could not find result map com.imooc.mapper.UsersMapperCustom.querypassword
+2024-04-26 15:28:34 ERROR SpringApplication:858 - Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'indexController': Unsatisfied dependency expressed through field 'carouselService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'carouselServiceImpl': Unsatisfied dependency expressed through field 'carouseMapper'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'carouseMapper' defined in file [/Users/daxin/Documents/code/tiantian/foodie-dev-mapper/target/classes/com/imooc/mapper/CarouseMapper.class]: Invocation of init method failed; nested exception is org.apache.ibatis.builder.IncompleteElementException: Could not find result map com.imooc.mapper.UsersMapperCustom.querypassword
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:596)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:374)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1411)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:592)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:843)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:877)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at com.imooc.controller.Application.main(Application.java:29)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'carouselServiceImpl': Unsatisfied dependency expressed through field 'carouseMapper'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'carouseMapper' defined in file [/Users/daxin/Documents/code/tiantian/foodie-dev-mapper/target/classes/com/imooc/mapper/CarouseMapper.class]: Invocation of init method failed; nested exception is org.apache.ibatis.builder.IncompleteElementException: Could not find result map com.imooc.mapper.UsersMapperCustom.querypassword
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:596)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:374)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1411)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:592)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:277)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1248)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1168)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:593)
+	... 19 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'carouseMapper' defined in file [/Users/daxin/Documents/code/tiantian/foodie-dev-mapper/target/classes/com/imooc/mapper/CarouseMapper.class]: Invocation of init method failed; nested exception is org.apache.ibatis.builder.IncompleteElementException: Could not find result map com.imooc.mapper.UsersMapperCustom.querypassword
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1778)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:277)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1248)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1168)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:593)
+	... 32 more
+Caused by: org.apache.ibatis.builder.IncompleteElementException: Could not find result map com.imooc.mapper.UsersMapperCustom.querypassword
+	at org.apache.ibatis.builder.MapperBuilderAssistant.getStatementResultMaps(MapperBuilderAssistant.java:346)
+	at org.apache.ibatis.builder.MapperBuilderAssistant.addMappedStatement(MapperBuilderAssistant.java:290)
+	at org.apache.ibatis.builder.xml.XMLStatementBuilder.parseStatementNode(XMLStatementBuilder.java:109)
+	at org.apache.ibatis.session.Configuration.buildAllStatements(Configuration.java:788)
+	at org.apache.ibatis.session.Configuration.getMappedStatements(Configuration.java:677)
+	at tk.mybatis.mapper.mapperhelper.MapperHelper.processConfiguration(MapperHelper.java:248)
+	at tk.mybatis.spring.mapper.MapperFactoryBean.checkDaoConfig(MapperFactoryBean.java:54)
+	at org.springframework.dao.support.DaoSupport.afterPropertiesSet(DaoSupport.java:44)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1837)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1774)
+	... 42 more
+Caused by: java.lang.IllegalArgumentException: Result Maps collection does not contain value for com.imooc.mapper.UsersMapperCustom.querypassword
+	at org.apache.ibatis.session.Configuration$StrictMap.get(Configuration.java:888)
+	at org.apache.ibatis.session.Configuration.getResultMap(Configuration.java:640)
+	at org.apache.ibatis.builder.MapperBuilderAssistant.getStatementResultMaps(MapperBuilderAssistant.java:344)
+	... 51 more
+2024-04-26 15:28:43 INFO  Version:21 - HV000001: Hibernate Validator 6.0.16.Final
+2024-04-26 15:28:43 INFO  Application:50 - Starting Application on daxindeMacBook-Pro.local with PID 2033 (/Users/daxin/Documents/code/tiantian/foodie-dev-api/target/classes started by daxin in /Users/daxin/Documents/code/tiantian)
+2024-04-26 15:28:43 INFO  Application:679 - The following profiles are active: dev
+2024-04-26 15:28:44 INFO  RepositoryConfigurationDelegate:244 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2024-04-26 15:28:44 INFO  RepositoryConfigurationDelegate:126 - Bootstrapping Spring Data repositories in DEFAULT mode.
+2024-04-26 15:28:44 INFO  RepositoryConfigurationDelegate:182 - Finished Spring Data repository scanning in 4ms. Found 0 repository interfaces.
+2024-04-26 15:28:44 INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$9855364c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-04-26 15:28:44 INFO  TomcatWebServer:90 - Tomcat initialized with port(s): 8088 (http)
+2024-04-26 15:28:44 INFO  ContextLoader:296 - Root WebApplicationContext: initialization completed in 1038 ms
+2024-04-26 15:28:45 WARN  AnnotationConfigServletWebServerApplicationContext:557 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'indexController': Unsatisfied dependency expressed through field 'carouselService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'carouselServiceImpl': Unsatisfied dependency expressed through field 'carouseMapper'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'carouseMapper' defined in file [/Users/daxin/Documents/code/tiantian/foodie-dev-mapper/target/classes/com/imooc/mapper/CarouseMapper.class]: Invocation of init method failed; nested exception is org.apache.ibatis.builder.IncompleteElementException: Could not find result map com.imooc.mapper.UsersMapperCustom.querypassword
+2024-04-26 15:28:45 ERROR SpringApplication:858 - Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'indexController': Unsatisfied dependency expressed through field 'carouselService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'carouselServiceImpl': Unsatisfied dependency expressed through field 'carouseMapper'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'carouseMapper' defined in file [/Users/daxin/Documents/code/tiantian/foodie-dev-mapper/target/classes/com/imooc/mapper/CarouseMapper.class]: Invocation of init method failed; nested exception is org.apache.ibatis.builder.IncompleteElementException: Could not find result map com.imooc.mapper.UsersMapperCustom.querypassword
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:596)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:374)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1411)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:592)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:843)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:877)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at com.imooc.controller.Application.main(Application.java:29)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'carouselServiceImpl': Unsatisfied dependency expressed through field 'carouseMapper'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'carouseMapper' defined in file [/Users/daxin/Documents/code/tiantian/foodie-dev-mapper/target/classes/com/imooc/mapper/CarouseMapper.class]: Invocation of init method failed; nested exception is org.apache.ibatis.builder.IncompleteElementException: Could not find result map com.imooc.mapper.UsersMapperCustom.querypassword
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:596)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:374)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1411)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:592)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:277)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1248)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1168)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:593)
+	... 19 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'carouseMapper' defined in file [/Users/daxin/Documents/code/tiantian/foodie-dev-mapper/target/classes/com/imooc/mapper/CarouseMapper.class]: Invocation of init method failed; nested exception is org.apache.ibatis.builder.IncompleteElementException: Could not find result map com.imooc.mapper.UsersMapperCustom.querypassword
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1778)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:277)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1248)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1168)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:593)
+	... 32 more
+Caused by: org.apache.ibatis.builder.IncompleteElementException: Could not find result map com.imooc.mapper.UsersMapperCustom.querypassword
+	at org.apache.ibatis.builder.MapperBuilderAssistant.getStatementResultMaps(MapperBuilderAssistant.java:346)
+	at org.apache.ibatis.builder.MapperBuilderAssistant.addMappedStatement(MapperBuilderAssistant.java:290)
+	at org.apache.ibatis.builder.xml.XMLStatementBuilder.parseStatementNode(XMLStatementBuilder.java:109)
+	at org.apache.ibatis.session.Configuration.buildAllStatements(Configuration.java:788)
+	at org.apache.ibatis.session.Configuration.getMappedStatements(Configuration.java:677)
+	at tk.mybatis.mapper.mapperhelper.MapperHelper.processConfiguration(MapperHelper.java:248)
+	at tk.mybatis.spring.mapper.MapperFactoryBean.checkDaoConfig(MapperFactoryBean.java:54)
+	at org.springframework.dao.support.DaoSupport.afterPropertiesSet(DaoSupport.java:44)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1837)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1774)
+	... 42 more
+Caused by: java.lang.IllegalArgumentException: Result Maps collection does not contain value for com.imooc.mapper.UsersMapperCustom.querypassword
+	at org.apache.ibatis.session.Configuration$StrictMap.get(Configuration.java:888)
+	at org.apache.ibatis.session.Configuration.getResultMap(Configuration.java:640)
+	at org.apache.ibatis.builder.MapperBuilderAssistant.getStatementResultMaps(MapperBuilderAssistant.java:344)
+	... 51 more

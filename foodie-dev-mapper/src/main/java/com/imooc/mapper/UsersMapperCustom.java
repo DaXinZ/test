@@ -1,7 +1,5 @@
 package com.imooc.mapper;
 
-import com.imooc.my.mapper.MyMapper;
-import com.imooc.pojo.Users;
 import com.imooc.pojo.vo.UsersVO;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
@@ -37,5 +35,17 @@ public interface UsersMapperCustom {
      * @return
      */
     public List<UsersVO>  queryUsertow(@Param("pramsMap") Map<String, Object> map);
+
+
+    /**
+     * 修改用户密码接口
+     *
+     * @param id
+     * @param password
+     * @return
+     */
+    public Boolean   updetepassword(String id,String password);
+
+    public  UsersVO querypassword(String  id);
 
 }

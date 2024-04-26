@@ -63,4 +63,9 @@ public interface  UserService {
     public List<UsersVO>  queryUsertow(String id,String nickname,String username,Integer sex,String sort);
 
 
+    public Boolean updetepassword(String id, String password);
+
+    public UsersVO querypassword(String id);
+
+
 }
