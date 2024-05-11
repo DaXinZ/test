@@ -4,6 +4,7 @@ import com.alibaba.fastjson.JSON;
 import com.imooc.enums.YesOrNo1;
 import com.imooc.pojo.Carousel;
 import com.imooc.pojo.Category;
+import com.imooc.pojo.Users;
 import com.imooc.pojo.vo.CategoryVO;
 import com.imooc.pojo.vo.NewItemsVO;
 import com.imooc.pojo.vo.UsersVO;
@@ -16,6 +17,8 @@ import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiParam;
 import io.swagger.models.auth.In;
 import org.apache.commons.lang3.StringUtils;
+import org.json.JSONArray;
+import org.json.JSONObject;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -35,7 +38,7 @@ public class UsersController  {
     @Autowired
     private UserService userService;
 
-    final  static Logger logger = LoggerFactory.getLogger(HelloController.class);
+    final  static Logger logger = LoggerFactory.getLogger(UsersController.class);
 
 
     /**
@@ -159,37 +162,52 @@ public class UsersController  {
 
         }
         UsersVO usersVO = new UsersVO();
-        usersVO.setPassowrd(password);
+        usersVO.setPassword(password);
         usersVO.setNewpassword(newpassword);
-        if (StringUtils.isBlank(password) ||  StringUtils.isBlank(newpassword)){
-            logger.info(JSON.toJSONString("新密码和原有密码不能为空"));
-        }
-
-        try {
-            usersVO.setPassowrd(MD5Utils.getMD5Str(usersVO.getPassowrd()));
-        } catch (Exception e) {
-            throw new RuntimeException(e);
-        }
-        String pass = usersVO.getPassowrd();
+        String pass = usersVO.getPassword();
         String newpass = usersVO.getNewpassword();
-        if (pass.equals(newpass)){
+        if (!pass.equals(newpass)){
             logger.info("两次输入密码不一致");
             return IMOOCJSONResult.ok("两次输入密码不一致");
         }
 
-             UsersVO  pas     = userService.querypassword(id);
-        logger.info(JSON.toJSONString(pas));
+        if (StringUtils.isBlank(password) ||  StringUtils.isBlank(newpassword)){
+            logger.info(JSON.toJSONString("新密码和原有密码不能为空"));
+        }
+        try {
+            usersVO.setPassword(MD5Utils.getMD5Str(usersVO.getPassword()));
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
+        String pass1 = usersVO.getPassword();
 
-        if (pas != null && pas.equals(pass)){
-            logger.info(JSON.toJSONString("新密码和老密码不能一样"));
+        UsersVO  Oldpassword   = userService.querypassword(id);
+        logger.info(JSON.toJSONString(Oldpassword));
+        String oldpass = Oldpassword.getPassword();
+        logger.info(JSON.toJSONString(oldpass));
+        if (oldpass.equals(pass1)){
+            logger.info(JSON.toJSONString("新密码不能和原密码一致"));
+            return IMOOCJSONResult.ok("新密码不能和原密码一致");
         }
 
-
-        boolean new1 =  userService.updetepassword(id,pass);
-         JSON.toJSONString("修改密码成功，新密码为"+pass);
+        boolean new1 =  userService.updetepassword(id,pass1);
+         JSON.toJSONString("修改密码成功，新密码为"+pass1);
         return IMOOCJSONResult.ok(new1);
 
-    }
+        }
+
+    @ApiOperation(value = "查询用户密码",notes = "查询密码",httpMethod = "POST")
+    @PostMapping("/querypassword.json")
+    public IMOOCJSONResult updatepassword(
+            @ApiParam(name = "id",value =  "用户id",required = false)
+            @RequestParam String id)
+        {
+            logger.info("接受入参"+JSON.toJSONString(id));
+            UsersVO  Oldpassword =  userService.querypassword(id);
+
+         return IMOOCJSONResult.ok(Oldpassword);
+         }
+
 
 
 

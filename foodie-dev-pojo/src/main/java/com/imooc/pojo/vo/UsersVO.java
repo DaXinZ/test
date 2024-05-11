@@ -1,5 +1,6 @@
 package com.imooc.pojo.vo;
 
+import java.lang.ref.PhantomReference;
 import java.util.List;
 
 /**
@@ -15,7 +16,7 @@ public class UsersVO {
 
     private Integer sex;
 
-    private String passowrd;
+    private String password;
 
     private String newpassword;
 
@@ -27,12 +28,12 @@ public class UsersVO {
         this.newpassword = newpassword;
     }
 
-    public String getPassowrd() {
-        return passowrd;
+    public String getPassword() {
+        return password;
     }
 
-    public void setPassowrd(String passowrd) {
-        this.passowrd = passowrd;
+    public void setPassword(String passowrd) {
+        this.password = passowrd;
     }
 
     public List<UsersVO> getUsersList() {
@@ -85,6 +86,7 @@ public class UsersVO {
 
 
     private List<UsersVO> usersList;
+
 
     public List<UsersVO> queryUsers() {
         return usersList;

@@ -76,13 +76,19 @@
 
   <update id="updetepassword" parameterType="com.imooc.pojo.vo.UsersVO">
 
-    UPDATE users SET password = #{password}  WHERE  id  =  #{id};
+    UPDATE users SET password = #{password},updated_time = #{updatedtime}  WHERE  id  =  #{id};
 
   </update>
 
 
 
-  <select id = "querypassword" resultMap="querypassword" parameterType="map">
+
+  <resultMap id="querypassword" type="com.imooc.pojo.vo.UsersVO" >
+    <result column="password" property="password"/>
+  </resultMap>
+
+
+  <select id = "querypassword"   resultMap="querypassword"  parameterType="map">
     SELECT `password` FROM users WHERE id = #{id}
 
   </select>

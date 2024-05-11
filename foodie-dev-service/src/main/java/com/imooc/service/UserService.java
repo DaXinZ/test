@@ -60,11 +60,31 @@ public interface  UserService {
      */
     public List<UsersVO>  queryUsername(String nickname);
 
+    /**
+     *
+     * @param id
+     * @param nickname
+     * @param username
+     * @param sex
+     * @param sort
+     * @return
+     */
+
     public List<UsersVO>  queryUsertow(String id,String nickname,String username,Integer sex,String sort);
 
-
+    /**
+     *
+     * @param id
+     * @param password
+     * @return
+     */
     public Boolean updetepassword(String id, String password);
 
+
+    /**
+     * @param id
+     * @return true \\ fasle
+     */
     public UsersVO querypassword(String id);
 
 

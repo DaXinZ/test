@@ -195,8 +195,6 @@ public class UserServiceImp implements UserService {
     @Override
     public Boolean updetepassword(String id, String password) {
         Boolean result =  usersMapperCustom.updetepassword(id, password);
-
-
         return result;
     }
 
@@ -205,6 +203,9 @@ public class UserServiceImp implements UserService {
     @Override
     public UsersVO querypassword(String id) {
 
-        return usersMapperCustom.querypassword(id);
+        UsersVO Oldpassword = usersMapperCustom.querypassword(id);
+
+
+        return Oldpassword;
     }
 }
