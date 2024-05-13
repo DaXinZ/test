@@ -178,8 +178,6 @@ public class UsersController  {
             return IMOOCJSONResult.ok("密码必须包含字母和数字");
         };
 
-
-
         if (pass.length() < 6 || pass.length() > 16){
             logger.info("密码长度为6-16位");
             return IMOOCJSONResult.ok("密码长度为6-16位");
