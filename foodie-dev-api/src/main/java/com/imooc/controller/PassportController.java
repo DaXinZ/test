@@ -167,9 +167,8 @@ public class PassportController {
         }
 
         //密码长度不能少于6位
-        if (password.length() < 6 ){
-            logger.info(trceid +  "\t 密码长度不能少于6");
-            return IMOOCJSONResult.errorMsg("密码长度不能少于6");
+        if (password.length() < 6 || password.length() > 16){
+            logger.info("密码长度为6-16位");
         }
 
         //判断两次密码不一致

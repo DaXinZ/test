@@ -1,6 +1,7 @@
 package com.imooc.pojo.vo;
 
-import java.lang.ref.PhantomReference;
+import javax.persistence.Column;
+import java.util.Date;
 import java.util.List;
 
 /**
@@ -19,6 +20,17 @@ public class UsersVO {
     private String password;
 
     private String newpassword;
+    @Column(name = "updated_time")
+    private Date updatedTime;
+
+    public Date getUpdatedTime() {
+        return updatedTime;
+    }
+
+    public Date setUpdatedTime(Date updatedTime) {
+        this.updatedTime = updatedTime;
+        return updatedTime;
+    }
 
     public String getNewpassword() {
         return newpassword;
@@ -93,4 +105,7 @@ public class UsersVO {
     }
 
 
+    public Date getUpdatedTime(Date setUpdatedTime) {
+        return setUpdatedTime;
+    }
 }

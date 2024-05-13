@@ -193,8 +193,11 @@ public class UserServiceImp implements UserService {
 
     @Transactional(rollbackFor = Exception.class)
     @Override
-    public Boolean updetepassword(String id, String password) {
-        Boolean result =  usersMapperCustom.updetepassword(id, password);
+    public Boolean updetepassword(String id, String password,Date updatedTime) {
+        UsersVO usersVO = new  UsersVO();
+       Date   date =  usersVO.setUpdatedTime(new Date());
+
+        Boolean result =  usersMapperCustom.updetepassword(id, password, updatedTime);
         return result;
     }
 

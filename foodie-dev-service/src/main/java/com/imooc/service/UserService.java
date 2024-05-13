@@ -4,6 +4,7 @@ import bo.UserBo;
 import com.imooc.pojo.Users;
 import com.imooc.pojo.vo.UsersVO;
 
+import java.util.Date;
 import java.util.List;
 
 /**
@@ -78,7 +79,7 @@ public interface  UserService {
      * @param password
      * @return
      */
-    public Boolean updetepassword(String id, String password);
+    public Boolean updetepassword(String id, String password, Date updatedtime);
 
 
     /**

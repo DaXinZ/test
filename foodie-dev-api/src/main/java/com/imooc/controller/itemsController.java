@@ -45,8 +45,7 @@ public class itemsController extends  BaseController{
             @ApiParam(name = "itemId",value =  "商品id",required = true)
             @PathVariable String itemId){
         StringRandom treceid = new StringRandom();
-        IMOOCJSONResult imoocjsonResult = new IMOOCJSONResult();
-        imoocjsonResult.setTrceid(treceid.getStringRandom());
+
 
         logger.info(
            "接收参数" +    JSON.toJSONString(itemId)
@@ -98,8 +97,7 @@ public class itemsController extends  BaseController{
             @ApiParam(name = "itemId",value =  "商品id",required = true)
             @RequestParam String itemId){
         StringRandom treceid = new StringRandom();
-        IMOOCJSONResult imoocjsonResult = new IMOOCJSONResult();
-        imoocjsonResult.setTrceid(treceid.getStringRandom());
+
 
         logger.info("接收参数" +    JSON.toJSONString(itemId));
         if (StringUtils.isBlank(itemId)){
@@ -131,8 +129,7 @@ public class itemsController extends  BaseController{
 
  {
         StringRandom treceid = new StringRandom();
-        IMOOCJSONResult imoocjsonResult = new IMOOCJSONResult();
-        imoocjsonResult.setTrceid(treceid.getStringRandom());
+
 
         logger.info("商品评价接受请求" +    JSON.toJSONString(itemId+level+page+pageSize));
         if (StringUtils.isBlank(itemId)){
@@ -171,8 +168,7 @@ public class itemsController extends  BaseController{
 
     {
         StringRandom treceid = new StringRandom();
-        IMOOCJSONResult imoocjsonResult = new IMOOCJSONResult();
-        imoocjsonResult.setTrceid(treceid.getStringRandom());
+
 
         logger.info("商品评价接受请求" +    JSON.toJSONString(catId+sort+page+pageSize));
         if (catId == null){

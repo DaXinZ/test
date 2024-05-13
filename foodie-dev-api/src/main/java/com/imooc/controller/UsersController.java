@@ -27,6 +27,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.math.BigDecimal;
 import java.math.BigInteger;
+import java.util.Date;
 import java.util.List;
 import java.util.Scanner;
 
@@ -155,6 +156,10 @@ public class UsersController  {
             @RequestParam String newpassword)
 
     {
+        StringRandom test = new StringRandom();
+        IMOOCJSONResult imoocjsonResult = new IMOOCJSONResult();
+        imoocjsonResult.setTrceid(test.getStringRandom());
+        String  trceid  = "trceid:" + imoocjsonResult.setTrceid(test.getStringRandom());
         logger.info("接受入参"+JSON.toJSONString(id+password+newpassword));
         if (StringUtils.isBlank(id)){
             logger.info(JSON.toJSONString(id+"不能为空"));
@@ -166,6 +171,20 @@ public class UsersController  {
         usersVO.setNewpassword(newpassword);
         String pass = usersVO.getPassword();
         String newpass = usersVO.getNewpassword();
+        isAlphaNumeric isAlphaNumeric = new isAlphaNumeric();
+
+        if (!isAlphaNumeric.isAlphaNumeric(pass)){
+            logger.info("密码必须包含字母和数字");
+            return IMOOCJSONResult.ok("密码必须包含字母和数字");
+        };
+
+
+
+        if (pass.length() < 6 || pass.length() > 16){
+            logger.info("密码长度为6-16位");
+            return IMOOCJSONResult.ok("密码长度为6-16位");
+        }
+
         if (!pass.equals(newpass)){
             logger.info("两次输入密码不一致");
             return IMOOCJSONResult.ok("两次输入密码不一致");
@@ -189,11 +208,11 @@ public class UsersController  {
             logger.info(JSON.toJSONString("新密码不能和原密码一致"));
             return IMOOCJSONResult.ok("新密码不能和原密码一致");
         }
-
-        boolean new1 =  userService.updetepassword(id,pass1);
-         JSON.toJSONString("修改密码成功，新密码为"+pass1);
+        Date updatedtime  = usersVO.getUpdatedTime(usersVO.setUpdatedTime(new Date()));
+        logger.info(JSON.toJSONString(updatedtime));
+        boolean new1 =  userService.updetepassword(id,pass1,updatedtime);
+         JSON.toJSONString("修改密码成功，新密码为"+pass1+"修改时间"+updatedtime);
         return IMOOCJSONResult.ok(new1);
-
         }
 
     @ApiOperation(value = "查询用户密码",notes = "查询密码",httpMethod = "POST")

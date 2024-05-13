@@ -1,10 +1,10 @@
 package com.imooc.mapper;
 
-import com.imooc.pojo.Users;
 import com.imooc.pojo.vo.UsersVO;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 
+import java.util.Date;
 import java.util.List;
 import java.util.Map;
 
@@ -45,7 +45,7 @@ public interface UsersMapperCustom {
      * @param password
      * @return
      */
-    public Boolean   updetepassword(String id,String password);
+    public Boolean   updetepassword(String id, String password, Date updatedtime);
 
 
     /**
