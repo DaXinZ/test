@@ -1,0 +1,2 @@
+2024-03-27 16:01:59 INFO  ThreadPoolTaskScheduler:208 - Shutting down ExecutorService 'taskScheduler'
+2024-03-27 16:01:59 INFO  ThreadPoolTaskExecutor:208 - Shutting down ExecutorService 'applicationTaskExecutor'

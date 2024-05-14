@@ -1,0 +1,6 @@
+2024-03-25 14:09:18 INFO  DispatcherServlet:524 - Initializing Servlet 'dispatcherServlet'
+2024-03-25 14:09:18 INFO  DispatcherServlet:546 - Completed initialization in 7 ms
+2024-03-25 14:09:24 INFO  HelloController:85 - 接受入参"上"
+2024-03-25 14:09:24 INFO  HikariDataSource:110 - DateSourceHikariCP - Starting...
+2024-03-25 14:09:25 INFO  HikariDataSource:123 - DateSourceHikariCP - Start completed.
+2024-03-25 14:09:25 INFO  HelloController:97 - 请求成功返回参数如下[{"createdTime":"2024-01-26 10:07:02","id":"240126761YY7KGC0","nickName":"上官","userName":"zhangsan"},{"createdTime":"2024-03-13 18:31:47","id":"240313D680G6DN9P","nickName":"上官黛萱","userName":"33333"}]

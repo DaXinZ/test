@@ -1,0 +1,9 @@
+2024-03-29 16:14:03 INFO  HelloController:100 - trceid:To52sjvQ83H71s3aLtK0W82Y68	 ok
+2024-03-29 16:14:24 INFO  HelloController:94 - trceid:T7J8WJ05Ga640Mpi6106v606Vj	 用户名已存在
+2024-03-29 16:14:37 INFO  HelloController:85 - 接受入参"上官"
+2024-03-29 16:14:37 INFO  HelloController:97 - 请求成功返回参数如下[{"createdTime":"2024-01-26 10:07:02","id":"240126761YY7KGC0","nickName":"上官","userName":"zhangsan"},{"createdTime":"2024-03-13 18:31:47","id":"240313D680G6DN9P","nickName":"上官黛萱","userName":"33333"},{"createdTime":"2024-03-28 14:53:08","id":"240328AKCYR2Y98H","nickName":"上官","userName":"12333"},{"createdTime":"2024-03-28 15:00:24","id":"240328ANWS7Y4F14","nickName":"上官","userName":"123333"},{"createdTime":"2024-03-28 15:05:42","id":"240328ARM4DPK4M8","nickName":"上官","userName":"1233333"},{"createdTime":"2024-03-28 15:06:35","id":"240328ARY9PFD7HH","nickName":"上官","userName":"12333333"}]
+2024-03-29 16:14:46 INFO  HelloController:104 - 接收参数"123123"
+2024-03-29 16:14:46 INFO  HelloController:113 - "商品详情数据查询成功{\"badCounts\":0,\"goodCounts\":0,\"normalCounts\":0,\"totalCounts\":0}"
+2024-03-29 16:14:53 INFO  HelloController:104 - 接收参数"cake-1001"
+2024-03-29 16:14:53 INFO  HelloController:113 - "商品详情数据查询成功{\"badCounts\":7,\"goodCounts\":14,\"normalCounts\":7,\"totalCounts\":28}"
+2024-03-29 16:14:59 INFO  HelloController:127 - 接收参数"cake-1001"

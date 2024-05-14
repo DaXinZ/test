@@ -1,13 +1,16 @@
 package com.imooc.controller;
 
 import bo.UserBo;
+import com.alibaba.fastjson.JSON;
 import com.imooc.pojo.Users;
+import com.imooc.pojo.vo.UsersVO;
 import com.imooc.service.UserService;
-
 import com.imooc.utils.*;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.apache.commons.lang3.StringUtils;
+import org.json.JSONArray;
+import org.json.JSONObject;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,6 +18,8 @@ import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Date: 2021/9/27 10:55 上午
@@ -109,11 +114,33 @@ public class PassportController {
         IMOOCJSONResult imoocjsonResult = new IMOOCJSONResult();
        String  trceid  =  imoocjsonResult.setTrceid(test.getStringRandom());
        RandomNickname randomNickname = new RandomNickname();
-
       String username = userBo.getUsername();
       String password = userBo.getPassword();
       String confirmpassword = userBo.getConfirmPassword();
+      String nickname = userBo.getNickname();
 
+      //判断用户名是否为空，为空则塞入随机数
+      if (StringUtils.isBlank(nickname)){
+          userBo.setNickname(randomNickname.RandomScale());
+
+
+      }
+        String  nickname2 = userBo.getNickname();
+
+      //查询用户名
+        List<UsersVO>  queryname =  userService.queryUsername(nickname2);
+        logger.info("查询用户呢称返回的数据 "+JSON.toJSONString(queryname));
+        JSONArray jsonArray = new JSONArray(queryname);
+
+        for (int i = 0; i < jsonArray.length(); i++) {
+            JSONObject jsonObject = jsonArray.getJSONObject(i);
+            String nickName = jsonObject.getString("nickName");
+            logger.info("取值出来的数据"+ nickName);
+            if (nickname2.equals(nickName)){
+                 logger.info(JSON.toJSONString("当前名字已存在，请修改"+nickName));
+                 return  IMOOCJSONResult.errorMsg("用户昵称已存在");
+            }
+        }
 
 
         // 判断用户名和密码必须不为空
@@ -134,15 +161,14 @@ public class PassportController {
         // 查询用户名是否存在
         boolean isExist = userService.queryUsernameIsExist(username);
         if (isExist) {
-            logger.info(trceid +  "\t 用户名已存在");
+            logger.info(JSON.toJSONString("用户名已存在" + username));
             return IMOOCJSONResult.errorMsg("用户名已存在");
 
         }
 
         //密码长度不能少于6位
-        if (password.length() < 6 ){
-            logger.info(trceid +  "\t 密码长度不能少于6");
-            return IMOOCJSONResult.errorMsg("密码长度不能少于6");
+        if (password.length() < 6 || password.length() > 16){
+            logger.info("密码长度为6-16位");
         }
 
         //判断两次密码不一致
@@ -150,6 +176,7 @@ public class PassportController {
             logger.info(trceid +  "\t 两次密码不一致");
             return IMOOCJSONResult.errorMsg("两次密码不一致");
         }
+
         // 实现注册功能
         Users userResult =   userService.createUser(userBo);
 
@@ -158,8 +185,8 @@ public class PassportController {
                 JsonUtils.objectToJson(userResult), true);
 
         // 3. 请求成功，用户名没有重复
-        logger.info(trceid +  "\t 注册成功");
-        return IMOOCJSONResult.ok("注册成功，用户名为" + username  );
+        logger.info(JSON.toJSONString(userResult));
+        return IMOOCJSONResult.ok("注册成功用户名为"+username+"昵称为" + nickname2);
     }
 
     /**
@@ -266,6 +293,6 @@ public class PassportController {
         return IMOOCJSONResult.ok(userId);
     }
 
-    }
+}
 
 

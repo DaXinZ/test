@@ -1,2 +1,2 @@
-2024-03-22 14:55:08 INFO  HelloController:48 - 接受用户请求参数"240313F8T00KCW4H"
-2024-03-22 14:55:08 INFO  HelloController:59 - 查询成功返回参数如下[{"createdTime":"2024-03-13 20:03:28","id":"240313F8T00KCW4H","nickName":"公仪香","userName":"dad1s"}]
+2024-05-14 10:11:41 INFO  ThreadPoolTaskScheduler:208 - Shutting down ExecutorService 'taskScheduler'
+2024-05-14 10:11:41 INFO  ThreadPoolTaskExecutor:208 - Shutting down ExecutorService 'applicationTaskExecutor'

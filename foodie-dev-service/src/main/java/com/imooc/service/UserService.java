@@ -4,6 +4,7 @@ import bo.UserBo;
 import com.imooc.pojo.Users;
 import com.imooc.pojo.vo.UsersVO;
 
+import java.util.Date;
 import java.util.List;
 
 /**
@@ -49,11 +50,43 @@ public interface  UserService {
 
 
     /**
-     *
      * @param id
      * @return 查询用户信息
      */
     public List<UsersVO>  queryUsers(String id);
+
+    /**
+     * @param nickname
+     * @return 模糊查询用户信息
+     */
+    public List<UsersVO>  queryUsername(String nickname);
+
+    /**
+     *
+     * @param id
+     * @param nickname
+     * @param username
+     * @param sex
+     * @param sort
+     * @return
+     */
+
+    public List<UsersVO>  queryUsertow(String id,String nickname,String username,Integer sex,String sort);
+
+    /**
+     *
+     * @param id
+     * @param password
+     * @return
+     */
+    public Boolean updetepassword(String id, String password, Date updatedtime);
+
+
+    /**
+     * @param id
+     * @return true \\ fasle
+     */
+    public UsersVO querypassword(String id);
 
 
 }

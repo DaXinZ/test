@@ -1,0 +1,2 @@
+2024-04-12 14:07:51 WARN  DefaultHandlerExceptionResolver:198 - Resolved [org.springframework.web.HttpMediaTypeNotSupportedException: Content type 'text/plain;charset=UTF-8' not supported]
+2024-04-12 14:07:59 WARN  DefaultHandlerExceptionResolver:198 - Resolved [org.springframework.web.HttpMediaTypeNotSupportedException: Content type 'text/plain;charset=UTF-8' not supported]

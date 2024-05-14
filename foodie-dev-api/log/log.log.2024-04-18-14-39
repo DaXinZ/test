@@ -1,0 +1,5 @@
+2024-04-18 14:39:28 INFO  HikariDataSource:110 - DateSourceHikariCP - Starting...
+2024-04-18 14:39:28 INFO  ThreadPoolTaskScheduler:208 - Shutting down ExecutorService 'taskScheduler'
+2024-04-18 14:39:28 INFO  ThreadPoolTaskExecutor:208 - Shutting down ExecutorService 'applicationTaskExecutor'
+2024-04-18 14:39:28 INFO  HikariDataSource:123 - DateSourceHikariCP - Start completed.
+2024-04-18 14:39:28 INFO  HelloController:97 - 请求成功返回参数如下[{"createdTime":"2024-03-13 18:50:44","id":"240313DCHNHWFT9P","nickName":"皇甫冷颜","userName":"DD1D"},{"createdTime":"2024-04-12 14:16:18","id":"240412A55GG216K4","nickName":"皇甫八月","userName":"938"}]

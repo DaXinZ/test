@@ -1,0 +1,12 @@
+2024-04-18 14:23:10 INFO  HelloController:85 - 接受入参"111"
+2024-04-18 14:23:10 INFO  HelloController:97 - 请求成功返回参数如下[]
+2024-04-18 14:23:11 INFO  HelloController:85 - 接受入参"111"
+2024-04-18 14:23:11 INFO  HelloController:97 - 请求成功返回参数如下[]
+2024-04-18 14:23:11 INFO  HelloController:85 - 接受入参"111"
+2024-04-18 14:23:11 INFO  HelloController:97 - 请求成功返回参数如下[]
+2024-04-18 14:23:19 INFO  HelloController:85 - 接受入参"上官"
+2024-04-18 14:23:19 INFO  HelloController:97 - 请求成功返回参数如下[{"createdTime":"2024-01-26 10:07:02","id":"1908017YR51G1XWH","nickName":"上官","userName":"imooc"},{"createdTime":"2024-03-13 18:31:47","id":"240313D680G6DN9P","nickName":"上官黛萱","userName":"33333"},{"createdTime":"2024-03-28 14:53:08","id":"240328AKCYR2Y98H","nickName":"上官","userName":"12333"},{"createdTime":"2024-03-28 15:00:24","id":"240328ANWS7Y4F14","nickName":"上官","userName":"123333"},{"createdTime":"2024-03-28 15:05:42","id":"240328ARM4DPK4M8","nickName":"上官","userName":"1233333"},{"createdTime":"2024-03-28 15:06:35","id":"240328ARY9PFD7HH","nickName":"上官","userName":"12333333"},{"createdTime":"2024-04-12 14:25:49","id":"240412A8A6NZGWBC","nickName":"上官懿","userName":"659"},{"createdTime":"2024-04-12 14:48:26","id":"240412AGX3AZP37C","nickName":"上官星辰","userName":"707"}]
+2024-04-18 14:23:49 INFO  HelloController:85 - 接受入参"黄埔"
+2024-04-18 14:23:49 INFO  HelloController:97 - 请求成功返回参数如下[]
+2024-04-18 14:23:57 INFO  HelloController:85 - 接受入参"黄浦"
+2024-04-18 14:23:57 INFO  HelloController:97 - 请求成功返回参数如下[]

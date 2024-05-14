@@ -1,5 +1,7 @@
 package com.imooc.pojo.vo;
 
+import javax.persistence.Column;
+import java.util.Date;
 import java.util.List;
 
 /**
@@ -13,6 +15,54 @@ public class UsersVO {
     private String nickName;
     private String createdTime;
 
+    private Integer sex;
+
+    private String password;
+
+    private String newpassword;
+    @Column(name = "updated_time")
+    private Date updatedTime;
+
+    public Date getUpdatedTime() {
+        return updatedTime;
+    }
+
+    public Date setUpdatedTime(Date updatedTime) {
+        this.updatedTime = updatedTime;
+        return updatedTime;
+    }
+
+    public String getNewpassword() {
+        return newpassword;
+    }
+
+    public void setNewpassword(String newpassword) {
+        this.newpassword = newpassword;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String passowrd) {
+        this.password = passowrd;
+    }
+
+    public List<UsersVO> getUsersList() {
+        return usersList;
+    }
+
+    public void setUsersList(List<UsersVO> usersList) {
+        this.usersList = usersList;
+    }
+
+    public Integer getSex() {
+        return sex;
+    }
+
+    public void setSex(Integer sex) {
+        this.sex = sex;
+    }
 
     public String getId() {
         return id;
@@ -49,24 +99,13 @@ public class UsersVO {
 
     private List<UsersVO> usersList;
 
+
     public List<UsersVO> queryUsers() {
         return usersList;
     }
 
 
-
-    public void setqueryUsers(List<UsersVO> usersList) {
-        this.usersList = usersList;
-    }
-
-    @Override
-    public String toString() {
-        return "UsersVO{" +
-                "id='" + id + '\'' +
-                ", userName='" + userName + '\'' +
-                ", nickName='" + nickName + '\'' +
-                ", createdTime='" + createdTime + '\'' +
-                ", usersList=" + usersList +
-                '}';
+    public Date getUpdatedTime(Date setUpdatedTime) {
+        return setUpdatedTime;
     }
 }

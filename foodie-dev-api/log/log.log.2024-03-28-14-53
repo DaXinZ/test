@@ -1,0 +1,7 @@
+2024-03-28 14:53:07 WARN  HikariPool:766 - DateSourceHikariCP - Thread starvation or clock leap detected (housekeeper delta=1m28s964ms).
+2024-03-28 14:53:07 INFO  ThreadPoolTaskScheduler:208 - Shutting down ExecutorService 'taskScheduler'
+2024-03-28 14:53:07 INFO  ThreadPoolTaskExecutor:208 - Shutting down ExecutorService 'applicationTaskExecutor'
+2024-03-28 14:53:07 INFO  HikariDataSource:350 - DateSourceHikariCP - Shutdown initiated...
+2024-03-28 14:53:07 INFO  HikariDataSource:352 - DateSourceHikariCP - Shutdown completed.
+2024-03-28 14:53:07 INFO  CookieUtils:210 - ========== domainName: localhost ==========
+2024-03-28 14:53:07 INFO  HelloController:177 - TK12A35X9zC7132mt2z3QV438j	 注册成功

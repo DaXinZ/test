@@ -1,0 +1,1 @@
+2024-03-29 15:00:39 WARN  DefaultHandlerExceptionResolver:198 - Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required String parameter 'itemId' is not present]

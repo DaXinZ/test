@@ -1,0 +1,14 @@
+2024-04-12 15:22:29 WARN  DefaultHandlerExceptionResolver:198 - Resolved [org.springframework.web.HttpMediaTypeNotSupportedException: Content type 'text/plain;charset=UTF-8' not supported]
+2024-04-12 15:22:30 WARN  DefaultHandlerExceptionResolver:198 - Resolved [org.springframework.web.HttpMediaTypeNotSupportedException: Content type 'text/plain;charset=UTF-8' not supported]
+2024-04-12 15:22:31 WARN  DefaultHandlerExceptionResolver:198 - Resolved [org.springframework.web.HttpMediaTypeNotSupportedException: Content type 'text/plain;charset=UTF-8' not supported]
+2024-04-12 15:22:32 WARN  DefaultHandlerExceptionResolver:198 - Resolved [org.springframework.web.HttpMediaTypeNotSupportedException: Content type 'text/plain;charset=UTF-8' not supported]
+2024-04-12 15:22:32 WARN  DefaultHandlerExceptionResolver:198 - Resolved [org.springframework.web.HttpMediaTypeNotSupportedException: Content type 'text/plain;charset=UTF-8' not supported]
+2024-04-12 15:22:36 INFO  HelloController:132 - 查询用户呢称返回的数据 []
+2024-04-12 15:22:36 INFO  CookieUtils:210 - ========== domainName: localhost ==========
+2024-04-12 15:22:36 INFO  HelloController:189 - {"face":"https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201901%2F22%2F20190122075852_qqpst.thumb.400_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1637226059&t=44137c685590cefc784c8426b088c54f","id":"240412AZ7X6ZGT2W","nickname":"秦仙糖","sex":2,"username":"850"}
+2024-04-12 15:22:38 INFO  HelloController:132 - 查询用户呢称返回的数据 []
+2024-04-12 15:22:38 INFO  CookieUtils:210 - ========== domainName: localhost ==========
+2024-04-12 15:22:38 INFO  HelloController:189 - {"face":"https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201901%2F22%2F20190122075852_qqpst.thumb.400_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1637226059&t=44137c685590cefc784c8426b088c54f","id":"240412AZ84KWZR40","nickname":"元星辰","sex":2,"username":"372"}
+2024-04-12 15:22:39 INFO  HelloController:132 - 查询用户呢称返回的数据 []
+2024-04-12 15:22:39 INFO  CookieUtils:210 - ========== domainName: localhost ==========
+2024-04-12 15:22:39 INFO  HelloController:189 - {"face":"https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201901%2F22%2F20190122075852_qqpst.thumb.400_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1637226059&t=44137c685590cefc784c8426b088c54f","id":"240412AZ887R9RYW","nickname":"沈公","sex":2,"username":"695"}

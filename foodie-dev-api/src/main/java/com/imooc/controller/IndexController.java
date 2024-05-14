@@ -1,5 +1,6 @@
 package com.imooc.controller;
 
+import com.alibaba.fastjson.JSON;
 import com.imooc.enums.YesOrNo1;
 import com.imooc.pojo.Carousel;
 import com.imooc.pojo.Category;
@@ -45,7 +46,7 @@ public class IndexController {
         imoocjsonResult.setTrceid(test.getStringRandom());
         String  trceid  = "trceid:" + imoocjsonResult.setTrceid(test.getStringRandom());
        List<Carousel> list =  carouselService.queryAll(YesOrNo1.YES.type);
-        logger.info(trceid +  "\t 轮播图查询成功" );
+        logger.info("\t 轮播图查询成功" + JSON.toJSONString(list));
         return IMOOCJSONResult.ok(list);
     }
 
@@ -64,7 +65,7 @@ public class IndexController {
         String  trceid  = "trceid:" + imoocjsonResult.setTrceid(test.getStringRandom());
 
         List<Category> list =  categoryService.queryAllRootLevelCat();
-        logger.info(trceid +  "\t 一级分类查询成功" );
+        logger.info( "\t 一级分类查询成功"+ JSON.toJSONString(list) );
         return IMOOCJSONResult.ok(list);
     }
 
@@ -83,7 +84,7 @@ public class IndexController {
         }
         List<CategoryVO> list = categoryService.getSubCatList(rootCatid);
 
-        logger.info(trceid +  "\t 子分类查询成功" );
+        logger.info("\t 子分类查询成功" + JSON.toJSONString(list) );
         return IMOOCJSONResult.ok(list);
     }
 
@@ -104,7 +105,7 @@ public class IndexController {
         }
         List<NewItemsVO> list = categoryService.getSixNewItemsLazy(rootCatId);
 
-        logger.info(trceid +  "\t 子分类查询成功" );
+        logger.info( "\t 商品数据查询成功" + JSON.toJSONString(list));
         return IMOOCJSONResult.ok(list);
     }
 

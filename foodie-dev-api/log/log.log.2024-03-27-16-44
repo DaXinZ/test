@@ -1,0 +1,26 @@
+2024-03-27 16:44:02 INFO  Version:21 - HV000001: Hibernate Validator 6.0.16.Final
+2024-03-27 16:44:02 INFO  Application:50 - Starting Application on daxindeMacBook-Pro.local with PID 11133 (/Users/daxin/Documents/code/tiantian/foodie-dev-api/target/classes started by daxin in /Users/daxin/Documents/code/tiantian)
+2024-03-27 16:44:02 INFO  Application:679 - The following profiles are active: dev
+2024-03-27 16:44:03 INFO  RepositoryConfigurationDelegate:244 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2024-03-27 16:44:03 INFO  RepositoryConfigurationDelegate:126 - Bootstrapping Spring Data repositories in DEFAULT mode.
+2024-03-27 16:44:03 INFO  RepositoryConfigurationDelegate:182 - Finished Spring Data repository scanning in 4ms. Found 0 repository interfaces.
+2024-03-27 16:44:03 INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$318f9b92] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-03-27 16:44:03 INFO  TomcatWebServer:90 - Tomcat initialized with port(s): 8088 (http)
+2024-03-27 16:44:03 INFO  ContextLoader:296 - Root WebApplicationContext: initialization completed in 1205 ms
+2024-03-27 16:44:04 INFO  ThreadPoolTaskExecutor:171 - Initializing ExecutorService 'applicationTaskExecutor'
+2024-03-27 16:44:04 INFO  ThreadPoolTaskScheduler:171 - Initializing ExecutorService 'taskScheduler'
+2024-03-27 16:44:04 INFO  DocumentationPluginsBootstrapper:84 - Context refreshed
+2024-03-27 16:44:04 INFO  DocumentationPluginsBootstrapper:87 - Found 1 custom documentation plugin(s)
+2024-03-27 16:44:04 INFO  ApiListingReferenceScanner:44 - Scanning for api listing references
+2024-03-27 16:44:05 INFO  TomcatWebServer:204 - Tomcat started on port(s): 8088 (http) with context path ''
+2024-03-27 16:44:05 INFO  Application:59 - Started Application in 3.035 seconds (JVM running for 3.41)
+2024-03-27 16:44:08 INFO  DispatcherServlet:524 - Initializing Servlet 'dispatcherServlet'
+2024-03-27 16:44:08 INFO  DispatcherServlet:546 - Completed initialization in 7 ms
+2024-03-27 16:44:08 INFO  HelloController:48 - 接收参数"candy-1002-param"
+2024-03-27 16:44:08 INFO  HikariDataSource:110 - DateSourceHikariCP - Starting...
+2024-03-27 16:44:08 INFO  HikariDataSource:123 - DateSourceHikariCP - Start completed.
+2024-03-27 16:44:08 INFO  HelloController:66 - "item数据null""itemImg数据[]""itemSpecs数据[]""itemParam数据null"
+2024-03-27 16:44:08 INFO  HelloController:73 - "查询成功数据如下com.imooc.pojo.vo.IteminfoVo@7ddc4b3a"
+2024-03-27 16:44:33 INFO  HelloController:48 - 接收参数"cake-38"
+2024-03-27 16:44:33 INFO  HelloController:66 - "item数据com.imooc.pojo.Items@15ad0cae""itemImg数据[com.imooc.pojo.ItemsImg@58589036, com.imooc.pojo.ItemsImg@62c26107]""itemSpecs数据[com.imooc.pojo.ItemsSpec@1597ce7e, com.imooc.pojo.ItemsSpec@68a2781e, com.imooc.pojo.ItemsSpec@74679c1c]""itemParam数据com.imooc.pojo.ItemsParam@55c11ce"
+2024-03-27 16:44:33 INFO  HelloController:73 - "查询成功数据如下com.imooc.pojo.vo.IteminfoVo@2e13cb25"

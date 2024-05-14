@@ -10,27 +10,21 @@ import com.imooc.mapper.UsersMapper;
 import com.imooc.mapper.UsersMapperCustom;
 import com.imooc.pojo.Users;
 
-import com.imooc.pojo.vo.CategoryVO;
 import com.imooc.pojo.vo.UsersVO;
 import com.imooc.service.UserService;
 
 import com.imooc.utils.*;
-import io.swagger.annotations.ApiOperation;
-import javafx.scene.control.PasswordFieldBuilder;
-import org.apache.commons.lang3.StringUtils;
 import org.n3r.idworker.Sid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestParam;
 import tk.mybatis.mapper.entity.Example;
 
 import java.util.Date;
+import java.util.HashMap;
 import java.util.List;
-
-import static com.imooc.utils.MD5Utils.getMD5Str;
+import java.util.Map;
 
 /**
  * Date: 2021/9/27 10:43 上午
@@ -97,6 +91,7 @@ public class UserServiceImp implements UserService {
     public Users createUser(UserBo userBO) {
         RandomNickname randomNickname = new RandomNickname();
 
+
         String  userId =  sid.nextShort();
 
         Users user = new Users();
@@ -111,11 +106,11 @@ public class UserServiceImp implements UserService {
         }
         //默认用户昵称随机生成
 
-        user.setNickname(randomNickname.RandomScale());
+        user.setNickname(userBO.getNickname());
         //设置默认头像
         user.setFace(user_face);
         //设置默认生日
-        user.setBirthday(DateUtil.stringToDate("1900-01-01"));
+        user.setBirthday(new Date());
         //设置默认性别
         user.setSex(Sex.secret.type);
         //创建时间
@@ -177,5 +172,43 @@ public class UserServiceImp implements UserService {
     }
 
 
+    @Transactional(propagation = Propagation.SUPPORTS)
+    @Override
+    public List<UsersVO> queryUsername(String nickname){
+        return usersMapperCustom.queryUsername(nickname);
+    }
 
+
+    @Override
+    public List<UsersVO> queryUsertow(String id, String nickname, String username, Integer sex,String sort) {
+        Map<String,Object> map = new HashMap<>();
+        map.put("id",id);
+        map.put("nickname",nickname);
+        map.put("username",username);
+        map.put("sex",sex);
+        map.put("sort",sort);
+        List<UsersVO> usersVOS =  usersMapperCustom.queryUsertow(map);
+        return usersVOS;
+    }
+
+    @Transactional(rollbackFor = Exception.class)
+    @Override
+    public Boolean updetepassword(String id, String password,Date updatedTime) {
+        UsersVO usersVO = new  UsersVO();
+       Date   date =  usersVO.setUpdatedTime(new Date());
+
+        Boolean result =  usersMapperCustom.updetepassword(id, password, updatedTime);
+        return result;
+    }
+
+
+    @Transactional(propagation = Propagation.SUPPORTS)
+    @Override
+    public UsersVO querypassword(String id) {
+
+        UsersVO Oldpassword = usersMapperCustom.querypassword(id);
+
+
+        return Oldpassword;
+    }
 }

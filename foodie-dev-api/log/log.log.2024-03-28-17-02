@@ -1,0 +1,14 @@
+2024-03-28 17:02:03 INFO  HikariDataSource:110 - DateSourceHikariCP - Starting...
+2024-03-28 17:02:03 INFO  HikariDataSource:123 - DateSourceHikariCP - Start completed.
+2024-03-28 17:02:03 INFO  HelloController:48 - trceid:T3Q75733Y2lQI3Wz0928x03jr2	 轮播图查询成功
+2024-03-28 17:02:03 INFO  HelloController:67 - trceid:TF385je82xq6454Q9Jduyo7F5h	 一级分类查询成功
+2024-03-28 17:02:03 INFO  HelloController:107 - trceid:TfByGka9k2l3p7U0nZI0Fn61g9	 子分类查询成功
+2024-03-28 17:02:12 INFO  HelloController:107 - trceid:TyyAF10SMt75BKfEKpd4UCb2tN	 子分类查询成功
+2024-03-28 17:02:14 INFO  HelloController:107 - trceid:TqiKdw0z6XG43gd05mi0dfd275	 子分类查询成功
+2024-03-28 17:02:14 INFO  HelloController:107 - trceid:Te211d8z7x39c4q20U048r86cR	 子分类查询成功
+2024-03-28 17:02:14 INFO  HelloController:107 - trceid:Tf7PA3E19569z76574PMQ97k6Y	 子分类查询成功
+2024-03-28 17:02:14 INFO  HelloController:107 - trceid:T70YA7U4rSg840Y61MGkN6Y879	 子分类查询成功
+2024-03-28 17:02:14 INFO  HelloController:107 - trceid:T8ZVtw3fB3VTwEbkUpTtC147QS	 子分类查询成功
+2024-03-28 17:02:14 INFO  HelloController:107 - trceid:TA4T0Z6Z576Rg7h9ZDjJT7A21G	 子分类查询成功
+2024-03-28 17:02:14 INFO  HelloController:107 - trceid:T58s37hE1yvQ1QCNN3X14e539z	 子分类查询成功
+2024-03-28 17:02:14 INFO  HelloController:107 - trceid:T6Y028335brl6233133SZx9W4e	 子分类查询成功

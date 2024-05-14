@@ -1,0 +1,22 @@
+2024-04-18 14:44:21 INFO  DispatcherServlet:524 - Initializing Servlet 'dispatcherServlet'
+2024-04-18 14:44:21 INFO  DispatcherServlet:546 - Completed initialization in 6 ms
+2024-04-18 14:44:22 INFO  HikariDataSource:110 - DateSourceHikariCP - Starting...
+2024-04-18 14:44:22 INFO  HikariDataSource:123 - DateSourceHikariCP - Start completed.
+2024-04-18 14:44:22 INFO  HelloController:132 - 查询用户呢称返回的数据 []
+2024-04-18 14:44:22 INFO  CookieUtils:210 - ========== domainName: localhost ==========
+2024-04-18 14:44:22 INFO  HelloController:189 - {"face":"https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201901%2F22%2F20190122075852_qqpst.thumb.400_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1637226059&t=44137c685590cefc784c8426b088c54f","id":"240418AFG6ZN24BC","nickname":"何余夏","sex":2,"username":"346"}
+2024-04-18 14:44:23 INFO  HelloController:132 - 查询用户呢称返回的数据 []
+2024-04-18 14:44:23 INFO  CookieUtils:210 - ========== domainName: localhost ==========
+2024-04-18 14:44:23 INFO  HelloController:189 - {"face":"https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201901%2F22%2F20190122075852_qqpst.thumb.400_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1637226059&t=44137c685590cefc784c8426b088c54f","id":"240418AFGFNA4F14","nickname":"韩沆砀","sex":2,"username":"842"}
+2024-04-18 14:44:24 INFO  HelloController:132 - 查询用户呢称返回的数据 []
+2024-04-18 14:44:24 INFO  CookieUtils:210 - ========== domainName: localhost ==========
+2024-04-18 14:44:24 INFO  HelloController:189 - {"face":"https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201901%2F22%2F20190122075852_qqpst.thumb.400_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1637226059&t=44137c685590cefc784c8426b088c54f","id":"240418AFGM9YZPDP","nickname":"秦亮","sex":2,"username":"832"}
+2024-04-18 14:44:25 INFO  HelloController:132 - 查询用户呢称返回的数据 []
+2024-04-18 14:44:25 INFO  CookieUtils:210 - ========== domainName: localhost ==========
+2024-04-18 14:44:25 INFO  HelloController:189 - {"face":"https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201901%2F22%2F20190122075852_qqpst.thumb.400_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1637226059&t=44137c685590cefc784c8426b088c54f","id":"240418AFGP8XR9WH","nickname":"顾云","sex":2,"username":"972"}
+2024-04-18 14:44:27 INFO  HelloController:132 - 查询用户呢称返回的数据 []
+2024-04-18 14:44:27 INFO  CookieUtils:210 - ========== domainName: localhost ==========
+2024-04-18 14:44:27 INFO  HelloController:189 - {"face":"https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201901%2F22%2F20190122075852_qqpst.thumb.400_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1637226059&t=44137c685590cefc784c8426b088c54f","id":"240418AFH204MZHH","nickname":"吴苍老","sex":2,"username":"406"}
+2024-04-18 14:44:28 INFO  HelloController:132 - 查询用户呢称返回的数据 []
+2024-04-18 14:44:28 INFO  CookieUtils:210 - ========== domainName: localhost ==========
+2024-04-18 14:44:28 INFO  HelloController:189 - {"face":"https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201901%2F22%2F20190122075852_qqpst.thumb.400_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1637226059&t=44137c685590cefc784c8426b088c54f","id":"240418AFH4FTHC28","nickname":"东方云","sex":2,"username":"822"}

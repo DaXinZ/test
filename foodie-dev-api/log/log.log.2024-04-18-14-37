@@ -1,0 +1,5 @@
+2024-04-18 14:37:27 INFO  ThreadPoolTaskExecutor:171 - Initializing ExecutorService 'applicationTaskExecutor'
+2024-04-18 14:37:52 INFO  ThreadPoolTaskScheduler:171 - Initializing ExecutorService 'taskScheduler'
+2024-04-18 14:37:58 INFO  DocumentationPluginsBootstrapper:84 - Context refreshed
+2024-04-18 14:37:59 INFO  DocumentationPluginsBootstrapper:87 - Found 1 custom documentation plugin(s)
+2024-04-18 14:37:59 INFO  ApiListingReferenceScanner:44 - Scanning for api listing references

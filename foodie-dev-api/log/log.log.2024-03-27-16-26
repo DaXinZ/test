@@ -1,0 +1,8 @@
+2024-03-27 16:26:09 INFO  HelloController:85 - 接受入参"S"
+2024-03-27 16:26:09 INFO  HikariDataSource:110 - DateSourceHikariCP - Starting...
+2024-03-27 16:26:09 INFO  HikariDataSource:123 - DateSourceHikariCP - Start completed.
+2024-03-27 16:26:09 INFO  HelloController:97 - 请求成功返回参数如下[{"createdTime":"2024-01-26 15:58:35","id":"240126BB78Z29214","nickName":"zhangsa1n","userName":"zhangsa1n"}]
+2024-03-27 16:26:14 INFO  HelloController:85 - 接受入参"3"
+2024-03-27 16:26:14 INFO  HelloController:97 - 请求成功返回参数如下[]
+2024-03-27 16:26:17 INFO  HelloController:85 - 接受入参"1"
+2024-03-27 16:26:17 INFO  HelloController:97 - 请求成功返回参数如下[{"createdTime":"2024-01-26 15:58:35","id":"240126BB78Z29214","nickName":"zhangsa1n","userName":"zhangsa1n"}]
