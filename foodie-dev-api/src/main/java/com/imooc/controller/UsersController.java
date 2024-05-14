@@ -53,7 +53,6 @@ public class UsersController  {
     public IMOOCJSONResult queryUser(
             @ApiParam(name = "uid", value = "用户uid", required = false
                      )
-
             @RequestParam String uid ) {
 
         StringRandom test = new StringRandom();
