@@ -1,2 +1,24 @@
-2024-05-14 10:11:41 INFO  ThreadPoolTaskScheduler:208 - Shutting down ExecutorService 'taskScheduler'
-2024-05-14 10:11:41 INFO  ThreadPoolTaskExecutor:208 - Shutting down ExecutorService 'applicationTaskExecutor'
+2024-05-22 18:21:01 INFO  DispatcherServlet:524 - Initializing Servlet 'dispatcherServlet'
+2024-05-22 18:21:01 INFO  DispatcherServlet:546 - Completed initialization in 7 ms
+2024-05-22 18:21:01 INFO  UsersController:163 - 接受入参"1908017YR51G1XWHa123123a123123"
+2024-05-22 18:21:01 INFO  HikariDataSource:110 - DateSourceHikariCP - Starting...
+2024-05-22 18:21:01 INFO  HikariDataSource:123 - DateSourceHikariCP - Start completed.
+2024-05-22 18:21:01 INFO  UsersController:208 - {"password":"V52eydDD1oeqqRKJrChU5A=="}
+2024-05-22 18:21:01 INFO  UsersController:221 - 1716373261541
+2024-05-22 18:21:02 INFO  UsersController:163 - 接受入参"1908017YR51G1XWHa123123a123123"
+2024-05-22 18:21:02 INFO  UsersController:208 - {"password":"WM9wP2ZDl+xPCsNZuEtWXA=="}
+2024-05-22 18:21:02 INFO  UsersController:213 - "WM9wP2ZDl+xPCsNZuEtWXA==V52eydDD1oeqqRKJrChU5A=="
+2024-05-22 18:21:12 INFO  UsersController:163 - 接受入参"1908017YR51G1XWHa123123a123123"
+2024-05-22 18:21:12 INFO  UsersController:208 - {"password":"WM9wP2ZDl+xPCsNZuEtWXA=="}
+2024-05-22 18:21:12 INFO  UsersController:213 - "WM9wP2ZDl+xPCsNZuEtWXA==gMnvD7hjac0l+QryfvU6ng=="
+2024-05-22 18:21:13 INFO  UsersController:163 - 接受入参"1908017YR51G1XWHa123123a123123"
+2024-05-22 18:21:13 INFO  UsersController:208 - {"password":"WM9wP2ZDl+xPCsNZuEtWXA=="}
+2024-05-22 18:21:13 INFO  UsersController:213 - "WM9wP2ZDl+xPCsNZuEtWXA==gMnvD7hjac0l+QryfvU6ng=="
+2024-05-22 18:21:16 INFO  UsersController:163 - 接受入参"1908017YR51G1XWHa123123a123123"
+2024-05-22 18:21:16 INFO  UsersController:208 - {"password":"WM9wP2ZDl+xPCsNZuEtWXA=="}
+2024-05-22 18:21:16 INFO  UsersController:217 - "新密码不能和原密码一致"
+2024-05-22 18:21:19 INFO  UsersController:163 - 接受入参"1908017YR51G1XWHa1231233a1231233"
+2024-05-22 18:21:19 INFO  UsersController:208 - {"password":"WM9wP2ZDl+xPCsNZuEtWXA=="}
+2024-05-22 18:21:19 INFO  UsersController:221 - 1716373279939
+2024-05-22 18:21:22 INFO  UsersController:163 - 接受入参"1908017YR51G1XWHa12312333a1231233"
+2024-05-22 18:21:22 INFO  UsersController:189 - 两次输入密码不一致

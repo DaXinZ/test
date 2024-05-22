@@ -20,6 +20,17 @@ public class UsersVO {
     private String password;
 
     private String newpassword;
+
+    private String formerpassword;
+
+    public String getFormerpassword() {
+        return formerpassword;
+    }
+
+    public void setFormerpassword(String formerpassword) {
+        this.formerpassword = formerpassword;
+    }
+
     @Column(name = "updated_time")
     private Date updatedTime;
 

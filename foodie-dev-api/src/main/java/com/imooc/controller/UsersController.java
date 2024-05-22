@@ -147,12 +147,13 @@ public class UsersController  {
     public IMOOCJSONResult updatepassword(
             @ApiParam(name = "id",value =  "用户id",required = false)
             @RequestParam String id,
-
-            @ApiParam(name = "password",value =  "新密码",required = false)
+            @ApiParam(name = "newpassword",value =  "新密码",required = false)
+            @RequestParam String newpassword,
+            @ApiParam(name = "password",value =  "确认密码",required = false)
             @RequestParam String password,
+            @ApiParam(name = "formerpassword",value =  "原有密码",required = false)
+            @RequestParam String formerpassword)
 
-            @ApiParam(name = "newpassword",value =  "原有密码",required = false)
-            @RequestParam String newpassword)
 
     {
         StringRandom test = new StringRandom();
@@ -168,8 +169,10 @@ public class UsersController  {
         UsersVO usersVO = new UsersVO();
         usersVO.setPassword(password);
         usersVO.setNewpassword(newpassword);
+        usersVO.setFormerpassword(formerpassword);
         String pass = usersVO.getPassword();
         String newpass = usersVO.getNewpassword();
+        String forem = usersVO.getFormerpassword();
         isAlphaNumeric isAlphaNumeric = new isAlphaNumeric();
 
         if (!isAlphaNumeric.isAlphaNumeric(pass)){
@@ -187,21 +190,30 @@ public class UsersController  {
             return IMOOCJSONResult.ok("两次输入密码不一致");
         }
 
-        if (StringUtils.isBlank(password) ||  StringUtils.isBlank(newpassword)){
+        if (StringUtils.isBlank(password) ||  StringUtils.isBlank(newpassword)  || StringUtils.isBlank(formerpassword)){
             logger.info(JSON.toJSONString("新密码和原有密码不能为空"));
         }
         try {
             usersVO.setPassword(MD5Utils.getMD5Str(usersVO.getPassword()));
+            usersVO.setFormerpassword(MD5Utils.getMD5Str(usersVO.getFormerpassword()));
+            usersVO.setNewpassword(MD5Utils.getMD5Str(usersVO.getNewpassword()));
         } catch (Exception e) {
             throw new RuntimeException(e);
         }
         String pass1 = usersVO.getPassword();
+        String passnew = usersVO.getNewpassword();
 
         UsersVO  Oldpassword   = userService.querypassword(id);
+        String   formernew = Oldpassword.getPassword();
         logger.info(JSON.toJSONString(Oldpassword));
-        String oldpass = Oldpassword.getPassword();
-        logger.info(JSON.toJSONString(oldpass));
-        if (oldpass.equals(pass1)){
+        String former = usersVO.getFormerpassword();
+
+
+        if (!formernew.equals(former)){
+            logger.info(JSON.toJSONString(pass1+former));
+            return  IMOOCJSONResult.ok("新密码和原有密码不一致，请检查密码");
+        }
+        if (passnew.equals(formernew)){
             logger.info(JSON.toJSONString("新密码不能和原密码一致"));
             return IMOOCJSONResult.ok("新密码不能和原密码一致");
         }
